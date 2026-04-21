@@ -10,7 +10,11 @@ const geistSans = Geist({
 
 export default function RootNotFound() {
   return (
-    <html lang="pt" className={`${geistSans.variable} h-full antialiased`}>
+    <html
+      lang="pt"
+      suppressHydrationWarning
+      className={`${geistSans.variable} h-full antialiased`}
+    >
       <body className="min-h-full bg-hero-gradient text-brand-ivory">
         <main className="mx-auto flex min-h-[80vh] w-full max-w-3xl flex-col items-start justify-center px-6 py-24 sm:px-8">
           <div className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-azure">
