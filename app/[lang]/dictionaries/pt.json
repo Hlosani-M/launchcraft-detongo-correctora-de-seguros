@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "siteName": "Detondo Corretora de Seguros e Resseguros",
+    "tagline": "Simplificando seguros para proteger o seu futuro",
+    "description": "Corretora de seguros e resseguros com sede em Luanda. Soluções personalizadas para particulares, empresas e instituições, com acesso aos mercados Lloyd's.",
+    "home": {
+      "title": "Detondo — Corretora de Seguros e Resseguros em Angola",
+      "description": "Soluções de seguro e resseguro desenhadas à medida. Protegemos pessoas, empresas e carteiras em Angola e nos mercados africanos."
+    },
+    "about": {
+      "title": "Sobre nós — Detondo",
+      "description": "Compreensão profunda dos mercados africanos, acesso aos mercados Lloyd's e compromisso com a excelência de serviço."
+    },
+    "services": {
+      "title": "Serviços — Detondo",
+      "description": "Cobertura completa para particulares, empresas e programas de resseguro."
+    },
+    "contact": {
+      "title": "Contacto — Detondo",
+      "description": "Fale com a nossa equipa em Luanda. Estamos disponíveis para cotações, esclarecimentos e gestão de sinistros."
+    }
+  },
+  "common": {
+    "brand": "Detondo",
+    "brandSubtitle": "Corretora de Seguros e Resseguros",
+    "cta": {
+      "quote": "Solicitar cotação",
+      "contact": "Falar connosco",
+      "learnMore": "Saber mais",
+      "viewAll": "Ver tudo"
+    },
+    "nav": {
+      "home": "Início",
+      "about": "Sobre nós",
+      "services": "Serviços",
+      "personal": "Seguro particular",
+      "business": "Seguro empresarial",
+      "reinsurance": "Resseguros",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+      "phoneLabel": "Telefone",
+      "emailLabel": "Email",
+      "rights": "Todos os direitos reservados.",
+      "tagline": "Protegemos e fortalecemos organizações e indivíduos com soluções de seguro adequadas e competitivas.",
+      "madeIn": "Feito com cuidado em Luanda."
+    },
+    "locale": {
+      "pt": "Português",
+      "en": "English",
+      "switchTo": "Mudar para"
+    },
+    "skipToContent": "Saltar para o conteúdo"
+  },
+  "hero": {
+    "eyebrow": "Corretora de seguros e resseguros",
+    "title": "Simplificando seguros para proteger o seu futuro",
+    "description": "Soluções de risco personalizadas com compreensão profunda dos mercados africanos e acesso aos mercados Lloyd's. Conversámos consigo, desenhámos a cobertura, e ficamos ao seu lado em cada sinistro.",
+    "primaryCta": "Solicitar cotação",
+    "secondaryCta": "Conhecer os serviços",
+    "stats": [
+      { "value": "15+", "label": "Práticas especializadas" },
+      { "value": "3", "label": "Linhas de negócio" },
+      { "value": "100%", "label": "Foco no cliente" }
+    ]
+  },
+  "whoWeAre": {
+    "eyebrow": "Quem somos",
+    "title": "Uma corretora nascida para simplificar o seguro em Angola",
+    "paragraphs": [
+      "A Detondo é uma corretora de seguros e resseguros que se dedica a fornecer soluções de seguro tanto para empresas como para particulares, com sede em Luanda. A nossa empresa oferece serviços de risco inovadores e personalizados em seguros, bem como financiamento de risco e consultoria actuarial, com foco na gestão de capital e fortalecimento do balanço dos nossos clientes.",
+      "A Detondo tem uma compreensão profunda dos mercados africanos e acesso aos mercados Lloyd's. O nosso objectivo é proteger e fortalecer organizações e indivíduos, oferecendo soluções de seguros adequadas a preços competitivos, conforme as necessidades de cada cliente.",
+      "Valorizamos cada cliente, construindo relações de longo prazo baseadas na confiança e na satisfação das suas necessidades. A nossa equipa é dedicada e comprometida em oferecer um serviço de excelência em cada interacção."
+    ],
+    "highlights": [
+      "Mercados africanos",
+      "Acesso a Lloyd's",
+      "Consultoria actuarial",
+      "Gestão de capital"
+    ]
+  },
+  "vision": {
+    "eyebrow": "Visão e valores",
+    "title": "A nossa visão",
+    "description": "Ser um fornecedor global de escolha em soluções de risco, entregando soluções excepcionais através de uma combinação equilibrada dos nossos pontos fortes — inovação, precisão e serviço.",
+    "valuesTitle": "Os nossos valores",
+    "valuesDescription": "Os nossos valores são a base da nossa filosofia operacional, orientam as nossas decisões e a determinação para atingir a visão. Estabelecemos os mais elevados padrões em todas as actividades que desenvolvemos.",
+    "values": [
+      {
+        "name": "Inovação",
+        "description": "Desenvolver constantemente soluções alternativas para o benefício dos clientes. Converter desafios em oportunidades."
+      },
+      {
+        "name": "Modernização",
+        "description": "Entregar produtos e serviços modernos e revitalizados, abraçando a mudança."
+      },
+      {
+        "name": "Proatividade e dinamismo",
+        "description": "Superar expectativas através de padrões desafiadores, desenhando as soluções de transferência de risco mais eficazes."
+      },
+      {
+        "name": "Excelência de serviço",
+        "description": "Conselhos precisos e soluções testadas, atingindo e superando as metas dos clientes e parceiros."
+      },
+      {
+        "name": "Precisão",
+        "description": "Fornecer permanentemente conselhos precisos e cumprir as metas estabelecidas."
+      }
+    ]
+  },
+  "commitment": {
+    "eyebrow": "Nosso compromisso",
+    "title": "Estamos consigo em cada etapa",
+    "description": "Do primeiro contacto ao sinistro, a nossa equipa garante que o seguro certo está no sítio certo — e que você entende exactamente o que está coberto.",
+    "pillars": [
+      {
+        "title": "Estruturar e negociar o melhor seguro",
+        "description": "Ajudamos a estruturar e negociar o seguro feito à medida das suas necessidades. Garantimos que compreende o produto, a cobertura e os prémios, e que fica com a seguradora que melhor se adequa ao seu perfil."
+      },
+      {
+        "title": "Manutenção de políticas",
+        "description": "A nossa equipa dedicada de consultores acompanha alterações, adições, actualizações e cancelamentos. Interagimos regularmente consigo para garantir que a sua apólice está sempre actualizada."
+      },
+      {
+        "title": "Gestão de sinistros",
+        "description": "A nossa equipa estará consigo o tempo todo. Ajudamos a preparar e apresentar reivindicações e garantimos que recebe o melhor serviço e o pagamento justo."
+      }
+    ]
+  },
+  "personal": {
+    "eyebrow": "Seguro particular",
+    "title": "Protecção para si e para o que lhe é importante",
+    "description": "Desde o automóvel à viagem, cobrimos os riscos do dia-a-dia com apólices claras e apoio humano.",
+    "items": [
+      {
+        "id": "motor",
+        "name": "Seguro automóvel",
+        "description": "Cobertura abrangente para os seus veículos, com aluguer de viatura, assistência em viagem e outros serviços de valor acrescentado. Também oferecemos seguro contra terceiros, incêndio e roubo."
+      },
+      {
+        "id": "building",
+        "name": "Seguro de edifícios",
+        "description": "A sua casa é provavelmente o investimento mais importante. Garantimos que a propriedade está devidamente segurada, com o prémio certo para o seu caso."
+      },
+      {
+        "id": "home-contents",
+        "name": "Seguro de conteúdo da casa",
+        "description": "Conteúdo do lar coberto contra roubo, incêndio, danos por água e outros eventos. Realizamos testes de adequação com o capital seguro."
+      },
+      {
+        "id": "all-risks",
+        "name": "Todo risco pessoal",
+        "description": "Garantimos que os seus objectos de valor estão correctamente cobertos em qualquer lugar do mundo."
+      },
+      {
+        "id": "liability",
+        "name": "Responsabilidade pessoal",
+        "description": "Cobertura para assuntos legais que possam surgir no seu dia-a-dia."
+      },
+      {
+        "id": "travel",
+        "name": "Seguro de viagem",
+        "description": "Viagens regionais ou internacionais com cobertura para despesas médicas, bagagem perdida, morte acidental e muito mais."
+      }
+    ]
+  },
+  "business": {
+    "eyebrow": "Seguro empresarial",
+    "title": "Cobrimos todos os aspectos do seu negócio",
+    "description": "Profissionais dedicados identificam os riscos do negócio e desenham soluções à medida a taxas económicas, incluindo esquemas de grupo.",
+    "items": [
+      { "id": "business", "name": "Seguro empresarial" },
+      { "id": "contractors", "name": "Empreiteiros todos os riscos" },
+      { "id": "truck", "name": "Seguro de camiões" },
+      { "id": "professional-indemnity", "name": "Indenização profissional" },
+      { "id": "goods-in-transit", "name": "Mercadorias em trânsito" },
+      { "id": "corporate-sectional", "name": "Títulos corporativos e seccionais" },
+      { "id": "agricultural", "name": "Seguro agrícola" },
+      { "id": "public-liability", "name": "Responsabilidade pública e cancelamento de eventos" },
+      { "id": "marine", "name": "Seguro marítimo" },
+      { "id": "aviation", "name": "Seguro de aviação" },
+      { "id": "wildlife", "name": "Seguro de vida selvagem" }
+    ],
+    "groupTitle": "Esquemas de grupo",
+    "groupDescription": "Também fornecemos soluções de seguro para esquemas de grupo, com a seguinte gama de coberturas:",
+    "groupItems": ["Acidente pessoal em grupo", "Seguro de saúde"]
+  },
+  "reinsurance": {
+    "eyebrow": "Resseguros e retrocessão",
+    "title": "Soluções de tratado, facultativas e de transferência alternativa de risco",
+    "description": "A Detondo ajuda clientes a atingir objectivos de subscrição e gestão de capital em empresas iniciantes ou maduras. Combinamos experiência especializada em corretagem de resseguros, consultoria e flexibilidade na negociação com uma ampla gama de resseguradores.",
+    "classesTitle": "Classes de risco",
+    "classes": [
+      "Propriedade",
+      "Engenharia",
+      "Agricultura",
+      "Náuticos",
+      "Poder e energia",
+      "Aviação",
+      "Resseguro financeiro",
+      "Violência política e terrorismo",
+      "Crédito e títulos",
+      "Linhas financeiras",
+      "Responsabilidade geral / Guarda-chuva / Confronto",
+      "Responsabilidade ambiental",
+      "Cibernética e tecnologia",
+      "Esportes e entretenimento",
+      "Sector público",
+      "Financiamento de habitação e protecção hipotecária",
+      "Vida e saúde"
+    ],
+    "servicesTitle": "O que fazemos",
+    "services": [
+      "Análise de risco quantitativa e qualitativa",
+      "Colocação e administração de programas de resseguro",
+      "Suporte e defesa de sinistros",
+      "Estratégias alternativas de risco",
+      "Consultoria de gestão de risco"
+    ],
+    "ancillaryTitle": "Serviços auxiliares",
+    "ancillary": [
+      "Risco de propriedade e avaliação de activos",
+      "Estratégias de força de trabalho",
+      "Consultoria de reclamações",
+      "Consultoria estratégica de risco",
+      "Segurança cibernética e consultoria financeira"
+    ]
+  },
+  "treaty": {
+    "eyebrow": "Resseguro do tratado e risco alternativo",
+    "title": "Resseguro elevado a um nível estratégico",
+    "description": "Elevamos o resseguro do tratado a um nível estratégico que aborda os objectivos de subscrição e capital dos clientes numa base de portfólio. A nossa natureza internacional permite-nos fornecer programas de tratado flexíveis, estruturados e com preços alinhados aos desafios e metas do cliente.",
+    "capabilitiesTitle": "Soluções alternativas de transferência de risco",
+    "capabilities": [
+      "Seguro de participação de quota finita",
+      "Seguro e resseguro de perda de spread",
+      "Transferência de portfólio de perdas",
+      "Protecção de prémios de reintegração",
+      "Stop-loss agregado multi-anual",
+      "Protecção de capital contingente (gatilho único ou múltiplo)",
+      "Derivados de seguros (protecções relacionadas ao clima)"
+    ],
+    "servicesTitle": "Serviços end-to-end",
+    "servicesDescription": "Oferecemos corretagem de resseguro, contabilidade técnica, gestão de sinistros e redacção de contratos.",
+    "services": [
+      {
+        "title": "Redacção de contrato",
+        "description": "A redacção é a base da relação legal entre ressegurados e resseguradores. Preparamos cada contrato com rigor e mantemo-nos a par das novas redacções do mercado."
+      },
+      {
+        "title": "Contabilidade técnica",
+        "description": "Contas de resseguro preparadas estritamente de acordo com o contrato, cálculos de comissão de lucro e ajustes de prémios. Gerimos contas de run-off em benefício dos clientes."
+      },
+      {
+        "title": "Corretagem de resseguro",
+        "description": "Profissionais líderes do sector analisam as suas necessidades e oferecem as melhores soluções disponíveis, apoiados em relações sólidas com o mercado."
+      },
+      {
+        "title": "Gestão de reclamações",
+        "description": "Trabalhamos com especialistas em sinistros para recolher, avaliar e apresentar reivindicações. Investimos em tecnologia para acelerar a comunicação na fase de sinistro."
+      }
+    ]
+  },
+  "lifeHealth": {
+    "eyebrow": "Resseguro de vida e saúde",
+    "title": "Experiência técnica e redes para produtos superiores",
+    "description": "A nossa equipa especializada oferece experiência técnica incomparável, conhecimento de mercado e redes que permitem aos clientes oferecer produtos superiores e optimizar a gestão de capital.",
+    "lifeTitle": "Resseguro de vida",
+    "lifeItems": [
+      "Funeral",
+      "Vida em grupo",
+      "Deficiência",
+      "Doença crítica",
+      "Dread disease",
+      "Vida de crédito",
+      "Garantia de crédito",
+      "Protecção de rendimento",
+      "Seguro de saúde permanente"
+    ],
+    "healthTitle": "Resseguro de saúde",
+    "healthItems": [
+      "Seguro de saúde",
+      "Excesso de perda hospitalar",
+      "Evacuação médica",
+      "Esquema médico",
+      "Cuidados geridos",
+      "Dental",
+      "Cobertura de lacunas"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Depoimentos",
+    "title": "Histórias dos nossos clientes",
+    "description": "Relações construídas sobre confiança, clareza e resposta rápida.",
+    "items": [
+      {
+        "quote": "A equipa da Detondo tornou algo complicado em algo simples. Explicaram cada detalhe da apólice e estiveram presentes quando mais precisámos.",
+        "author": "Directora financeira",
+        "company": "Grupo empresarial em Luanda"
+      },
+      {
+        "quote": "Colocaram um programa de resseguro num prazo apertado e com condições que pareciam impossíveis no mercado local. Profissionalismo ao mais alto nível.",
+        "author": "Director técnico",
+        "company": "Seguradora regional"
+      },
+      {
+        "quote": "Sinistro resolvido em dias, não em meses. A comunicação foi transparente do princípio ao fim.",
+        "author": "Proprietário",
+        "company": "Pequena empresa familiar"
+      }
+    ],
+    "a11y": {
+      "goToSlide": "Testemunho {index}",
+      "previous": "Anterior",
+      "next": "Próximo"
+    }
+  },
+  "ctaBand": {
+    "title": "Vamos desenhar a protecção certa para si?",
+    "description": "Em minutos agendamos uma conversa para compreender as suas necessidades e apresentar as melhores opções disponíveis.",
+    "primaryCta": "Solicitar cotação",
+    "secondaryCta": "Ver todos os serviços"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Sobre a Detondo",
+      "title": "Corretora dedicada a simplificar o seguro e proteger o seu futuro",
+      "description": "Nasce em Luanda para fornecer soluções personalizadas de seguro e resseguro. Combinamos conhecimento profundo dos mercados africanos com acesso aos mercados internacionais, incluindo Lloyd's."
+    },
+    "missionTitle": "Missão",
+    "missionDescription": "Proporcionar tranquilidade e segurança por meio de soluções de seguro confiáveis. Reconhecemos que cada situação é singular e esforçamo-nos por compreender as necessidades individuais de cada cliente.",
+    "purposeTitle": "Propósito",
+    "purposeDescription": "Simplificar o processo de seguro, tornando-o mais claro e eficiente, para que os nossos clientes possam desfrutar da tranquilidade que merecem.",
+    "capabilitiesTitle": "Capacidades",
+    "capabilities": [
+      {
+        "title": "Mais de 15 práticas especializadas",
+        "description": "Incluindo práticas robustas em serviços cibernéticos, financeiros e profissionais, bem como negócios de saúde e benefícios para colaboradores."
+      },
+      {
+        "title": "Acesso a Lloyd's",
+        "description": "Relação directa com os mercados Lloyd's permite colocações e capacidade que muitas vezes não existem no mercado doméstico."
+      },
+      {
+        "title": "Consultoria actuarial",
+        "description": "Equipa dedicada que fornece o substrato analítico necessário para o exame eficiente e aprofundado de todas as oportunidades."
+      }
+    ]
+  },
+  "servicesHub": {
+    "eyebrow": "Serviços",
+    "title": "Três linhas de negócio, um só compromisso",
+    "description": "Cada linha é conduzida por especialistas dedicados. Escolha a área que melhor descreve a sua necessidade e conheça a oferta em detalhe.",
+    "cards": [
+      {
+        "slug": "personal",
+        "name": "Seguro particular",
+        "description": "Para si e para a sua família: automóvel, habitação, viagem, todo risco e mais."
+      },
+      {
+        "slug": "business",
+        "name": "Seguro empresarial",
+        "description": "Coberturas para empresas de todos os tamanhos, incluindo esquemas de grupo."
+      },
+      {
+        "slug": "reinsurance",
+        "name": "Resseguros",
+        "description": "Soluções de tratado, facultativas e transferência alternativa de risco."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Fale connosco",
+    "description": "Preencha o formulário ou envie-nos um email — respondemos em dias úteis, normalmente em menos de 24 horas.",
+    "infoTitle": "Informações de contacto",
+    "addressTitle": "Endereço",
+    "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+    "phoneTitle": "Telefone",
+    "emailTitle": "Email",
+    "hoursTitle": "Horário",
+    "hours": "Segunda a sexta, 08h00 — 17h00",
+    "form": {
+      "name": "Nome completo",
+      "namePlaceholder": "O seu nome",
+      "email": "Email",
+      "emailPlaceholder": "voce@exemplo.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "+244 900 000 000",
+      "phoneHint": "Opcional",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-nos como podemos ajudar...",
+      "submit": "Enviar mensagem",
+      "submitting": "A enviar...",
+      "successTitle": "Mensagem recebida. Obrigado!",
+      "successBody": "A nossa equipa irá responder-lhe brevemente. Para assuntos urgentes, contacte-nos por telefone.",
+      "errorTitle": "Não foi possível enviar",
+      "errorBody": "Verifique os campos e tente novamente. Se o problema persistir, envie-nos email directamente.",
+      "errors": {
+        "name": "Indique o seu nome.",
+        "email": "Indique um email válido.",
+        "message": "Indique uma mensagem com pelo menos 10 caracteres."
+      }
+    }
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que procura não existe ou foi movida. Volte ao início para continuar a explorar.",
+    "cta": "Voltar ao início"
+  }
+}

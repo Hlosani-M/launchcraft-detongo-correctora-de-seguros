@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "siteName": "Detondo Insurance and Reinsurance Brokerage",
+    "tagline": "Simplifying insurance to protect your future",
+    "description": "Insurance and reinsurance brokerage headquartered in Luanda. Tailored solutions for individuals, companies, and institutions, with access to the Lloyd's markets.",
+    "home": {
+      "title": "Detondo — Insurance and Reinsurance Brokerage in Angola",
+      "description": "Bespoke insurance and reinsurance solutions. We protect people, businesses, and portfolios across Angola and the African markets."
+    },
+    "about": {
+      "title": "About us — Detondo",
+      "description": "Deep understanding of African markets, access to the Lloyd's markets, and a commitment to service excellence."
+    },
+    "services": {
+      "title": "Services — Detondo",
+      "description": "Comprehensive cover for individuals, businesses, and reinsurance programmes."
+    },
+    "contact": {
+      "title": "Contact — Detondo",
+      "description": "Talk to our team in Luanda. We are available for quotes, advice, and claims management."
+    }
+  },
+  "common": {
+    "brand": "Detondo",
+    "brandSubtitle": "Insurance and Reinsurance Brokerage",
+    "cta": {
+      "quote": "Get a quote",
+      "contact": "Talk to us",
+      "learnMore": "Learn more",
+      "viewAll": "View all"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "personal": "Personal insurance",
+      "business": "Business insurance",
+      "reinsurance": "Reinsurance",
+      "contact": "Contact"
+    },
+    "footer": {
+      "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "rights": "All rights reserved.",
+      "tagline": "We protect and strengthen organizations and individuals with suitable, competitive insurance solutions.",
+      "madeIn": "Crafted with care in Luanda."
+    },
+    "locale": {
+      "pt": "Português",
+      "en": "English",
+      "switchTo": "Switch to"
+    },
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "eyebrow": "Insurance and reinsurance brokerage",
+    "title": "Simplifying insurance to protect your future",
+    "description": "Tailored risk solutions with a deep understanding of the African markets and access to the Lloyd's markets. We listen, design the right cover, and stand beside you at every claim.",
+    "primaryCta": "Get a quote",
+    "secondaryCta": "Explore services",
+    "stats": [
+      { "value": "15+", "label": "Specialty practices" },
+      { "value": "3", "label": "Business lines" },
+      { "value": "100%", "label": "Client-focused" }
+    ]
+  },
+  "whoWeAre": {
+    "eyebrow": "Who we are",
+    "title": "A brokerage built to simplify insurance in Angola",
+    "paragraphs": [
+      "Detondo is an insurance and reinsurance brokerage dedicated to providing insurance solutions for companies and individuals, headquartered in Luanda. We offer innovative and personalized risk services in insurance, as well as risk financing and actuarial consulting, focused on capital management and strengthening our clients' balance sheet.",
+      "Detondo has a deep understanding of the African markets and access to the Lloyd's markets. Our objective is to protect and strengthen organizations and individuals by offering suitable insurance solutions at competitive prices according to each client's needs.",
+      "We value each client, building long-term relationships based on trust and the satisfaction of their needs. Our team is dedicated and committed to delivering excellent service in every interaction."
+    ],
+    "highlights": [
+      "African markets",
+      "Lloyd's access",
+      "Actuarial consulting",
+      "Capital management"
+    ]
+  },
+  "vision": {
+    "eyebrow": "Vision and values",
+    "title": "Our vision",
+    "description": "To be a global risk solutions provider of choice, delivering exceptional risk solutions through a balanced combination of our strengths — innovation, precision, and service.",
+    "valuesTitle": "Our values",
+    "valuesDescription": "Our values are the foundation of our operating philosophy and guide our decisions and determination to achieve our vision. We set the highest standards in all the activities we undertake.",
+    "values": [
+      {
+        "name": "Innovation",
+        "description": "Constantly developing alternative solutions for the benefit of our clients. Turning challenges into opportunities."
+      },
+      {
+        "name": "Modernization",
+        "description": "Consistently delivering modern, revitalized products and services, and embracing change."
+      },
+      {
+        "name": "Proactivity & dynamism",
+        "description": "Exceeding expectations through challenging standards and designing the most effective risk-transfer solutions."
+      },
+      {
+        "name": "Service excellence",
+        "description": "Precise advice and tested solutions that achieve and exceed the targets set by our clients and partners."
+      },
+      {
+        "name": "Precision",
+        "description": "Permanently providing accurate advice and meeting every established goal."
+      }
+    ]
+  },
+  "commitment": {
+    "eyebrow": "Our commitment",
+    "title": "We are with you at every step",
+    "description": "From the first conversation to the claim, our team makes sure the right cover is in place — and that you know exactly what is protected.",
+    "pillars": [
+      {
+        "title": "Structuring and negotiating the best insurance",
+        "description": "We help structure and negotiate insurance tailored to your individual needs. We make sure you understand the product, coverage, and premiums, and that you are placed with the insurer that best matches your profile."
+      },
+      {
+        "title": "Policy maintenance",
+        "description": "Our dedicated consultants handle changes, additions, updates, and cancellations. We engage with you regularly so your policy stays current."
+      },
+      {
+        "title": "Claims management",
+        "description": "Our team will be with you every step of the way. We help file claims and ensure you receive the best service and a fair payout."
+      }
+    ]
+  },
+  "personal": {
+    "eyebrow": "Personal insurance",
+    "title": "Cover for you and what matters most",
+    "description": "From the car to the trip, we cover everyday risks with clear policies and real human support.",
+    "items": [
+      {
+        "id": "motor",
+        "name": "Motor insurance",
+        "description": "Comprehensive cover for your vehicles, with car rental, roadside assistance, and other value-added services. Third-party, fire, and theft cover also available."
+      },
+      {
+        "id": "building",
+        "name": "Building insurance",
+        "description": "Your home is likely your most important investment. We make sure it is properly insured with the right premium."
+      },
+      {
+        "id": "home-contents",
+        "name": "Home contents insurance",
+        "description": "Household contents covered against theft, fire, water damage, and other events. We run adequacy tests on the sum insured."
+      },
+      {
+        "id": "all-risks",
+        "name": "All risks",
+        "description": "All your valuables correctly covered, anywhere in the world."
+      },
+      {
+        "id": "liability",
+        "name": "Personal liability",
+        "description": "Cover for legal matters that may arise in your everyday life."
+      },
+      {
+        "id": "travel",
+        "name": "Travel insurance",
+        "description": "Regional or international travel covered for medical expenses, lost luggage, accidental death, and more."
+      }
+    ]
+  },
+  "business": {
+    "eyebrow": "Business insurance",
+    "title": "Cover for every side of your business",
+    "description": "Dedicated professionals identify business risks and design tailored solutions at economical rates, including group schemes.",
+    "items": [
+      { "id": "business", "name": "Business insurance" },
+      { "id": "contractors", "name": "Contractors all risks" },
+      { "id": "truck", "name": "Truck insurance" },
+      { "id": "professional-indemnity", "name": "Professional indemnity" },
+      { "id": "goods-in-transit", "name": "Goods in transit" },
+      { "id": "corporate-sectional", "name": "Corporate & sectional title" },
+      { "id": "agricultural", "name": "Agricultural insurance" },
+      { "id": "public-liability", "name": "Public liability & events cancellation" },
+      { "id": "marine", "name": "Marine insurance" },
+      { "id": "aviation", "name": "Aviation insurance" },
+      { "id": "wildlife", "name": "Wildlife insurance" }
+    ],
+    "groupTitle": "Group schemes",
+    "groupDescription": "We also provide insurance solutions for group schemes, with the following range of covers:",
+    "groupItems": ["Group personal accident", "Health insurance"]
+  },
+  "reinsurance": {
+    "eyebrow": "Reinsurance and retrocession",
+    "title": "Treaty, facultative, and alternative risk transfer",
+    "description": "Detondo helps clients meet underwriting and capital-management goals at both start-up and mature insurance companies. We combine specialized reinsurance broking experience with advisory services and flexibility negotiating with a wide range of reinsurers.",
+    "classesTitle": "Classes of risk",
+    "classes": [
+      "Property",
+      "Engineering",
+      "Agriculture",
+      "Marine",
+      "Power and energy",
+      "Aviation",
+      "Financial reinsurance",
+      "Political violence & terrorism",
+      "Credit and bonds",
+      "Financial lines",
+      "General liability / Umbrella / Casualty",
+      "Environmental liability",
+      "Cyber and technology",
+      "Sports and entertainment",
+      "Public sector",
+      "Housing finance and mortgage protection",
+      "Life and health"
+    ],
+    "servicesTitle": "What we do",
+    "services": [
+      "Quantitative and qualitative risk analysis",
+      "Reinsurance programme placement and administration",
+      "Claims support and defence",
+      "Alternative risk strategies",
+      "Risk-management consulting"
+    ],
+    "ancillaryTitle": "Ancillary services",
+    "ancillary": [
+      "Property risk and asset valuation",
+      "Workforce strategies",
+      "Claims consultancy",
+      "Strategic risk consultancy",
+      "Cyber security and financial advisory"
+    ]
+  },
+  "treaty": {
+    "eyebrow": "Treaty reinsurance & alternative risk",
+    "title": "Treaty reinsurance raised to a strategic level",
+    "description": "We elevate treaty reinsurance to a strategic level addressing clients' underwriting and capital objectives on a portfolio basis. Our international nature lets us provide flexible, structured, priced treaty programmes aligned with customer challenges and goals.",
+    "capabilitiesTitle": "Alternative risk transfer capabilities",
+    "capabilities": [
+      "Finite quota share insurance",
+      "Spread-loss insurance and reinsurance",
+      "Loss portfolio transfers",
+      "Reinstatement premium protections",
+      "Multi-year aggregate stop-loss",
+      "Contingent capital protection (single or multi-trigger)",
+      "Insurance derivatives (weather-related protections)"
+    ],
+    "servicesTitle": "End-to-end services",
+    "servicesDescription": "We offer reinsurance broking, technical reinsurance accounting, claims management, and contract drafting.",
+    "services": [
+      {
+        "title": "Contract drafting",
+        "description": "Wording is the foundation of the legal relationship between reinsured and reinsurers. We draft every contract carefully and stay current with new market wordings."
+      },
+      {
+        "title": "Technical accounting",
+        "description": "Reinsurance accounts prepared strictly to the contract, profit-commission calculations, and premium adjustments. We manage run-off accounts on behalf of clients."
+      },
+      {
+        "title": "Reinsurance broking",
+        "description": "Industry-leading professionals analyse your needs and offer the best available solutions, backed by strong market relationships."
+      },
+      {
+        "title": "Claims management",
+        "description": "We work with claims experts to collect, evaluate, and present claims. We invest in technology to speed up communication at the claims stage."
+      }
+    ]
+  },
+  "lifeHealth": {
+    "eyebrow": "Life and health reinsurance",
+    "title": "Technical expertise and networks for superior products",
+    "description": "Our specialized team offers unparalleled technical expertise, market knowledge, and networks enabling clients to offer superior products and optimize capital management.",
+    "lifeTitle": "Life reinsurance",
+    "lifeItems": [
+      "Funeral",
+      "Group life",
+      "Disability",
+      "Critical illness",
+      "Dread disease",
+      "Credit life",
+      "Credit guarantee",
+      "Income protection",
+      "Permanent health insurance"
+    ],
+    "healthTitle": "Health reinsurance",
+    "healthItems": [
+      "Health insurance",
+      "Hospital stop-loss",
+      "Medical evacuation",
+      "Medical scheme",
+      "Managed care",
+      "Dental",
+      "Gap coverage"
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "Stories from our clients",
+    "description": "Relationships built on trust, clarity, and fast response.",
+    "items": [
+      {
+        "quote": "Detondo's team turned something complicated into something simple. They explained every policy detail and were there when we needed them most.",
+        "author": "CFO",
+        "company": "Luanda-based group"
+      },
+      {
+        "quote": "They placed a reinsurance programme on a tight deadline with terms that seemed impossible in the local market. Top-tier professionalism.",
+        "author": "Technical Director",
+        "company": "Regional insurer"
+      },
+      {
+        "quote": "Claim resolved in days, not months. Communication was transparent from start to finish.",
+        "author": "Owner",
+        "company": "Small family business"
+      }
+    ],
+    "a11y": {
+      "goToSlide": "Testimonial {index}",
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "ctaBand": {
+    "title": "Shall we design the right cover for you?",
+    "description": "In minutes we can schedule a conversation to understand your needs and present the best available options.",
+    "primaryCta": "Get a quote",
+    "secondaryCta": "See all services"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Detondo",
+      "title": "A brokerage dedicated to simplifying insurance and protecting your future",
+      "description": "Born in Luanda to deliver tailored insurance and reinsurance solutions. We combine deep knowledge of the African markets with access to international markets, including Lloyd's."
+    },
+    "missionTitle": "Mission",
+    "missionDescription": "To provide peace of mind and security through reliable insurance solutions. We recognize that each situation is unique and strive to understand every client's individual needs.",
+    "purposeTitle": "Purpose",
+    "purposeDescription": "To simplify the insurance process, making it clearer and more efficient, so our clients can enjoy the peace of mind they deserve.",
+    "capabilitiesTitle": "Capabilities",
+    "capabilities": [
+      {
+        "title": "15+ specialty practices",
+        "description": "Including robust cyber, financial, and professional services practices, along with health and employee-benefits businesses."
+      },
+      {
+        "title": "Lloyd's access",
+        "description": "A direct relationship with the Lloyd's markets gives us placements and capacity not always available locally."
+      },
+      {
+        "title": "Actuarial consulting",
+        "description": "A dedicated team delivers the analytical substrate needed to thoroughly examine every opportunity."
+      }
+    ]
+  },
+  "servicesHub": {
+    "eyebrow": "Services",
+    "title": "Three business lines, one commitment",
+    "description": "Each line is led by dedicated specialists. Pick the area that best matches your need and explore the offer in detail.",
+    "cards": [
+      {
+        "slug": "personal",
+        "name": "Personal insurance",
+        "description": "For you and your family: motor, home, travel, all-risks, and more."
+      },
+      {
+        "slug": "business",
+        "name": "Business insurance",
+        "description": "Cover for companies of every size, including group schemes."
+      },
+      {
+        "slug": "reinsurance",
+        "name": "Reinsurance",
+        "description": "Treaty, facultative, and alternative risk-transfer solutions."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Talk to us",
+    "description": "Fill out the form or send us an email — we reply on business days, usually within 24 hours.",
+    "infoTitle": "Contact details",
+    "addressTitle": "Address",
+    "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "hoursTitle": "Hours",
+    "hours": "Monday to Friday, 8:00 AM — 5:00 PM",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+244 900 000 000",
+      "phoneHint": "Optional",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "successTitle": "Message received. Thank you!",
+      "successBody": "Our team will get back to you shortly. For urgent matters, please call us.",
+      "errorTitle": "We couldn't send your message",
+      "errorBody": "Check the fields and try again. If the problem persists, email us directly.",
+      "errors": {
+        "name": "Please tell us your name.",
+        "email": "Please enter a valid email.",
+        "message": "Message must be at least 10 characters."
+      }
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for doesn't exist or has been moved. Head back home to keep exploring.",
+    "cta": "Back to home"
+  }
+}

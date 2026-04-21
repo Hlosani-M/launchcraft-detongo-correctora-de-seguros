@@ -1,0 +1,74 @@
+import { Section } from "@/components/ui/Section";
+import { Reveal } from "@/components/ui/Reveal";
+import { ServiceCard } from "@/components/ui/ServiceCard";
+import {
+  CarIcon,
+  HomeIcon,
+  BoxIcon,
+  ShieldIcon,
+  ScaleIcon,
+  PlaneIcon,
+} from "@/components/ui/Icons";
+
+type Item = { id: string; name: string; description: string };
+
+type Dict = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  items: Item[];
+};
+
+const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  motor: CarIcon,
+  building: HomeIcon,
+  "home-contents": BoxIcon,
+  "all-risks": ShieldIcon,
+  liability: ScaleIcon,
+  travel: PlaneIcon,
+};
+
+export function PersonalInsurance({
+  lang,
+  dict,
+  cta,
+}: {
+  lang: string;
+  dict: Dict;
+  cta: string;
+}) {
+  return (
+    <Section
+      id="personal"
+      tone="ivory"
+      eyebrow={dict.eyebrow}
+      title={dict.title}
+      description={dict.description}
+    >
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {dict.items.map((item, i) => {
+          const Icon = ICONS[item.id] ?? ShieldIcon;
+          return (
+            <Reveal key={item.id} delay={i * 0.04}>
+              <ServiceCard
+                tone="light"
+                name={item.name}
+                description={item.description}
+                icon={<Icon className="h-5 w-5" />}
+              />
+            </Reveal>
+          );
+        })}
+      </div>
+      <div className="mt-10">
+        <a
+          href={`/${lang}/services/personal`}
+          className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-azure-dim transition-all hover:gap-2.5 hover:text-brand-azure"
+        >
+          {cta}
+          <span aria-hidden>→</span>
+        </a>
+      </div>
+    </Section>
+  );
+}
