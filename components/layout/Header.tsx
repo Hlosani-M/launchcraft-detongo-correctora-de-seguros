@@ -6,7 +6,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/app/[lang]/dictionaries";
 import { LocaleSwitcher } from "./LocaleSwitcher";
-import { BrandDiamond } from "@/components/ui/ParallelogramAccent";
+import { Logo } from "@/components/layout/Logo";
 import { LinkButton } from "@/components/ui/Button";
 
 type HeaderDict = {
@@ -74,7 +74,7 @@ export function Header({
           aria-label={dict.brand}
           className="flex items-center gap-2.5"
         >
-          <BrandDiamond className="h-8 w-8" />
+          <Logo size={40} priority />
           <span className="flex flex-col leading-tight">
             <span className="text-lg font-bold tracking-tight text-brand-navy">
               {dict.brand}

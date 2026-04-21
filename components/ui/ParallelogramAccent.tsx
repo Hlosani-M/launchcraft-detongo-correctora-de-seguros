@@ -30,13 +30,3 @@ export function ParallelogramAccent({
   );
 }
 
-export function BrandDiamond({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 48 48" aria-hidden className={className}>
-      <path
-        d="M12 6 H36 Q42 6 38 12 L30 22 Q27 26 30 30 L38 40 Q40 44 36 44 H20 Q16 44 14 40 L6 28 Q4 24 6 20 L10 10 Q12 6 16 6 Z"
-        fill="#05BBFB"
-      />
-    </svg>
-  );
-}

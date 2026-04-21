@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Locale } from "@/app/[lang]/dictionaries";
-import { BrandDiamond } from "@/components/ui/ParallelogramAccent";
+import { Logo } from "@/components/layout/Logo";
 import { MapPinIcon, PhoneIcon, EmailIcon } from "@/components/ui/Icons";
 
 type FooterDict = {
@@ -51,7 +51,7 @@ export function Footer({
               className="inline-flex items-center gap-2.5"
               aria-label={dict.brand}
             >
-              <BrandDiamond className="h-9 w-9" />
+              <Logo size={44} />
               <span className="flex flex-col leading-tight">
                 <span className="text-xl font-bold tracking-tight">
                   {dict.brand}

@@ -65,7 +65,7 @@ Sizes: `md` (px-5 py-2.5) and `lg` (px-7 py-3.5). Always render an `ArrowIcon` a
 
 ## Signature motif
 
-The azure parallelogram from the company presentation is reproduced as `ParallelogramAccent`. It is purely decorative (`aria-hidden`) and is layered behind hero sections with controlled opacity. `BrandDiamond` is the diamond mark used in the Header / Footer next to the wordmark.
+The azure parallelogram from the company presentation is reproduced as `ParallelogramAccent`. It is purely decorative (`aria-hidden`) and is layered behind hero sections with controlled opacity. The brand mark itself is rendered by `Logo` (`components/layout/Logo.tsx`) next to the wordmark in the Header / Footer — it is the only canonical brand primitive.
 
 ## Cards
 

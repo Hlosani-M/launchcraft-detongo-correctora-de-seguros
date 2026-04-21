@@ -64,7 +64,6 @@ export async function generateMetadata(
       description: home.description,
     },
     robots: { index: true, follow: true },
-    icons: { icon: "/favicon.ico" },
   };
 }
 

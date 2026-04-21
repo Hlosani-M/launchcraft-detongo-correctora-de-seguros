@@ -64,7 +64,19 @@ A PR with only one language updated is not "done" — it's a defect.
 - **Design tokens**: colours, radii, shadows — see `design-system.md`. Never inline hex values.
 - **Motion**: wrap reveals in `Reveal`; always respect `useReducedMotion()` and the global `prefers-reduced-motion` rule in `globals.css`.
 
-## 6. When adding new surfaces
+## 6. Design & brand consistency
+
+Every visual / styling change must remain inside the established design language. `design-system.md` holds the tokens and recipes; the rules below are non-negotiable.
+
+- Use the existing tokens from `app/globals.css` and `design-system.md`. Never inline hex values or custom fonts in components.
+- Spacing, radii, shadows, type scale, and section rhythm (`py-20 sm:py-24 lg:py-32`) come from the design system. Don't freestyle.
+- Reuse brand primitives. `Logo` (`components/layout/Logo.tsx`) is the only canonical brand mark — do not reintroduce ad-hoc SVGs, inline `<img>` tags, or parallel "LogoSmall" variants.
+- When updating the logo, icons, or any visual asset, update every surface in the same change: `app/icon.png`, `app/apple-icon.png`, `app/opengraph-image.png`, `app/twitter-image.png`, `Logo`, the Organization `logo` in `lib/jsonld.tsx`, the footer, and any future splash / auth / loading states. No half-migrations.
+- Off-pattern UI (bespoke buttons, custom section wrappers, new font weights, unauthorized breakpoints) is rejected by default. If the existing primitive can't express what you need, extend it — don't fork it.
+- Changes must be intentional, reusable, and aligned with the current UI. No drive-by restylings of a single page that drift away from the rest of the site.
+- Respect `prefers-reduced-motion`, the `brand-*` palette, and the mobile-first sizing conventions in `design-system.md`.
+
+## 7. When adding new surfaces
 
 Adding any of the following **requires the bilingual wiring in the same change** — no exceptions:
 
@@ -76,7 +88,7 @@ Adding any of the following **requires the bilingual wiring in the same change**
 - New SEO field / structured data property → add to `lib/jsonld.tsx` and localize human-readable values from `dict`.
 - Legal / policy content → full translations at the moment of introduction; never ship English-only.
 
-## 7. Engineering hygiene
+## 8. Engineering hygiene
 
 - Follow existing architecture before introducing new layers. Reuse `Section`, `Reveal`, `ServiceCard`, etc. before writing new primitives.
 - Make the **smallest safe change** when fixing bugs — but still update every locale. Scope creep and stale translations are equally bad.
@@ -85,7 +97,7 @@ Adding any of the following **requires the bilingual wiring in the same change**
 - Respect the Next 16 APIs: async `params` / `searchParams`, `PageProps<...>` / `LayoutProps<...>` globals, `proxy.ts` (not `middleware.ts`), Server Actions for mutations. If uncertain, re-read `node_modules/next/dist/docs/01-app/02-guides/internationalization.md` and siblings before writing code (per `AGENTS.md`).
 - Keep `CLAUDE.md`, `README.md`, and `design-system.md` in sync but non-duplicative.
 
-## 8. Known drift — fix when you next touch these files
+## 9. Known drift — fix when you next touch these files
 
 These slipped through the initial build. They are not separate tasks — fix each the next time a change lands in the same file.
 
@@ -95,7 +107,7 @@ These slipped through the initial build. They are not separate tasks — fix eac
 
 The top-level `app/not-found.tsx` is allowed to stay bilingual-at-once because it renders before any locale is known. Do not "fix" it.
 
-## 9. Verification before completion
+## 10. Verification before completion
 
 ```bash
 npm run typecheck
@@ -104,7 +116,7 @@ npm run build
 npm run dev       # manually hit /pt and /en on every touched route
 ```
 
-## 10. Pointers
+## 11. Pointers
 
 - `AGENTS.md` — Next 16 reading habit. Heed deprecation notices.
 - `README.md` — env vars, scripts, email provider swap, deployment.
