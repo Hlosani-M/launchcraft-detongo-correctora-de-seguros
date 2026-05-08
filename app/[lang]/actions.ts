@@ -12,7 +12,7 @@ export async function contactAction(
   _prev: ContactState,
   formData: FormData,
 ): Promise<ContactState> {
-  // Honeypot — bots that fill hidden `website` field get a silent success.
+  // Honeypot: bots that fill the hidden `website` field get a silent success.
   if (formData.get("website")) {
     return { status: "success" };
   }

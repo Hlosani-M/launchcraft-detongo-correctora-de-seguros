@@ -48,6 +48,7 @@ Before marking any task complete, run through this checklist:
 - [ ] Grepped the diff for hardcoded pt/en strings (`rg "\b(Enviar|Submit|Saber mais|Learn more|Voltar|Back)\b" -t tsx -t ts`). Replace any hit with a dictionary key.
 - [ ] If a translation key was added, removed, or renamed, the same operation happened in every locale file.
 - [ ] If a per-locale duplicated page exists (e.g. a future localized slug), both versions are aligned.
+- [ ] Swept the diff for em-dashes (`—`), curly quotes (`"` `"` `'` `'`), and the ellipsis character (`…`) in user-facing strings. See section 7.
 - [ ] `npm test` passes — `tests/dictionaries.test.ts` fails loudly on top-level key drift and is the first line of defence.
 - [ ] `npm run build` passes — typed metadata / route types / JSON-LD all rebuild cleanly.
 - [ ] Smoke-tested both `/pt/<route>` and `/en/<route>` in `npm run dev` for any UI you changed.
@@ -76,7 +77,27 @@ Every visual / styling change must remain inside the established design language
 - Changes must be intentional, reusable, and aligned with the current UI. No drive-by restylings of a single page that drift away from the rest of the site.
 - Respect `prefers-reduced-motion`, the `brand-*` palette, and the mobile-first sizing conventions in `design-system.md`.
 
-## 7. When adding new surfaces
+## 7. Copy voice
+
+User-facing copy must read like a human at the brokerage wrote it, not a model. Strict rules — they apply to dictionaries, component-level strings, metadata, and structured data alike:
+
+- **No em-dashes (`—`) in user-visible strings.** Use commas, periods, parentheses, or "and". Long parenthetical clauses fenced by em-dashes are the loudest AI tell.
+- **No curly quotes** (`"`, `"`, `'`, `'`) in dictionaries or components. Use straight `"` and `'`.
+- **No ellipsis character** (`…`). Use three dots, and only where the surface is genuinely a placeholder (`"Tell us how we can help..."`).
+- **`<title>` separator is ` | `**, never `—` (e.g. `Services | Detondo`, not `Services — Detondo`).
+- **Addresses, hours, ranges**: comma-separate or use the locale word for "to". `08h00 às 17h00` / `8:00 AM to 5:00 PM`. Never `08h00 — 17h00`.
+- **Avoid AI filler**. Rewrite phrases like *"engineered to international standards"*, *"anchored in proximity"*, *"where it matters most"*, *"raised to a strategic level"*, *"specialised expertise"* into plain, direct language. If a sentence reads like a marketing-deck headline that nobody at the company would actually say, rewrite it.
+
+Sweep before completing any copy change:
+
+```bash
+grep -rnF '—' app/\[lang\]/dictionaries components 2>/dev/null | grep -v node_modules
+grep -rnE '[“”‘’…]' app/\[lang\]/dictionaries components 2>/dev/null | grep -v node_modules
+```
+
+Both must return nothing for user-facing strings. Internal code comments are out of scope but should follow the same hygiene by default.
+
+## 8. When adding new surfaces
 
 Adding any of the following **requires the bilingual wiring in the same change** — no exceptions:
 
@@ -88,7 +109,7 @@ Adding any of the following **requires the bilingual wiring in the same change**
 - New SEO field / structured data property → add to `lib/jsonld.tsx` and localize human-readable values from `dict`.
 - Legal / policy content → full translations at the moment of introduction; never ship English-only.
 
-## 8. Engineering hygiene
+## 9. Engineering hygiene
 
 - Follow existing architecture before introducing new layers. Reuse `Section`, `Reveal`, `ServiceCard`, etc. before writing new primitives.
 - Make the **smallest safe change** when fixing bugs — but still update every locale. Scope creep and stale translations are equally bad.
@@ -97,7 +118,7 @@ Adding any of the following **requires the bilingual wiring in the same change**
 - Respect the Next 16 APIs: async `params` / `searchParams`, `PageProps<...>` / `LayoutProps<...>` globals, `proxy.ts` (not `middleware.ts`), Server Actions for mutations. If uncertain, re-read `node_modules/next/dist/docs/01-app/02-guides/internationalization.md` and siblings before writing code (per `AGENTS.md`).
 - Keep `CLAUDE.md`, `README.md`, and `design-system.md` in sync but non-duplicative.
 
-## 9. Known drift — fix when you next touch these files
+## 10. Known drift — fix when you next touch these files
 
 These slipped through the initial build. They are not separate tasks — fix each the next time a change lands in the same file.
 
@@ -107,7 +128,7 @@ These slipped through the initial build. They are not separate tasks — fix eac
 
 The top-level `app/not-found.tsx` is allowed to stay bilingual-at-once because it renders before any locale is known. Do not "fix" it.
 
-## 10. Verification before completion
+## 11. Verification before completion
 
 ```bash
 npm run typecheck
@@ -116,7 +137,7 @@ npm run build
 npm run dev       # manually hit /pt and /en on every touched route
 ```
 
-## 11. Pointers
+## 12. Pointers
 
 - `AGENTS.md` — Next 16 reading habit. Heed deprecation notices.
 - `README.md` — env vars, scripts, email provider swap, deployment.

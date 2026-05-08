@@ -106,7 +106,7 @@ export function ContactForm({
   return (
     <form action={formAction} noValidate className="space-y-5">
       <input type="hidden" name="locale" value={locale} />
-      {/* Honeypot — hidden from humans, visible to bots */}
+      {/* Honeypot: hidden from humans, visible to bots */}
       <div
         aria-hidden
         className="pointer-events-none absolute -left-[9999px] h-0 w-0 overflow-hidden"

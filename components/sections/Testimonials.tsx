@@ -56,7 +56,7 @@ export function Testimonials({ dict }: { dict: Dict }) {
             aria-hidden
             className="absolute -top-5 left-8 text-7xl font-serif leading-none text-brand-azure/30 sm:text-8xl"
           >
-            “
+            "
           </span>
 
           <div className="relative min-h-[180px]">

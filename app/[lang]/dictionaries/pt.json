@@ -2,21 +2,21 @@
   "meta": {
     "siteName": "Detondo Corretora de Seguros e Resseguros",
     "tagline": "Seguros, resseguros e gestão de risco para Angola",
-    "description": "Corretora angolana de seguros e resseguros fundada em 2017. Soluções à medida para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Certificada pela ANPG.",
+    "description": "Corretora angolana de seguros e resseguros, fundada em 2017. Soluções à medida para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Certificada pela ANPG.",
     "home": {
-      "title": "Detondo — Corretora de Seguros e Resseguros em Angola",
+      "title": "Detondo | Corretora de Seguros e Resseguros em Angola",
       "description": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017. Certificação ANPG."
     },
     "about": {
-      "title": "Sobre nós — Detondo",
+      "title": "Sobre nós | Detondo",
       "description": "Corretora angolana fundada em 2017. Experiência multi-sectorial, certificação ANPG e painel das principais seguradoras a operar em Angola."
     },
     "services": {
-      "title": "Serviços — Detondo",
+      "title": "Serviços | Detondo",
       "description": "Soluções corporativas, petróleo & gás, energia, marítimo, construção todos os riscos, responsabilidade civil, saúde e vida e resseguros para Angola."
     },
     "contact": {
-      "title": "Contacto — Detondo",
+      "title": "Contacto | Detondo",
       "description": "Fale com a nossa equipa em Luanda. Estamos disponíveis para cotações, esclarecimentos e gestão de sinistros."
     }
   },
@@ -39,12 +39,14 @@
       "contact": "Contacto"
     },
     "footer": {
-      "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+      "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
       "phoneLabel": "Telefone",
       "emailLabel": "Email",
       "rights": "Todos os direitos reservados.",
       "tagline": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017.",
-      "madeIn": "Feito com cuidado em Luanda."
+      "builtBy": "Website desenvolvido por",
+      "partner": "LaunchCraft",
+      "partnerUrl": "https://launchcraft.co.za/"
     },
     "locale": {
       "pt": "Português",
@@ -55,8 +57,8 @@
   },
   "hero": {
     "eyebrow": "Seguros, resseguros e gestão de risco",
-    "title": "Soluções de risco desenhadas para o mercado angolano",
-    "description": "Desde 2017, a Detondo estrutura programas de seguro, resseguro e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Certificada pela ANPG e parceira das principais seguradoras do mercado.",
+    "title": "Seguros e resseguros, feitos para Angola",
+    "description": "Desde 2017, ajudamos clientes corporativos, do sector energético e de Petróleo & Gás em Angola a colocar em prática os programas certos de seguro, resseguro e gestão de risco. Somos certificados pela ANPG e trabalhamos com as principais seguradoras do mercado.",
     "primaryCta": "Solicitar cotação",
     "secondaryCta": "Conhecer os serviços",
     "stats": [
@@ -67,11 +69,11 @@
   },
   "whoWeAre": {
     "eyebrow": "Quem somos",
-    "title": "Uma corretora angolana feita para os sectores mais exigentes do país",
+    "title": "Uma corretora angolana para os sectores mais exigentes do país",
     "paragraphs": [
-      "A Detondo é uma corretora angolana de seguros e resseguros fundada em 2017, com sede em Luanda. Desde a sua fundação fornecemos soluções de seguro, resseguro e gestão de risco a clientes particulares, empresariais e institucionais nos diversos sectores da economia angolana.",
-      "Construímos experiência profunda nas linhas mais exigentes do mercado — corporativo, petróleo & gás, marítimo, energia, construção todos os riscos, responsabilidade civil e saúde e vida — complementadas por programas de resseguro e gestão de risco corporativo.",
-      "O nosso trabalho assenta na proximidade aos clientes, no rigor das colocações e na disciplina da gestão de sinistros. O resultado é uma corretora em que as principais seguradoras e operadores corporativos angolanos confiam para estruturar, negociar e responder pelos seus programas de risco."
+      "A Detondo é uma corretora angolana de seguros e resseguros, fundada em 2017 e sediada em Luanda. Desde o início, trabalhamos com clientes particulares, empresariais e institucionais em vários sectores da economia angolana.",
+      "Ao longo dos anos, construímos forte experiência nas linhas mais exigentes do mercado: corporativo, petróleo & gás, marítimo, energia, construção todos os riscos, responsabilidade civil e saúde e vida. Complementamos esta oferta com programas de resseguro e gestão de risco corporativo.",
+      "O nosso trabalho assenta em estar perto dos clientes, fazer a colocação certa à primeira e gerir os sinistros de forma rigorosa quando acontecem. O resultado é uma corretora em que as principais seguradoras e operadores corporativos angolanos confiam para estruturar, negociar e responder pelos seus programas de risco."
     ],
     "highlights": [
       "Fundada em 2017",
@@ -82,37 +84,37 @@
   },
   "sectors": {
     "eyebrow": "Sectores que servimos",
-    "title": "Especialização onde mais conta",
-    "description": "A Detondo concentra-se nos sectores de maior exigência da economia angolana — corporativo, energia e petróleo & gás — com programas de risco desenhados a padrões internacionais.",
+    "title": "Sectores que conhecemos bem",
+    "description": "A Detondo concentra-se em três áreas onde as empresas angolanas mais precisam de uma mão firme: corporativo, energia e petróleo & gás. Desenhamos programas de risco que cumprem padrões internacionais.",
     "items": [
       {
         "id": "corporate",
         "name": "Corporativo",
-        "description": "Programas abrangentes de risco para empresas angolanas e multinacionais com operações em múltiplos sectores. Do património e responsabilidade civil aos benefícios para colaboradores e gestão de risco corporativo à medida."
+        "description": "Programas de risco para empresas angolanas e multinacionais com operações em vários sectores da economia. Do património e responsabilidade civil aos benefícios para colaboradores e gestão de risco corporativo."
       },
       {
         "id": "energy",
         "name": "Energia",
-        "description": "Cobertura para geração e transmissão de energia e projectos de energias renováveis — desenhada em torno da realidade operacional dos activos energéticos em Angola e dos contratantes que os constroem e operam."
+        "description": "Cobertura para geração e transmissão de energia e projectos de energias renováveis. Pensada em torno do dia-a-dia operacional dos activos energéticos em Angola e dos contratantes que os constroem e operam."
       },
       {
         "id": "oilgas",
         "name": "Petróleo & Gás",
-        "description": "Coberturas upstream, midstream e downstream. A Detondo está oficialmente certificada pela ANPG para prestar bens e serviços ao sector de Petróleo e Gás em Angola."
+        "description": "Coberturas upstream, midstream e downstream. A Detondo está certificada pela ANPG para prestar bens e serviços ao sector de Petróleo e Gás em Angola."
       }
     ]
   },
   "anpg": {
     "eyebrow": "Certificação ANPG",
-    "title": "Oficialmente autorizada a servir o sector de Petróleo & Gás de Angola",
-    "description": "A Detondo está certificada pela ANPG — Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola — para fornecer bens e serviços a operadores em toda a cadeia de valor de Petróleo e Gás.",
+    "title": "Certificada para servir o sector de Petróleo & Gás de Angola",
+    "description": "A Detondo está certificada pela ANPG, Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola, para fornecer bens e serviços a operadores em toda a cadeia de valor de Petróleo e Gás.",
     "issuer": "Emitido pela ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola",
     "viewCertificate": "Ver certificado"
   },
   "partners": {
     "eyebrow": "Seguradoras parceiras",
-    "title": "Colocações com as principais seguradoras a operar em Angola",
-    "description": "Trabalhamos com as principais seguradoras do mercado angolano, garantindo aos nossos clientes ampla capacidade, preços competitivos e gestão sólida de sinistros.",
+    "title": "Trabalhamos com as principais seguradoras a operar em Angola",
+    "description": "Colocamos negócio com as principais seguradoras do mercado angolano, o que garante aos nossos clientes mais capacidade, melhores preços e gestão de sinistros mais sólida.",
     "items": [
       "ENSA Seguros",
       "Nossa Seguros",
@@ -129,48 +131,48 @@
   "vision": {
     "eyebrow": "Visão e valores",
     "title": "A nossa visão",
-    "description": "Ser um fornecedor global de escolha em soluções de risco, entregando soluções excepcionais através de uma combinação equilibrada dos nossos pontos fortes — inovação, precisão e serviço.",
+    "description": "Ser um fornecedor global de escolha em soluções de risco, entregando resultados excepcionais através do equilíbrio entre os nossos pontos fortes: inovação, precisão e serviço.",
     "valuesTitle": "Os nossos valores",
-    "valuesDescription": "Os nossos valores são a base da nossa filosofia operacional, orientam as nossas decisões e a determinação para atingir a visão. Estabelecemos os mais elevados padrões em todas as actividades que desenvolvemos.",
+    "valuesDescription": "Os nossos valores são a base da forma como trabalhamos. Orientam as nossas decisões e a determinação para concretizar a nossa visão. Mantemos os mais altos padrões em tudo o que fazemos.",
     "values": [
       {
         "name": "Inovação",
-        "description": "Desenvolver constantemente soluções alternativas para o benefício dos clientes. Converter desafios em oportunidades."
+        "description": "Desenvolver constantemente soluções alternativas para o benefício dos clientes. Transformar desafios em oportunidades."
       },
       {
         "name": "Modernização",
-        "description": "Entregar produtos e serviços modernos e revitalizados, abraçando a mudança."
+        "description": "Entregar produtos e serviços modernos e bem feitos, abraçando a mudança."
       },
       {
         "name": "Proatividade e dinamismo",
-        "description": "Superar expectativas através de padrões desafiadores, desenhando as soluções de transferência de risco mais eficazes."
+        "description": "Ir além das expectativas com padrões exigentes, desenhando as soluções de transferência de risco mais eficazes."
       },
       {
         "name": "Excelência de serviço",
-        "description": "Conselhos precisos e soluções testadas, atingindo e superando as metas dos clientes e parceiros."
+        "description": "Conselhos precisos e soluções testadas que cumprem e superam as metas dos clientes e parceiros."
       },
       {
         "name": "Precisão",
-        "description": "Fornecer permanentemente conselhos precisos e cumprir as metas estabelecidas."
+        "description": "Dar conselhos certeiros sempre e cumprir cada meta combinada."
       }
     ]
   },
   "commitment": {
     "eyebrow": "Nosso compromisso",
     "title": "Estamos consigo em cada etapa",
-    "description": "Do primeiro contacto ao sinistro, a nossa equipa garante que o seguro certo está no sítio certo — e que você entende exactamente o que está coberto.",
+    "description": "Do primeiro contacto ao sinistro, a nossa equipa garante que o seguro certo está no sítio certo, e que você sabe exactamente o que está coberto.",
     "pillars": [
       {
         "title": "Estruturar e negociar o melhor seguro",
         "description": "Ajudamos a estruturar e negociar o seguro feito à medida das suas necessidades. Garantimos que compreende o produto, a cobertura e os prémios, e que fica com a seguradora que melhor se adequa ao seu perfil."
       },
       {
-        "title": "Manutenção de políticas",
-        "description": "A nossa equipa dedicada de consultores acompanha alterações, adições, actualizações e cancelamentos. Interagimos regularmente consigo para garantir que a sua apólice está sempre actualizada."
+        "title": "Manutenção de apólices",
+        "description": "A nossa equipa de consultores acompanha alterações, adições, actualizações e cancelamentos. Falamos consigo regularmente para que a sua apólice esteja sempre actualizada."
       },
       {
         "title": "Gestão de sinistros",
-        "description": "A nossa equipa estará consigo o tempo todo. Ajudamos a preparar e apresentar reivindicações e garantimos que recebe o melhor serviço e o pagamento justo."
+        "description": "A nossa equipa estará consigo o tempo todo. Ajudamos a preparar e apresentar reivindicações e garantimos que recebe o serviço e o pagamento justo a que tem direito."
       }
     ]
   },
@@ -187,12 +189,12 @@
       {
         "id": "building",
         "name": "Seguro de edifícios",
-        "description": "A sua casa é provavelmente o investimento mais importante. Garantimos que a propriedade está devidamente segurada, com o prémio certo para o seu caso."
+        "description": "A sua casa é provavelmente o investimento mais importante. Garantimos que está devidamente segurada, com o prémio certo para o seu caso."
       },
       {
         "id": "home-contents",
         "name": "Seguro de conteúdo da casa",
-        "description": "Conteúdo do lar coberto contra roubo, incêndio, danos por água e outros eventos. Realizamos testes de adequação com o capital seguro."
+        "description": "Conteúdo do lar coberto contra roubo, incêndio, danos por água e outros eventos. Verificamos a adequação do capital seguro."
       },
       {
         "id": "all-risks",
@@ -214,7 +216,7 @@
   "business": {
     "eyebrow": "Seguro empresarial",
     "title": "Cobertura para os sectores corporativo, energia e petróleo & gás",
-    "description": "Especialistas dedicados identificam os riscos do negócio e desenham programas à medida — do seguro corporativo ao petróleo & gás, energia, marítimo e construção todos os riscos. Esquemas de grupo também disponíveis.",
+    "description": "Os nossos especialistas identificam os riscos do negócio e desenham programas à medida, do seguro corporativo ao petróleo & gás, energia, marítimo e construção todos os riscos. Esquemas de grupo também disponíveis.",
     "items": [
       { "id": "corporate", "name": "Seguro corporativo" },
       { "id": "oil-gas", "name": "Seguro de petróleo & gás" },
@@ -236,7 +238,7 @@
   "reinsurance": {
     "eyebrow": "Resseguros e retrocessão",
     "title": "Soluções de tratado, facultativas e de transferência alternativa de risco",
-    "description": "A Detondo ajuda clientes a atingir objectivos de subscrição e gestão de capital em empresas iniciantes ou maduras. Combinamos experiência especializada em corretagem de resseguros, consultoria e flexibilidade na negociação com uma ampla gama de resseguradores.",
+    "description": "A Detondo ajuda os clientes a atingir objectivos de subscrição e gestão de capital em empresas iniciantes ou maduras. Combinamos experiência especializada em corretagem de resseguros, consultoria e flexibilidade na negociação com uma ampla gama de resseguradores.",
     "classesTitle": "Classes de risco",
     "classes": [
       "Propriedade",
@@ -276,8 +278,8 @@
   },
   "treaty": {
     "eyebrow": "Resseguro do tratado e risco alternativo",
-    "title": "Resseguro elevado a um nível estratégico",
-    "description": "Elevamos o resseguro do tratado a um nível estratégico que aborda os objectivos de subscrição e capital dos clientes numa base de portfólio. A nossa natureza internacional permite-nos fornecer programas de tratado flexíveis, estruturados e com preços alinhados aos desafios e metas do cliente.",
+    "title": "Resseguro tratado a um nível estratégico",
+    "description": "Tratamos o resseguro de tratado como uma decisão estratégica, focada nos objectivos de subscrição e capital dos nossos clientes em base de portfólio. A nossa presença internacional permite-nos desenhar programas de tratado flexíveis, estruturados e justamente apreçados, alinhados com os desafios e metas de cada cliente.",
     "capabilitiesTitle": "Soluções alternativas de transferência de risco",
     "capabilities": [
       "Seguro de participação de quota finita",
@@ -301,7 +303,7 @@
       },
       {
         "title": "Corretagem de resseguro",
-        "description": "Profissionais líderes do sector analisam as suas necessidades e oferecem as melhores soluções disponíveis, apoiados em relações sólidas com o mercado."
+        "description": "Profissionais seniores analisam as suas necessidades e oferecem as melhores soluções disponíveis, apoiados em relações sólidas com o mercado."
       },
       {
         "title": "Gestão de reclamações",
@@ -311,8 +313,8 @@
   },
   "lifeHealth": {
     "eyebrow": "Resseguro de vida e saúde",
-    "title": "Experiência técnica e redes para produtos superiores",
-    "description": "A nossa equipa especializada oferece experiência técnica incomparável, conhecimento de mercado e redes que permitem aos clientes oferecer produtos superiores e optimizar a gestão de capital.",
+    "title": "Profundidade técnica e as redes certas",
+    "description": "A nossa equipa especializada traz forte experiência técnica, conhecimento de mercado e redes que permitem aos clientes oferecer melhores produtos e gerir o capital de forma mais eficaz.",
     "lifeTitle": "Resseguro de vida",
     "lifeItems": [
       "Funeral",
@@ -365,7 +367,7 @@
   },
   "ctaBand": {
     "title": "Vamos desenhar a protecção certa para si?",
-    "description": "Em minutos agendamos uma conversa para compreender as suas necessidades e apresentar as melhores opções disponíveis.",
+    "description": "Em poucos minutos agendamos uma conversa para compreender as suas necessidades e colocar à sua frente as melhores opções disponíveis.",
     "primaryCta": "Solicitar cotação",
     "secondaryCta": "Ver todos os serviços"
   },
@@ -373,17 +375,17 @@
     "hero": {
       "eyebrow": "Sobre a Detondo",
       "title": "Uma corretora angolana sediada em Luanda desde 2017",
-      "description": "A Detondo é uma corretora angolana de seguros e resseguros fundada em 2017 e sediada em Luanda. Entregamos soluções à medida nos sectores corporativo, de energia e de Petróleo & Gás — apoiadas pela certificação ANPG e por um painel das principais seguradoras do país."
+      "description": "A Detondo é uma corretora angolana de seguros e resseguros, fundada em 2017 e sediada em Luanda. Entregamos soluções à medida nos sectores corporativo, de energia e de Petróleo & Gás, apoiadas pela certificação ANPG e por um painel das principais seguradoras do país."
     },
     "missionTitle": "Missão",
-    "missionDescription": "Proporcionar tranquilidade e segurança por meio de soluções de seguro confiáveis. Reconhecemos que cada situação é singular e esforçamo-nos por compreender as necessidades individuais de cada cliente.",
+    "missionDescription": "Dar tranquilidade e segurança aos nossos clientes através de soluções de seguro confiáveis. Cada situação é diferente, por isso fazemos questão de compreender o que cada cliente realmente precisa.",
     "purposeTitle": "Propósito",
-    "purposeDescription": "Simplificar o processo de seguro, tornando-o mais claro e eficiente, para que os nossos clientes possam desfrutar da tranquilidade que merecem.",
+    "purposeDescription": "Tornar o processo de seguro mais claro e mais fácil de gerir, para que os nossos clientes possam continuar a sua vida e o seu negócio com a tranquilidade que merecem.",
     "capabilitiesTitle": "Capacidades",
     "capabilities": [
       {
         "title": "Experiência multi-sectorial",
-        "description": "Prática profunda em seguros corporativos, petróleo & gás, marítimo, energia, construção todos os riscos e responsabilidade civil — nos sectores mais exigentes da economia angolana."
+        "description": "Forte prática em seguros corporativos, petróleo & gás, marítimo, energia, construção todos os riscos e responsabilidade civil, abrangendo as áreas mais exigentes da economia angolana."
       },
       {
         "title": "Certificação ANPG",
@@ -391,7 +393,7 @@
       },
       {
         "title": "Painel das principais seguradoras",
-        "description": "Colocações nas principais seguradoras a operar em Angola, garantindo aos clientes ampla capacidade e preços competitivos."
+        "description": "Colocações nas principais seguradoras a operar em Angola, garantindo aos clientes mais capacidade e melhores preços."
       }
     ]
   },
@@ -420,14 +422,14 @@
   "contact": {
     "eyebrow": "Contacto",
     "title": "Fale connosco",
-    "description": "Preencha o formulário ou envie-nos um email — respondemos em dias úteis, normalmente em menos de 24 horas.",
+    "description": "Preencha o formulário ou envie-nos um email. Respondemos em dias úteis, normalmente em menos de 24 horas.",
     "infoTitle": "Informações de contacto",
     "addressTitle": "Endereço",
-    "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+    "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
     "phoneTitle": "Telefone",
     "emailTitle": "Email",
     "hoursTitle": "Horário",
-    "hours": "Segunda a sexta, 08h00 — 17h00",
+    "hours": "Segunda a sexta, 08h00 às 17h00",
     "form": {
       "name": "Nome completo",
       "namePlaceholder": "O seu nome",

@@ -2,21 +2,21 @@
   "meta": {
     "siteName": "Detondo Insurance and Reinsurance Brokerage",
     "tagline": "Insurance, reinsurance, and risk management for Angola",
-    "description": "Angolan insurance and reinsurance brokerage established in 2017. Tailored solutions for corporate, energy, and oil & gas clients in Angola. ANPG-certified.",
+    "description": "Angolan insurance and reinsurance brokerage, established in 2017. Tailored solutions for corporate, energy, and oil & gas clients in Angola. ANPG-certified.",
     "home": {
-      "title": "Detondo — Insurance and Reinsurance Brokerage in Angola",
+      "title": "Detondo | Insurance and Reinsurance Brokerage in Angola",
       "description": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017. ANPG-certified."
     },
     "about": {
-      "title": "About us — Detondo",
-      "description": "Angolan brokerage established 2017. Multi-sector experience, ANPG certification, and a panel of the leading insurers operating in Angola."
+      "title": "About us | Detondo",
+      "description": "Angolan brokerage, established 2017. Multi-sector experience, ANPG certification, and a panel of the leading insurers in Angola."
     },
     "services": {
-      "title": "Services — Detondo",
+      "title": "Services | Detondo",
       "description": "Corporate, oil & gas, energy, marine, construction all risks, liability, health and life, and reinsurance solutions for Angola."
     },
     "contact": {
-      "title": "Contact — Detondo",
+      "title": "Contact | Detondo",
       "description": "Talk to our team in Luanda. We are available for quotes, advice, and claims management."
     }
   },
@@ -39,12 +39,14 @@
       "contact": "Contact"
     },
     "footer": {
-      "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+      "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
       "phoneLabel": "Phone",
       "emailLabel": "Email",
       "rights": "All rights reserved.",
       "tagline": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017.",
-      "madeIn": "Crafted with care in Luanda."
+      "builtBy": "Website built by",
+      "partner": "LaunchCraft",
+      "partnerUrl": "https://launchcraft.co.za/"
     },
     "locale": {
       "pt": "Português",
@@ -55,8 +57,8 @@
   },
   "hero": {
     "eyebrow": "Insurance, reinsurance & risk management",
-    "title": "Risk solutions engineered for the Angolan market",
-    "description": "Since 2017, Detondo has structured insurance, reinsurance, and risk-management programmes for corporate, energy, and oil & gas clients in Angola. ANPG-certified and trusted by the country's leading insurers.",
+    "title": "Insurance and reinsurance, made for Angola",
+    "description": "Since 2017, we have helped corporate, energy, and oil & gas clients in Angola put the right insurance, reinsurance, and risk-management programmes in place. We are ANPG-certified and work with the country's leading insurers.",
     "primaryCta": "Get a quote",
     "secondaryCta": "Explore services",
     "stats": [
@@ -67,11 +69,11 @@
   },
   "whoWeAre": {
     "eyebrow": "Who we are",
-    "title": "An Angolan brokerage built for the country's most demanding sectors",
+    "title": "An Angolan brokerage for the country's most demanding sectors",
     "paragraphs": [
-      "Detondo is an Angolan insurance and reinsurance brokerage established in 2017, headquartered in Luanda. Since our inception we have delivered insurance, reinsurance, and risk-management solutions to individual, corporate, and institutional clients across multiple sectors of the Angolan economy.",
-      "We have built deep expertise in the country's most demanding lines — corporate, oil & gas, marine, energy, construction all risks, liability, and health and life — complemented by reinsurance and corporate risk-management programmes.",
-      "Our work is anchored in proximity to clients, accuracy in placement, and disciplined claims handling. The result is a brokerage Angola's leading insurers and corporate operators trust to structure, negotiate, and stand behind their risk programmes."
+      "Detondo is an Angolan insurance and reinsurance brokerage, established in 2017 and headquartered in Luanda. Since the company started, we have worked with individual, corporate, and institutional clients across many sectors of the Angolan economy.",
+      "Over the years we have built strong expertise in the country's most demanding lines: corporate, oil & gas, marine, energy, construction all risks, liability, and health and life. We back these up with reinsurance and corporate risk-management programmes.",
+      "Our work comes down to staying close to our clients, getting the placement right the first time, and handling claims properly when they happen. The result is a brokerage that Angola's leading insurers and corporate operators trust to structure, negotiate, and stand behind their risk programmes."
     ],
     "highlights": [
       "Established 2017",
@@ -82,37 +84,37 @@
   },
   "sectors": {
     "eyebrow": "Sectors we serve",
-    "title": "Specialised expertise where it matters most",
-    "description": "Detondo focuses on the high-stakes corners of the Angolan economy — corporate, energy, and oil & gas — with risk programmes engineered to international standards.",
+    "title": "Sectors we know best",
+    "description": "Detondo focuses on three areas where Angolan businesses most need a steady hand: corporate, energy, and oil & gas. We design risk programmes that meet international standards.",
     "items": [
       {
         "id": "corporate",
         "name": "Corporate",
-        "description": "Comprehensive risk programmes for Angolan and multinational companies operating across multiple sectors of the economy. From property and liability to employee benefits and bespoke corporate risk management."
+        "description": "Risk programmes for Angolan and multinational companies operating across multiple sectors of the economy. From property and liability cover to employee benefits and corporate risk management."
       },
       {
         "id": "energy",
         "name": "Energy",
-        "description": "Cover for power generation, transmission, and renewable energy projects — built around the operational realities of Angolan energy assets and the contractors that build and maintain them."
+        "description": "Cover for power generation, transmission, and renewable energy projects. Designed around the day-to-day realities of Angolan energy assets and the contractors who build and run them."
       },
       {
         "id": "oilgas",
         "name": "Oil & Gas",
-        "description": "Upstream, midstream, and downstream cover. Detondo is officially certified by ANPG to provide goods and services to Angola's Oil & Gas sector."
+        "description": "Upstream, midstream, and downstream cover. Detondo is certified by ANPG to provide goods and services to Angola's Oil & Gas sector."
       }
     ]
   },
   "anpg": {
     "eyebrow": "ANPG certified",
-    "title": "Officially authorised to serve Angola's Oil & Gas sector",
-    "description": "Detondo is certified by ANPG — the National Oil, Gas and Biofuels Agency of Angola — to provide goods and services to operators across the Oil & Gas value chain.",
+    "title": "Certified to serve Angola's Oil & Gas sector",
+    "description": "Detondo is certified by ANPG, Angola's National Oil, Gas and Biofuels Agency, to provide goods and services to operators across the Oil & Gas value chain.",
     "issuer": "Issued by ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola",
     "viewCertificate": "View certificate"
   },
   "partners": {
     "eyebrow": "Insurer partners",
-    "title": "Placed with the leading insurers operating in Angola",
-    "description": "We work with the major insurers in the Angolan market, giving our clients access to broad capacity, competitive pricing, and robust claims-handling.",
+    "title": "We work with the leading insurers in Angola",
+    "description": "We place business with the major insurers in the Angolan market, which gives our clients more capacity, better pricing, and reliable claims-handling.",
     "items": [
       "ENSA Seguros",
       "Nossa Seguros",
@@ -129,9 +131,9 @@
   "vision": {
     "eyebrow": "Vision and values",
     "title": "Our vision",
-    "description": "To be a global risk solutions provider of choice, delivering exceptional risk solutions through a balanced combination of our strengths — innovation, precision, and service.",
+    "description": "To be a global risk solutions provider of choice, delivering exceptional results through the balance of our strengths: innovation, precision, and service.",
     "valuesTitle": "Our values",
-    "valuesDescription": "Our values are the foundation of our operating philosophy and guide our decisions and determination to achieve our vision. We set the highest standards in all the activities we undertake.",
+    "valuesDescription": "Our values are the foundation of how we operate. They guide our decisions and the determination to live up to our vision. We hold the highest standards in everything we do.",
     "values": [
       {
         "name": "Innovation",
@@ -139,38 +141,38 @@
       },
       {
         "name": "Modernization",
-        "description": "Consistently delivering modern, revitalized products and services, and embracing change."
+        "description": "Delivering modern, well-built products and services, and embracing change."
       },
       {
         "name": "Proactivity & dynamism",
-        "description": "Exceeding expectations through challenging standards and designing the most effective risk-transfer solutions."
+        "description": "Going beyond expectations through challenging standards and designing the most effective risk-transfer solutions."
       },
       {
         "name": "Service excellence",
-        "description": "Precise advice and tested solutions that achieve and exceed the targets set by our clients and partners."
+        "description": "Precise advice and tested solutions that meet and exceed the targets our clients and partners set."
       },
       {
         "name": "Precision",
-        "description": "Permanently providing accurate advice and meeting every established goal."
+        "description": "Giving accurate advice every time and meeting every goal we agree to."
       }
     ]
   },
   "commitment": {
     "eyebrow": "Our commitment",
     "title": "We are with you at every step",
-    "description": "From the first conversation to the claim, our team makes sure the right cover is in place — and that you know exactly what is protected.",
+    "description": "From the first conversation to the claim, our team makes sure the right cover is in place, and that you know exactly what is protected.",
     "pillars": [
       {
         "title": "Structuring and negotiating the best insurance",
-        "description": "We help structure and negotiate insurance tailored to your individual needs. We make sure you understand the product, coverage, and premiums, and that you are placed with the insurer that best matches your profile."
+        "description": "We help structure and negotiate insurance built around your needs. We make sure you understand the product, the cover, and the premiums, and that you end up with the insurer that best fits your profile."
       },
       {
         "title": "Policy maintenance",
-        "description": "Our dedicated consultants handle changes, additions, updates, and cancellations. We engage with you regularly so your policy stays current."
+        "description": "Our consultants handle changes, additions, updates, and cancellations. We check in with you regularly so your policy stays current."
       },
       {
         "title": "Claims management",
-        "description": "Our team will be with you every step of the way. We help file claims and ensure you receive the best service and a fair payout."
+        "description": "Our team will be with you through every step. We help file claims and make sure you get the service and the fair payout you are owed."
       }
     ]
   },
@@ -187,12 +189,12 @@
       {
         "id": "building",
         "name": "Building insurance",
-        "description": "Your home is likely your most important investment. We make sure it is properly insured with the right premium."
+        "description": "Your home is likely your most important investment. We make sure it is properly insured, at the right premium."
       },
       {
         "id": "home-contents",
         "name": "Home contents insurance",
-        "description": "Household contents covered against theft, fire, water damage, and other events. We run adequacy tests on the sum insured."
+        "description": "Household contents covered against theft, fire, water damage, and other events. We run adequacy checks on the sum insured."
       },
       {
         "id": "all-risks",
@@ -202,7 +204,7 @@
       {
         "id": "liability",
         "name": "Personal liability",
-        "description": "Cover for legal matters that may arise in your everyday life."
+        "description": "Cover for legal matters that may come up in your everyday life."
       },
       {
         "id": "travel",
@@ -214,7 +216,7 @@
   "business": {
     "eyebrow": "Business insurance",
     "title": "Cover for the corporate, energy, and oil & gas sectors",
-    "description": "Dedicated specialists identify business risks and design tailored programmes — from corporate covers to oil & gas, energy, marine, and construction all risks. Group schemes also available.",
+    "description": "Our specialists identify business risks and design tailored programmes for everything from corporate covers to oil & gas, energy, marine, and construction all risks. Group schemes are also available.",
     "items": [
       { "id": "corporate", "name": "Corporate insurance" },
       { "id": "oil-gas", "name": "Oil & gas insurance" },
@@ -236,7 +238,7 @@
   "reinsurance": {
     "eyebrow": "Reinsurance and retrocession",
     "title": "Treaty, facultative, and alternative risk transfer",
-    "description": "Detondo helps clients meet underwriting and capital-management goals at both start-up and mature insurance companies. We combine specialized reinsurance broking experience with advisory services and flexibility negotiating with a wide range of reinsurers.",
+    "description": "Detondo helps clients meet underwriting and capital-management goals at both start-up and mature insurance companies. We bring specialist reinsurance broking experience together with advisory work and the flexibility to negotiate with a wide range of reinsurers.",
     "classesTitle": "Classes of risk",
     "classes": [
       "Property",
@@ -276,8 +278,8 @@
   },
   "treaty": {
     "eyebrow": "Treaty reinsurance & alternative risk",
-    "title": "Treaty reinsurance raised to a strategic level",
-    "description": "We elevate treaty reinsurance to a strategic level addressing clients' underwriting and capital objectives on a portfolio basis. Our international nature lets us provide flexible, structured, priced treaty programmes aligned with customer challenges and goals.",
+    "title": "Treaty reinsurance handled at a strategic level",
+    "description": "We treat treaty reinsurance as a strategic decision, focused on our clients' underwriting and capital objectives across the whole portfolio. Our international reach lets us put together flexible, structured, fairly priced treaty programmes that match each client's challenges and goals.",
     "capabilitiesTitle": "Alternative risk transfer capabilities",
     "capabilities": [
       "Finite quota share insurance",
@@ -293,7 +295,7 @@
     "services": [
       {
         "title": "Contract drafting",
-        "description": "Wording is the foundation of the legal relationship between reinsured and reinsurers. We draft every contract carefully and stay current with new market wordings."
+        "description": "The wording is the foundation of the legal relationship between the reinsured and the reinsurers. We draft every contract carefully and stay current with new market wordings."
       },
       {
         "title": "Technical accounting",
@@ -301,18 +303,18 @@
       },
       {
         "title": "Reinsurance broking",
-        "description": "Industry-leading professionals analyse your needs and offer the best available solutions, backed by strong market relationships."
+        "description": "Senior professionals analyse your needs and offer the best available solutions, backed by strong market relationships."
       },
       {
         "title": "Claims management",
-        "description": "We work with claims experts to collect, evaluate, and present claims. We invest in technology to speed up communication at the claims stage."
+        "description": "We work with claims experts to gather, evaluate, and present claims. We invest in technology to speed up communication during the claims stage."
       }
     ]
   },
   "lifeHealth": {
     "eyebrow": "Life and health reinsurance",
-    "title": "Technical expertise and networks for superior products",
-    "description": "Our specialized team offers unparalleled technical expertise, market knowledge, and networks enabling clients to offer superior products and optimize capital management.",
+    "title": "Technical depth and the right networks",
+    "description": "Our specialist team brings strong technical expertise, market knowledge, and networks that let our clients offer better products and manage their capital more effectively.",
     "lifeTitle": "Life reinsurance",
     "lifeItems": [
       "Funeral",
@@ -365,25 +367,25 @@
   },
   "ctaBand": {
     "title": "Shall we design the right cover for you?",
-    "description": "In minutes we can schedule a conversation to understand your needs and present the best available options.",
+    "description": "In a few minutes we can schedule a conversation to understand your needs and put the best available options in front of you.",
     "primaryCta": "Get a quote",
     "secondaryCta": "See all services"
   },
   "about": {
     "hero": {
       "eyebrow": "About Detondo",
-      "title": "An Angolan brokerage anchored in Luanda since 2017",
-      "description": "Detondo is an Angolan insurance and reinsurance brokerage established in 2017 and headquartered in Luanda. We deliver tailored solutions across corporate, energy, and oil & gas — backed by ANPG certification and a panel of the country's leading insurers."
+      "title": "An Angolan brokerage based in Luanda since 2017",
+      "description": "Detondo is an Angolan insurance and reinsurance brokerage, established in 2017 and headquartered in Luanda. We deliver tailored solutions across corporate, energy, and oil & gas, backed by ANPG certification and a panel of the country's leading insurers."
     },
     "missionTitle": "Mission",
-    "missionDescription": "To provide peace of mind and security through reliable insurance solutions. We recognize that each situation is unique and strive to understand every client's individual needs.",
+    "missionDescription": "To give our clients peace of mind and security through reliable insurance solutions. Every situation is different, so we make the time to understand what each client actually needs.",
     "purposeTitle": "Purpose",
-    "purposeDescription": "To simplify the insurance process, making it clearer and more efficient, so our clients can enjoy the peace of mind they deserve.",
+    "purposeDescription": "To make insurance clearer and easier to deal with, so our clients can get on with their lives and their business with the peace of mind they deserve.",
     "capabilitiesTitle": "Capabilities",
     "capabilities": [
       {
         "title": "Multi-sector expertise",
-        "description": "Deep practice in corporate, oil & gas, marine, energy, construction all risks, and liability — across the high-stakes corners of the Angolan economy."
+        "description": "Strong practice in corporate, oil & gas, marine, energy, construction all risks, and liability, covering the most demanding parts of the Angolan economy."
       },
       {
         "title": "ANPG certification",
@@ -391,14 +393,14 @@
       },
       {
         "title": "Major-insurer panel",
-        "description": "Placements across the leading insurers operating in Angola, giving our clients access to broad capacity and competitive pricing."
+        "description": "Placements across the leading insurers operating in Angola, giving our clients more capacity and better pricing."
       }
     ]
   },
   "servicesHub": {
     "eyebrow": "Services",
     "title": "Three business lines, one commitment",
-    "description": "Each line is led by dedicated specialists. Pick the area that best matches your need and explore the offer in detail.",
+    "description": "Each line is run by dedicated specialists. Pick the area that best matches your need and explore what we offer in detail.",
     "cards": [
       {
         "slug": "personal",
@@ -420,14 +422,14 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Talk to us",
-    "description": "Fill out the form or send us an email — we reply on business days, usually within 24 hours.",
+    "description": "Fill out the form or send us an email. We reply on business days, usually within 24 hours.",
     "infoTitle": "Contact details",
     "addressTitle": "Address",
-    "address": "Rua nº 121, casa nº 1262 D, Nova Vida — Kilamba Kiaxi, Luanda / Angola",
+    "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
     "phoneTitle": "Phone",
     "emailTitle": "Email",
     "hoursTitle": "Hours",
-    "hours": "Monday to Friday, 8:00 AM — 5:00 PM",
+    "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
     "form": {
       "name": "Full name",
       "namePlaceholder": "Your name",

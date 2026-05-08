@@ -21,7 +21,9 @@ type FooterDict = {
     emailLabel: string;
     rights: string;
     tagline: string;
-    madeIn: string;
+    builtBy: string;
+    partner: string;
+    partnerUrl: string;
   };
 };
 
@@ -171,9 +173,19 @@ export function Footer({
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-brand-ivory/10 pt-6 text-xs text-brand-ivory/50 sm:flex-row sm:items-center">
           <p>
-            © {year} {dict.brand} — Corretora de Seguros, Lda. {dict.footer.rights}
+            © {year} {dict.brand}, Corretora de Seguros, Lda. {dict.footer.rights}
           </p>
-          <p>{dict.footer.madeIn}</p>
+          <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span>{dict.footer.builtBy}</span>
+            <a
+              href={dict.footer.partnerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base font-extrabold tracking-tight text-brand-gradient transition-opacity hover:opacity-90 sm:text-lg"
+            >
+              {dict.footer.partner}
+            </a>
+          </p>
         </div>
       </div>
     </footer>
