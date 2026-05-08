@@ -1,19 +1,19 @@
 {
   "meta": {
     "siteName": "Detondo Corretora de Seguros e Resseguros",
-    "tagline": "Simplificando seguros para proteger o seu futuro",
-    "description": "Corretora de seguros e resseguros com sede em Luanda. Soluções personalizadas para particulares, empresas e instituições, com acesso aos mercados Lloyd's.",
+    "tagline": "Seguros, resseguros e gestão de risco para Angola",
+    "description": "Corretora angolana de seguros e resseguros fundada em 2017. Soluções à medida para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Certificada pela ANPG.",
     "home": {
       "title": "Detondo — Corretora de Seguros e Resseguros em Angola",
-      "description": "Soluções de seguro e resseguro desenhadas à medida. Protegemos pessoas, empresas e carteiras em Angola e nos mercados africanos."
+      "description": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017. Certificação ANPG."
     },
     "about": {
       "title": "Sobre nós — Detondo",
-      "description": "Compreensão profunda dos mercados africanos, acesso aos mercados Lloyd's e compromisso com a excelência de serviço."
+      "description": "Corretora angolana fundada em 2017. Experiência multi-sectorial, certificação ANPG e painel das principais seguradoras a operar em Angola."
     },
     "services": {
       "title": "Serviços — Detondo",
-      "description": "Cobertura completa para particulares, empresas e programas de resseguro."
+      "description": "Soluções corporativas, petróleo & gás, energia, marítimo, construção todos os riscos, responsabilidade civil, saúde e vida e resseguros para Angola."
     },
     "contact": {
       "title": "Contacto — Detondo",
@@ -43,7 +43,7 @@
       "phoneLabel": "Telefone",
       "emailLabel": "Email",
       "rights": "Todos os direitos reservados.",
-      "tagline": "Protegemos e fortalecemos organizações e indivíduos com soluções de seguro adequadas e competitivas.",
+      "tagline": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017.",
       "madeIn": "Feito com cuidado em Luanda."
     },
     "locale": {
@@ -54,30 +54,76 @@
     "skipToContent": "Saltar para o conteúdo"
   },
   "hero": {
-    "eyebrow": "Corretora de seguros e resseguros",
-    "title": "Simplificando seguros para proteger o seu futuro",
-    "description": "Soluções de risco personalizadas com compreensão profunda dos mercados africanos e acesso aos mercados Lloyd's. Conversámos consigo, desenhámos a cobertura, e ficamos ao seu lado em cada sinistro.",
+    "eyebrow": "Seguros, resseguros e gestão de risco",
+    "title": "Soluções de risco desenhadas para o mercado angolano",
+    "description": "Desde 2017, a Detondo estrutura programas de seguro, resseguro e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Certificada pela ANPG e parceira das principais seguradoras do mercado.",
     "primaryCta": "Solicitar cotação",
     "secondaryCta": "Conhecer os serviços",
     "stats": [
-      { "value": "15+", "label": "Práticas especializadas" },
-      { "value": "3", "label": "Linhas de negócio" },
-      { "value": "100%", "label": "Foco no cliente" }
+      { "value": "2017", "label": "Ano de fundação" },
+      { "value": "10+", "label": "Seguradoras parceiras" },
+      { "value": "ANPG", "label": "Certificação Petróleo & Gás" }
     ]
   },
   "whoWeAre": {
     "eyebrow": "Quem somos",
-    "title": "Uma corretora nascida para simplificar o seguro em Angola",
+    "title": "Uma corretora angolana feita para os sectores mais exigentes do país",
     "paragraphs": [
-      "A Detondo é uma corretora de seguros e resseguros que se dedica a fornecer soluções de seguro tanto para empresas como para particulares, com sede em Luanda. A nossa empresa oferece serviços de risco inovadores e personalizados em seguros, bem como financiamento de risco e consultoria actuarial, com foco na gestão de capital e fortalecimento do balanço dos nossos clientes.",
-      "A Detondo tem uma compreensão profunda dos mercados africanos e acesso aos mercados Lloyd's. O nosso objectivo é proteger e fortalecer organizações e indivíduos, oferecendo soluções de seguros adequadas a preços competitivos, conforme as necessidades de cada cliente.",
-      "Valorizamos cada cliente, construindo relações de longo prazo baseadas na confiança e na satisfação das suas necessidades. A nossa equipa é dedicada e comprometida em oferecer um serviço de excelência em cada interacção."
+      "A Detondo é uma corretora angolana de seguros e resseguros fundada em 2017, com sede em Luanda. Desde a sua fundação fornecemos soluções de seguro, resseguro e gestão de risco a clientes particulares, empresariais e institucionais nos diversos sectores da economia angolana.",
+      "Construímos experiência profunda nas linhas mais exigentes do mercado — corporativo, petróleo & gás, marítimo, energia, construção todos os riscos, responsabilidade civil e saúde e vida — complementadas por programas de resseguro e gestão de risco corporativo.",
+      "O nosso trabalho assenta na proximidade aos clientes, no rigor das colocações e na disciplina da gestão de sinistros. O resultado é uma corretora em que as principais seguradoras e operadores corporativos angolanos confiam para estruturar, negociar e responder pelos seus programas de risco."
     ],
     "highlights": [
-      "Mercados africanos",
-      "Acesso a Lloyd's",
-      "Consultoria actuarial",
-      "Gestão de capital"
+      "Fundada em 2017",
+      "Certificada pela ANPG (Petróleo & Gás)",
+      "Experiência multi-sectorial",
+      "Painel das principais seguradoras"
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Sectores que servimos",
+    "title": "Especialização onde mais conta",
+    "description": "A Detondo concentra-se nos sectores de maior exigência da economia angolana — corporativo, energia e petróleo & gás — com programas de risco desenhados a padrões internacionais.",
+    "items": [
+      {
+        "id": "corporate",
+        "name": "Corporativo",
+        "description": "Programas abrangentes de risco para empresas angolanas e multinacionais com operações em múltiplos sectores. Do património e responsabilidade civil aos benefícios para colaboradores e gestão de risco corporativo à medida."
+      },
+      {
+        "id": "energy",
+        "name": "Energia",
+        "description": "Cobertura para geração e transmissão de energia e projectos de energias renováveis — desenhada em torno da realidade operacional dos activos energéticos em Angola e dos contratantes que os constroem e operam."
+      },
+      {
+        "id": "oilgas",
+        "name": "Petróleo & Gás",
+        "description": "Coberturas upstream, midstream e downstream. A Detondo está oficialmente certificada pela ANPG para prestar bens e serviços ao sector de Petróleo e Gás em Angola."
+      }
+    ]
+  },
+  "anpg": {
+    "eyebrow": "Certificação ANPG",
+    "title": "Oficialmente autorizada a servir o sector de Petróleo & Gás de Angola",
+    "description": "A Detondo está certificada pela ANPG — Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola — para fornecer bens e serviços a operadores em toda a cadeia de valor de Petróleo e Gás.",
+    "issuer": "Emitido pela ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola",
+    "viewCertificate": "Ver certificado"
+  },
+  "partners": {
+    "eyebrow": "Seguradoras parceiras",
+    "title": "Colocações com as principais seguradoras a operar em Angola",
+    "description": "Trabalhamos com as principais seguradoras do mercado angolano, garantindo aos nossos clientes ampla capacidade, preços competitivos e gestão sólida de sinistros.",
+    "items": [
+      "ENSA Seguros",
+      "Nossa Seguros",
+      "BIC Seguros",
+      "Sanlam Seguros",
+      "Fidelidade Seguros",
+      "STAS Seguros",
+      "Proteja Seguros",
+      "Viva Seguros",
+      "Unisaúde Seguros",
+      "Fortaleza Seguros"
     ]
   },
   "vision": {
@@ -167,20 +213,21 @@
   },
   "business": {
     "eyebrow": "Seguro empresarial",
-    "title": "Cobrimos todos os aspectos do seu negócio",
-    "description": "Profissionais dedicados identificam os riscos do negócio e desenham soluções à medida a taxas económicas, incluindo esquemas de grupo.",
+    "title": "Cobertura para os sectores corporativo, energia e petróleo & gás",
+    "description": "Especialistas dedicados identificam os riscos do negócio e desenham programas à medida — do seguro corporativo ao petróleo & gás, energia, marítimo e construção todos os riscos. Esquemas de grupo também disponíveis.",
     "items": [
-      { "id": "business", "name": "Seguro empresarial" },
-      { "id": "contractors", "name": "Empreiteiros todos os riscos" },
-      { "id": "truck", "name": "Seguro de camiões" },
-      { "id": "professional-indemnity", "name": "Indenização profissional" },
-      { "id": "goods-in-transit", "name": "Mercadorias em trânsito" },
-      { "id": "corporate-sectional", "name": "Títulos corporativos e seccionais" },
-      { "id": "agricultural", "name": "Seguro agrícola" },
-      { "id": "public-liability", "name": "Responsabilidade pública e cancelamento de eventos" },
+      { "id": "corporate", "name": "Seguro corporativo" },
+      { "id": "oil-gas", "name": "Seguro de petróleo & gás" },
+      { "id": "energy", "name": "Seguro de energia" },
       { "id": "marine", "name": "Seguro marítimo" },
+      { "id": "construction-all-risks", "name": "Construção todos os riscos" },
+      { "id": "liability", "name": "Responsabilidade civil" },
+      { "id": "contractors", "name": "Empreiteiros todos os riscos" },
+      { "id": "professional-indemnity", "name": "Responsabilidade profissional" },
+      { "id": "goods-in-transit", "name": "Mercadorias em trânsito" },
+      { "id": "truck", "name": "Camiões e frotas" },
       { "id": "aviation", "name": "Seguro de aviação" },
-      { "id": "wildlife", "name": "Seguro de vida selvagem" }
+      { "id": "agricultural", "name": "Seguro agrícola" }
     ],
     "groupTitle": "Esquemas de grupo",
     "groupDescription": "Também fornecemos soluções de seguro para esquemas de grupo, com a seguinte gama de coberturas:",
@@ -325,8 +372,8 @@
   "about": {
     "hero": {
       "eyebrow": "Sobre a Detondo",
-      "title": "Corretora dedicada a simplificar o seguro e proteger o seu futuro",
-      "description": "Nasce em Luanda para fornecer soluções personalizadas de seguro e resseguro. Combinamos conhecimento profundo dos mercados africanos com acesso aos mercados internacionais, incluindo Lloyd's."
+      "title": "Uma corretora angolana sediada em Luanda desde 2017",
+      "description": "A Detondo é uma corretora angolana de seguros e resseguros fundada em 2017 e sediada em Luanda. Entregamos soluções à medida nos sectores corporativo, de energia e de Petróleo & Gás — apoiadas pela certificação ANPG e por um painel das principais seguradoras do país."
     },
     "missionTitle": "Missão",
     "missionDescription": "Proporcionar tranquilidade e segurança por meio de soluções de seguro confiáveis. Reconhecemos que cada situação é singular e esforçamo-nos por compreender as necessidades individuais de cada cliente.",
@@ -335,16 +382,16 @@
     "capabilitiesTitle": "Capacidades",
     "capabilities": [
       {
-        "title": "Mais de 15 práticas especializadas",
-        "description": "Incluindo práticas robustas em serviços cibernéticos, financeiros e profissionais, bem como negócios de saúde e benefícios para colaboradores."
+        "title": "Experiência multi-sectorial",
+        "description": "Prática profunda em seguros corporativos, petróleo & gás, marítimo, energia, construção todos os riscos e responsabilidade civil — nos sectores mais exigentes da economia angolana."
       },
       {
-        "title": "Acesso a Lloyd's",
-        "description": "Relação directa com os mercados Lloyd's permite colocações e capacidade que muitas vezes não existem no mercado doméstico."
+        "title": "Certificação ANPG",
+        "description": "Oficialmente autorizada pela Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola a fornecer bens e serviços ao sector de Petróleo e Gás."
       },
       {
-        "title": "Consultoria actuarial",
-        "description": "Equipa dedicada que fornece o substrato analítico necessário para o exame eficiente e aprofundado de todas as oportunidades."
+        "title": "Painel das principais seguradoras",
+        "description": "Colocações nas principais seguradoras a operar em Angola, garantindo aos clientes ampla capacidade e preços competitivos."
       }
     ]
   },
@@ -361,7 +408,7 @@
       {
         "slug": "business",
         "name": "Seguro empresarial",
-        "description": "Coberturas para empresas de todos os tamanhos, incluindo esquemas de grupo."
+        "description": "Corporativo, petróleo & gás, energia, marítimo, construção todos os riscos e mais."
       },
       {
         "slug": "reinsurance",

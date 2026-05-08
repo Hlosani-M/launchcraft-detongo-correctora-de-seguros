@@ -5,6 +5,8 @@ import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { VisionValues } from "@/components/sections/VisionValues";
 import { WhoWeAre } from "@/components/sections/WhoWeAre";
+import { AnpgCertification } from "@/components/sections/AnpgCertification";
+import { Partners } from "@/components/sections/Partners";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { ParallelogramAccent } from "@/components/ui/ParallelogramAccent";
 
@@ -83,6 +85,8 @@ export default async function AboutPage(props: PageProps<"/[lang]/about">) {
 
       <WhoWeAre dict={dict.whoWeAre} />
 
+      <AnpgCertification dict={dict.anpg} />
+
       <Section
         tone="surface"
         eyebrow={dict.vision.eyebrow}
@@ -106,6 +110,7 @@ export default async function AboutPage(props: PageProps<"/[lang]/about">) {
       </Section>
 
       <VisionValues dict={dict.vision} />
+      <Partners dict={dict.partners} />
       <CtaBand lang={lang} dict={dict.ctaBand} />
     </>
   );

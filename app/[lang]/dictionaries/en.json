@@ -1,19 +1,19 @@
 {
   "meta": {
     "siteName": "Detondo Insurance and Reinsurance Brokerage",
-    "tagline": "Simplifying insurance to protect your future",
-    "description": "Insurance and reinsurance brokerage headquartered in Luanda. Tailored solutions for individuals, companies, and institutions, with access to the Lloyd's markets.",
+    "tagline": "Insurance, reinsurance, and risk management for Angola",
+    "description": "Angolan insurance and reinsurance brokerage established in 2017. Tailored solutions for corporate, energy, and oil & gas clients in Angola. ANPG-certified.",
     "home": {
       "title": "Detondo — Insurance and Reinsurance Brokerage in Angola",
-      "description": "Bespoke insurance and reinsurance solutions. We protect people, businesses, and portfolios across Angola and the African markets."
+      "description": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017. ANPG-certified."
     },
     "about": {
       "title": "About us — Detondo",
-      "description": "Deep understanding of African markets, access to the Lloyd's markets, and a commitment to service excellence."
+      "description": "Angolan brokerage established 2017. Multi-sector experience, ANPG certification, and a panel of the leading insurers operating in Angola."
     },
     "services": {
       "title": "Services — Detondo",
-      "description": "Comprehensive cover for individuals, businesses, and reinsurance programmes."
+      "description": "Corporate, oil & gas, energy, marine, construction all risks, liability, health and life, and reinsurance solutions for Angola."
     },
     "contact": {
       "title": "Contact — Detondo",
@@ -43,7 +43,7 @@
       "phoneLabel": "Phone",
       "emailLabel": "Email",
       "rights": "All rights reserved.",
-      "tagline": "We protect and strengthen organizations and individuals with suitable, competitive insurance solutions.",
+      "tagline": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017.",
       "madeIn": "Crafted with care in Luanda."
     },
     "locale": {
@@ -54,30 +54,76 @@
     "skipToContent": "Skip to content"
   },
   "hero": {
-    "eyebrow": "Insurance and reinsurance brokerage",
-    "title": "Simplifying insurance to protect your future",
-    "description": "Tailored risk solutions with a deep understanding of the African markets and access to the Lloyd's markets. We listen, design the right cover, and stand beside you at every claim.",
+    "eyebrow": "Insurance, reinsurance & risk management",
+    "title": "Risk solutions engineered for the Angolan market",
+    "description": "Since 2017, Detondo has structured insurance, reinsurance, and risk-management programmes for corporate, energy, and oil & gas clients in Angola. ANPG-certified and trusted by the country's leading insurers.",
     "primaryCta": "Get a quote",
     "secondaryCta": "Explore services",
     "stats": [
-      { "value": "15+", "label": "Specialty practices" },
-      { "value": "3", "label": "Business lines" },
-      { "value": "100%", "label": "Client-focused" }
+      { "value": "2017", "label": "Year founded" },
+      { "value": "10+", "label": "Partner insurers" },
+      { "value": "ANPG", "label": "Oil & Gas certified" }
     ]
   },
   "whoWeAre": {
     "eyebrow": "Who we are",
-    "title": "A brokerage built to simplify insurance in Angola",
+    "title": "An Angolan brokerage built for the country's most demanding sectors",
     "paragraphs": [
-      "Detondo is an insurance and reinsurance brokerage dedicated to providing insurance solutions for companies and individuals, headquartered in Luanda. We offer innovative and personalized risk services in insurance, as well as risk financing and actuarial consulting, focused on capital management and strengthening our clients' balance sheet.",
-      "Detondo has a deep understanding of the African markets and access to the Lloyd's markets. Our objective is to protect and strengthen organizations and individuals by offering suitable insurance solutions at competitive prices according to each client's needs.",
-      "We value each client, building long-term relationships based on trust and the satisfaction of their needs. Our team is dedicated and committed to delivering excellent service in every interaction."
+      "Detondo is an Angolan insurance and reinsurance brokerage established in 2017, headquartered in Luanda. Since our inception we have delivered insurance, reinsurance, and risk-management solutions to individual, corporate, and institutional clients across multiple sectors of the Angolan economy.",
+      "We have built deep expertise in the country's most demanding lines — corporate, oil & gas, marine, energy, construction all risks, liability, and health and life — complemented by reinsurance and corporate risk-management programmes.",
+      "Our work is anchored in proximity to clients, accuracy in placement, and disciplined claims handling. The result is a brokerage Angola's leading insurers and corporate operators trust to structure, negotiate, and stand behind their risk programmes."
     ],
     "highlights": [
-      "African markets",
-      "Lloyd's access",
-      "Actuarial consulting",
-      "Capital management"
+      "Established 2017",
+      "ANPG-certified for Oil & Gas",
+      "Multi-sector experience",
+      "Major-insurer panel"
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Sectors we serve",
+    "title": "Specialised expertise where it matters most",
+    "description": "Detondo focuses on the high-stakes corners of the Angolan economy — corporate, energy, and oil & gas — with risk programmes engineered to international standards.",
+    "items": [
+      {
+        "id": "corporate",
+        "name": "Corporate",
+        "description": "Comprehensive risk programmes for Angolan and multinational companies operating across multiple sectors of the economy. From property and liability to employee benefits and bespoke corporate risk management."
+      },
+      {
+        "id": "energy",
+        "name": "Energy",
+        "description": "Cover for power generation, transmission, and renewable energy projects — built around the operational realities of Angolan energy assets and the contractors that build and maintain them."
+      },
+      {
+        "id": "oilgas",
+        "name": "Oil & Gas",
+        "description": "Upstream, midstream, and downstream cover. Detondo is officially certified by ANPG to provide goods and services to Angola's Oil & Gas sector."
+      }
+    ]
+  },
+  "anpg": {
+    "eyebrow": "ANPG certified",
+    "title": "Officially authorised to serve Angola's Oil & Gas sector",
+    "description": "Detondo is certified by ANPG — the National Oil, Gas and Biofuels Agency of Angola — to provide goods and services to operators across the Oil & Gas value chain.",
+    "issuer": "Issued by ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola",
+    "viewCertificate": "View certificate"
+  },
+  "partners": {
+    "eyebrow": "Insurer partners",
+    "title": "Placed with the leading insurers operating in Angola",
+    "description": "We work with the major insurers in the Angolan market, giving our clients access to broad capacity, competitive pricing, and robust claims-handling.",
+    "items": [
+      "ENSA Seguros",
+      "Nossa Seguros",
+      "BIC Seguros",
+      "Sanlam Seguros",
+      "Fidelidade Seguros",
+      "STAS Seguros",
+      "Proteja Seguros",
+      "Viva Seguros",
+      "Unisaúde Seguros",
+      "Fortaleza Seguros"
     ]
   },
   "vision": {
@@ -167,20 +213,21 @@
   },
   "business": {
     "eyebrow": "Business insurance",
-    "title": "Cover for every side of your business",
-    "description": "Dedicated professionals identify business risks and design tailored solutions at economical rates, including group schemes.",
+    "title": "Cover for the corporate, energy, and oil & gas sectors",
+    "description": "Dedicated specialists identify business risks and design tailored programmes — from corporate covers to oil & gas, energy, marine, and construction all risks. Group schemes also available.",
     "items": [
-      { "id": "business", "name": "Business insurance" },
+      { "id": "corporate", "name": "Corporate insurance" },
+      { "id": "oil-gas", "name": "Oil & gas insurance" },
+      { "id": "energy", "name": "Energy insurance" },
+      { "id": "marine", "name": "Marine insurance" },
+      { "id": "construction-all-risks", "name": "Construction all risks" },
+      { "id": "liability", "name": "Liability insurance" },
       { "id": "contractors", "name": "Contractors all risks" },
-      { "id": "truck", "name": "Truck insurance" },
       { "id": "professional-indemnity", "name": "Professional indemnity" },
       { "id": "goods-in-transit", "name": "Goods in transit" },
-      { "id": "corporate-sectional", "name": "Corporate & sectional title" },
-      { "id": "agricultural", "name": "Agricultural insurance" },
-      { "id": "public-liability", "name": "Public liability & events cancellation" },
-      { "id": "marine", "name": "Marine insurance" },
+      { "id": "truck", "name": "Truck & fleet insurance" },
       { "id": "aviation", "name": "Aviation insurance" },
-      { "id": "wildlife", "name": "Wildlife insurance" }
+      { "id": "agricultural", "name": "Agricultural insurance" }
     ],
     "groupTitle": "Group schemes",
     "groupDescription": "We also provide insurance solutions for group schemes, with the following range of covers:",
@@ -325,8 +372,8 @@
   "about": {
     "hero": {
       "eyebrow": "About Detondo",
-      "title": "A brokerage dedicated to simplifying insurance and protecting your future",
-      "description": "Born in Luanda to deliver tailored insurance and reinsurance solutions. We combine deep knowledge of the African markets with access to international markets, including Lloyd's."
+      "title": "An Angolan brokerage anchored in Luanda since 2017",
+      "description": "Detondo is an Angolan insurance and reinsurance brokerage established in 2017 and headquartered in Luanda. We deliver tailored solutions across corporate, energy, and oil & gas — backed by ANPG certification and a panel of the country's leading insurers."
     },
     "missionTitle": "Mission",
     "missionDescription": "To provide peace of mind and security through reliable insurance solutions. We recognize that each situation is unique and strive to understand every client's individual needs.",
@@ -335,16 +382,16 @@
     "capabilitiesTitle": "Capabilities",
     "capabilities": [
       {
-        "title": "15+ specialty practices",
-        "description": "Including robust cyber, financial, and professional services practices, along with health and employee-benefits businesses."
+        "title": "Multi-sector expertise",
+        "description": "Deep practice in corporate, oil & gas, marine, energy, construction all risks, and liability — across the high-stakes corners of the Angolan economy."
       },
       {
-        "title": "Lloyd's access",
-        "description": "A direct relationship with the Lloyd's markets gives us placements and capacity not always available locally."
+        "title": "ANPG certification",
+        "description": "Officially authorised by Angola's National Oil, Gas and Biofuels Agency to provide goods and services to the Oil & Gas sector."
       },
       {
-        "title": "Actuarial consulting",
-        "description": "A dedicated team delivers the analytical substrate needed to thoroughly examine every opportunity."
+        "title": "Major-insurer panel",
+        "description": "Placements across the leading insurers operating in Angola, giving our clients access to broad capacity and competitive pricing."
       }
     ]
   },
@@ -361,7 +408,7 @@
       {
         "slug": "business",
         "name": "Business insurance",
-        "description": "Cover for companies of every size, including group schemes."
+        "description": "Corporate, oil & gas, energy, marine, construction all risks, and more."
       },
       {
         "slug": "reinsurance",

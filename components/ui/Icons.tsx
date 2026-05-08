@@ -186,6 +186,52 @@ export const ClockIcon = ({ className = base }: Props) => (
   </svg>
 );
 
+export const BoltIcon = ({ className = base }: Props) => (
+  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+    <path
+      d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const OilDropIcon = ({ className = base }: Props) => (
+  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+    <path
+      d="M12 3c-3 4-6 8-6 11.5A6 6 0 0 0 18 14.5C18 11 15 7 12 3z"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const BadgeCheckIcon = ({ className = base }: Props) => (
+  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+    <path
+      d="M12 2.5l2.5 2 3.2-.4.4 3.2 2 2.5-2 2.5-.4 3.2-3.2-.4L12 17l-2.5-2-3.2.4-.4-3.2-2-2.5 2-2.5.4-3.2 3.2.4L12 2.5z"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.5 10l2.5 2.5 4.5-5"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 export const CheckIcon = ({ className = base }: Props) => (
   <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
     <path

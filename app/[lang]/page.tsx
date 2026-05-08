@@ -2,12 +2,15 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, type Locale } from "./dictionaries";
 import { Hero } from "@/components/sections/Hero";
 import { WhoWeAre } from "@/components/sections/WhoWeAre";
+import { Sectors } from "@/components/sections/Sectors";
+import { AnpgCertification } from "@/components/sections/AnpgCertification";
 import { VisionValues } from "@/components/sections/VisionValues";
 import { Commitment } from "@/components/sections/Commitment";
 import { PersonalInsurance } from "@/components/sections/PersonalInsurance";
 import { BusinessInsurance } from "@/components/sections/BusinessInsurance";
 import { Reinsurance } from "@/components/sections/Reinsurance";
 import { TreatyAlternative } from "@/components/sections/TreatyAlternative";
+import { Partners } from "@/components/sections/Partners";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBand } from "@/components/sections/CtaBand";
 
@@ -20,6 +23,8 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
     <>
       <Hero lang={lang} dict={dict.hero} />
       <WhoWeAre dict={dict.whoWeAre} />
+      <Sectors dict={dict.sectors} />
+      <AnpgCertification dict={dict.anpg} />
       <VisionValues dict={dict.vision} />
       <Commitment dict={dict.commitment} />
       <PersonalInsurance
@@ -38,6 +43,7 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         cta={dict.common.cta.learnMore}
       />
       <TreatyAlternative dict={dict.treaty} />
+      <Partners dict={dict.partners} />
       <Testimonials dict={dict.testimonials} />
       <CtaBand lang={lang} dict={dict.ctaBand} />
     </>

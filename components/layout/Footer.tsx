@@ -32,7 +32,7 @@ export function Footer({
   lang: Locale;
   dict: FooterDict;
 }) {
-  const year = new Date().getFullYear();
+  const year = 2018
   return (
     <footer className="relative overflow-hidden bg-brand-navy text-brand-ivory">
       <div
