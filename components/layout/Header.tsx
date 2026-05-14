@@ -32,7 +32,13 @@ export function Header({
   const pathname = usePathname() ?? `/${lang}`;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [trackedPathname, setTrackedPathname] = useState(pathname);
   const reduce = useReducedMotion();
+
+  if (trackedPathname !== pathname) {
+    setTrackedPathname(pathname);
+    setOpen(false);
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -40,8 +46,6 @@ export function Header({
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => setOpen(false), [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
