@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowIcon } from "@/components/ui/Button";
@@ -30,6 +31,22 @@ export function Hero({ lang, dict }: { lang: string; dict: HeroDict }) {
 
   return (
     <section className="relative overflow-hidden bg-hero-gradient text-brand-ivory">
+      {/* Luanda skyline — anchors the brand to Angola without competing with the headline */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+      >
+        <Image
+          src="/luanda.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-[0.12] mix-blend-luminosity"
+          priority
+        />
+        {/* Vignette: fade the photo out at top and bottom so it reads as ambient texture */}
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-navy-deep/80 via-transparent to-brand-navy-deep/70" />
+      </div>
       <ParallelogramAccent
         tone="azure"
         className="pointer-events-none absolute -right-24 top-8 h-[520px] w-[620px] opacity-25 blur-[2px] sm:opacity-35"

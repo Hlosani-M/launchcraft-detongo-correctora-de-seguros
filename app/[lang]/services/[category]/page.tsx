@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
 import { PersonalInsurance } from "@/components/sections/PersonalInsurance";
@@ -72,19 +73,63 @@ export default async function CategoryPage(
   return (
     <>
       <section className="relative overflow-hidden bg-hero-gradient text-brand-ivory">
-        <ParallelogramAccent
-          tone="azure"
-          className="pointer-events-none absolute -right-20 -top-16 h-[420px] w-[520px] opacity-25"
-        />
-        <div className="relative mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 sm:py-24">
-          <div className="max-w-3xl">
+        {category === "reinsurance" || category === "personal" || category === "business" ? (
+          <>
+            {/* Mobile: full-bleed background */}
+            <div aria-hidden className="absolute inset-0 lg:hidden">
+              <Image
+                src={
+                  category === "personal"
+                    ? "/personal.jpg"
+                    : category === "business"
+                      ? "/business-insurance.jpg"
+                      : "/reinsurance.jpg"
+                }
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 1px, 100vw"
+                className="object-cover object-center"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-brand-navy-deep/85 via-brand-navy-deep/60 to-brand-navy-deep/85" />
+            </div>
+            {/* Desktop: wide right-bleed panel */}
+            <div aria-hidden className="absolute inset-y-0 right-0 hidden w-[62%] lg:block">
+              <Image
+                src={
+                  category === "personal"
+                    ? "/personal.jpg"
+                    : category === "business"
+                      ? "/business-insurance.jpg"
+                      : "/reinsurance.jpg"
+                }
+                alt=""
+                fill
+                sizes="62vw"
+                className="object-cover object-center"
+                priority
+              />
+              {/* Left-edge melt */}
+              <div className="absolute inset-0 bg-gradient-to-r from-brand-navy-deep from-[10%] via-brand-navy-deep/40 via-[38%] to-transparent" />
+              {/* Subtle top/bottom blends */}
+              <div className="absolute inset-0 bg-gradient-to-b from-brand-navy-deep/40 via-transparent to-brand-navy-deep/50" />
+            </div>
+          </>
+        ) : (
+          <ParallelogramAccent
+            tone="azure"
+            className="pointer-events-none absolute -right-20 -top-16 h-[420px] w-[520px] opacity-25"
+          />
+        )}
+        <div className="relative mx-auto w-full max-w-6xl px-6 py-24 sm:px-8 sm:py-28 lg:py-32">
+          <div className="max-w-xl">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-azure">
               {heroCopy.eyebrow}
             </div>
             <h1 className="mt-4 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               {heroCopy.title}
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-brand-ivory/80 sm:text-lg">
+            <p className="mt-5 max-w-xl text-base leading-7 text-brand-ivory/80 sm:text-lg">
               {heroCopy.description}
             </p>
           </div>

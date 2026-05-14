@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowIcon } from "./Button";
 
@@ -9,6 +10,7 @@ type ServiceCardProps = {
   href?: string;
   cta?: string;
   icon?: React.ReactNode;
+  image?: string;
   tone?: Tone;
   className?: string;
 };
@@ -19,6 +21,7 @@ export function ServiceCard({
   href,
   cta,
   icon,
+  image,
   tone = "light",
   className = "",
 }: ServiceCardProps) {
@@ -32,8 +35,21 @@ export function ServiceCard({
 
   const body = (
     <div
-      className={`group relative flex h-full flex-col rounded-2xl p-7 ring-1 shadow-[var(--shadow-soft)] transition-all duration-300 ${container} ${className}`}
+      className={`group relative flex h-full flex-col rounded-2xl ring-1 shadow-[var(--shadow-soft)] transition-all duration-300 overflow-hidden ${container} ${className}`}
     >
+      {image ? (
+        <div className="relative aspect-video w-full flex-shrink-0 overflow-hidden">
+          <Image
+            src={image}
+            alt=""
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+        </div>
+      ) : null}
+      <div className="flex flex-1 flex-col p-7">
       {icon ? (
         <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-azure/15 text-brand-azure">
           {icon}
@@ -51,6 +67,7 @@ export function ServiceCard({
           <ArrowIcon />
         </span>
       ) : null}
+      </div>
     </div>
   );
 

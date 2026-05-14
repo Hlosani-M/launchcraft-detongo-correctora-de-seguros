@@ -34,6 +34,12 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   reinsurance: LayersIcon,
 };
 
+const CARD_IMAGES: Record<string, string> = {
+  personal: "/personal.jpg",
+  business: "/business-insurance.jpg",
+  reinsurance: "/reinsurance.jpg",
+};
+
 export default async function ServicesHubPage(
   props: PageProps<"/[lang]/services">,
 ) {
@@ -74,6 +80,7 @@ export default async function ServicesHubPage(
                   name={card.name}
                   description={card.description}
                   icon={<Icon />}
+                  image={CARD_IMAGES[card.slug]}
                   href={`/${lang}/services/${card.slug}`}
                   cta={dict.common.cta.learnMore}
                 />
