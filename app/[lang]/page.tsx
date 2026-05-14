@@ -5,6 +5,7 @@ import { WhoWeAre } from "@/components/sections/WhoWeAre";
 import { Numbers } from "@/components/sections/Numbers";
 import { Sectors } from "@/components/sections/Sectors";
 import { AnpgCertification } from "@/components/sections/AnpgCertification";
+import { ArSegCompliance } from "@/components/sections/ArSegCompliance";
 import { VisionValues } from "@/components/sections/VisionValues";
 import { Commitment } from "@/components/sections/Commitment";
 import { PersonalInsurance } from "@/components/sections/PersonalInsurance";
@@ -26,6 +27,7 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
       <Numbers dict={dict.numbers} />
       <Sectors chapter="03" dict={dict.sectors} />
       <AnpgCertification dict={dict.anpg} />
+      <ArSegCompliance dict={dict.arseg} />
       <VisionValues dict={dict.vision} />
       <Commitment dict={dict.commitment} />
       <PersonalInsurance

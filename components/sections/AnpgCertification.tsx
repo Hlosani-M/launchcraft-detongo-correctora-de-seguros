@@ -7,7 +7,6 @@ type Dict = {
   title: string;
   description: string;
   issuer: string;
-  viewCertificate: string;
 };
 
 export function AnpgCertification({ dict }: { dict: Dict }) {
@@ -59,20 +58,9 @@ export function AnpgCertification({ dict }: { dict: Dict }) {
               <p className="mt-6 max-w-2xl text-base leading-7 text-brand-ivory/80 sm:text-lg sm:leading-8">
                 {dict.description}
               </p>
-              <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
-                <p className="text-xs uppercase tracking-[0.18em] text-brand-ivory/55">
-                  {dict.issuer}
-                </p>
-                <a
-                  href="/anpg-certificate.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-brand-ivory/25 px-6 py-3 text-sm font-semibold text-brand-ivory transition-colors hover:border-brand-azure hover:bg-brand-azure/10 hover:text-brand-azure"
-                >
-                  {dict.viewCertificate}
-                  <span aria-hidden>→</span>
-                </a>
-              </div>
+              <p className="mt-8 text-xs uppercase tracking-[0.18em] text-brand-ivory/55">
+                {dict.issuer}
+              </p>
             </div>
           </div>
         </Reveal>

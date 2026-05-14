@@ -120,8 +120,21 @@
     "eyebrow": "Certificação ANPG",
     "title": "Certificada para servir o sector de Petróleo & Gás de Angola",
     "description": "A Detondo está certificada pela ANPG, Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola, para fornecer bens e serviços a operadores em toda a cadeia de valor de Petróleo e Gás.",
-    "issuer": "Emitido pela ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola",
-    "viewCertificate": "Ver certificado"
+    "issuer": "Emitido pela ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola"
+  },
+  "arseg": {
+    "eyebrow": "Entidade Autorizada pela ARSEG",
+    "title": "Registada e supervisionada pela ARSEG",
+    "description": "A DETONDO - Corretora de Seguros, Lda consta na lista de entidades autorizadas pela ARSEG, Agência Angolana de Regulação e Supervisão de Seguros, como corretora de seguros registada.",
+    "details": {
+      "entityType": "Tipo de Entidade",
+      "entityTypeValue": "Corretor de Seguro",
+      "licence": "Referência",
+      "licenceValue": "112/ASEG/MF/23",
+      "registered": "Data de Registo",
+      "registeredValue": "20/09/2023"
+    },
+    "link": "Ver entidades autorizadas"
   },
   "partners": {
     "eyebrow": "Parceiros",

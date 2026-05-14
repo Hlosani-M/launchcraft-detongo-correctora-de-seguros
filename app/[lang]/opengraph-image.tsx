@@ -199,19 +199,27 @@ export default async function Image({
           {/* Main headline */}
           <div
             style={{
-              color: "#FBFCFC",
-              fontSize: 68,
-              fontWeight: 800,
-              lineHeight: 1.08,
-              letterSpacing: "-0.025em",
-              maxWidth: 820,
               flex: 1,
               display: "flex",
               alignItems: "flex-start",
-              whiteSpace: "pre-line",
             }}
           >
-            {t.title}
+            <div
+              style={{
+                color: "#FBFCFC",
+                fontSize: 56,
+                fontWeight: 800,
+                lineHeight: 1.1,
+                letterSpacing: "-0.025em",
+                maxWidth: 860,
+                whiteSpace: "pre-line",
+                wordBreak: "break-word",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {t.title}
+            </div>
           </div>
 
           {/* Bottom row: stats + domain */}
