@@ -75,11 +75,23 @@
       "Over the years we have built strong expertise in the country's most demanding lines: corporate, oil & gas, marine, energy, construction all risks, liability, and health and life. We back these up with reinsurance and corporate risk-management programmes.",
       "Our work comes down to staying close to our clients, getting the placement right the first time, and handling claims properly when they happen. The result is a brokerage that Angola's leading insurers and corporate operators trust to structure, negotiate, and stand behind their risk programmes."
     ],
+    "quote": "We are the brokerage Angola's leading insurers and corporate operators trust to stand behind their risk programmes.",
     "highlights": [
       "Established 2017",
       "ANPG-certified for Oil & Gas",
       "Multi-sector experience",
       "Major-insurer panel"
+    ]
+  },
+  "numbers": {
+    "eyebrow": "Detondo at a glance",
+    "title": "Detondo by the numbers",
+    "description": "A short read on the foundations behind every programme we place.",
+    "items": [
+      { "value": "2017", "label": "Year founded" },
+      { "value": "10+", "label": "Insurer partners in Angola" },
+      { "value": "12+", "label": "Specialist business lines" },
+      { "value": "ANPG", "label": "Certified for Oil & Gas" }
     ]
   },
   "sectors": {

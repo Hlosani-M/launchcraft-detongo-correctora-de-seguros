@@ -60,7 +60,11 @@ export function Header({
   const isActive = (href: string, exact?: boolean) =>
     exact ? pathname === href : pathname.startsWith(href);
 
+  const onContactPage = pathname === `/${lang}/contact`;
+  const showFloatingCta = !open && !onContactPage;
+
   return (
+    <>
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
@@ -114,14 +118,15 @@ export function Header({
             labels={dict.locale}
             tone="light"
           />
-          <LinkButton
-            href={`/${lang}/contact`}
-            size="md"
-            variant="primary"
-            className="hidden lg:inline-flex"
-          >
-            {dict.cta.quote}
-          </LinkButton>
+          <div className="hidden lg:flex">
+            <LinkButton
+              href={`/${lang}/contact`}
+              size="md"
+              variant="primary"
+            >
+              {dict.cta.quote}
+            </LinkButton>
+          </div>
           <button
             type="button"
             aria-label="Menu"
@@ -177,18 +182,33 @@ export function Header({
                   {link.label}
                 </Link>
               ))}
-              <LinkButton
-                href={`/${lang}/contact`}
-                size="lg"
-                variant="primary"
-                className="mt-3 w-full"
-              >
-                {dict.cta.quote}
-              </LinkButton>
             </nav>
           </motion.div>
         ) : null}
       </AnimatePresence>
     </header>
+
+    <AnimatePresence>
+      {showFloatingCta ? (
+        <motion.div
+          key="floating-cta"
+          initial={reduce ? false : { opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 16 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          className="fixed bottom-6 right-6 z-40 lg:hidden"
+        >
+          <LinkButton
+            href={`/${lang}/contact`}
+            size="lg"
+            variant="primary"
+            className="shadow-[0_8px_32px_-8px_rgba(5,187,251,0.6)]"
+          >
+            {dict.cta.quote}
+          </LinkButton>
+        </motion.div>
+      ) : null}
+    </AnimatePresence>
+    </>
   );
 }

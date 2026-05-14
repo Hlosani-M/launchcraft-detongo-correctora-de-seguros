@@ -33,16 +33,18 @@ The repo loads **Geist Sans** and **Geist Mono** via `next/font/google`.
 
 | Usage | Tailwind classes |
 | --- | --- |
-| Hero h1 | `text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight` |
-| Section h2 | `text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight` |
+| Hero h1 | `text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.02] tracking-tight` |
+| Section h2 | `text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight` |
 | Subsection h3 | `text-lg sm:text-xl font-semibold tracking-tight` |
 | Eyebrow | `text-xs font-semibold uppercase tracking-[0.2em]` |
-| Body | `text-base leading-7 sm:text-lg` |
+| Chapter prefix | `font-mono` with eyebrow sizing, separator `/` rendered in `text-brand-slate` (ivory tones use `text-brand-ivory/50`) |
+| Body | `text-base leading-7 sm:text-lg` (hero/lede: bump to `lg:text-xl lg:leading-8`) |
+| Stat value | `text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight` |
 | Meta/caption | `text-sm leading-6` |
 
 ## Spacing
 
-We stick to Tailwind's 4-pt scale. Section vertical rhythm is always `py-20 sm:py-24 lg:py-32`. Card padding is `p-6 sm:p-7` (with `p-8 sm:p-10` for hero/feature cards). Gaps between grid items default to `gap-5` / `gap-6`.
+We stick to Tailwind's 4-pt scale. Section vertical rhythm is always `py-20 sm:py-24 lg:py-32`. The hero is the one exception (`pb-24 pt-20 sm:pb-32 sm:pt-24 lg:pb-40 lg:pt-32`) to give the display headline more room. Card padding is `p-6 sm:p-7` (with `p-8 sm:p-10` for hero/feature cards). Gaps between grid items default to `gap-5` / `gap-6`.
 
 ## Radii & shadows
 
@@ -62,6 +64,10 @@ We stick to Tailwind's 4-pt scale. Section vertical rhythm is always `py-20 sm:p
 | `outline-light` | CTA over navy/hero surfaces. |
 
 Sizes: `md` (px-5 py-2.5) and `lg` (px-7 py-3.5). Always render an `ArrowIcon` as the affordance for forward navigation.
+
+## Chapter numbering
+
+Marquee homepage sections (WhoWeAre, Numbers, Sectors, ANPG, Partners) carry a short chapter index alongside the eyebrow, rendered through the `chapter` prop on `Section` (e.g. `chapter="01"`). It prints as `01 / Eyebrow text` in the eyebrow row, monospaced for the number, separator `/` muted. Use it only on top-of-page editorial sections; sub-pages and dense content sections don't need it.
 
 ## Signature motif
 

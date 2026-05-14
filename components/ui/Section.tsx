@@ -4,6 +4,7 @@ type Tone = "ivory" | "navy" | "surface" | "azure";
 
 type SectionProps = {
   id?: string;
+  chapter?: string;
   eyebrow?: string;
   title?: string;
   description?: string;
@@ -23,6 +24,7 @@ const toneStyles: Record<Tone, string> = {
 
 export function Section({
   id,
+  chapter,
   eyebrow,
   title,
   description,
@@ -32,9 +34,11 @@ export function Section({
   containerClassName = "",
   children,
 }: SectionProps) {
-  const heading = eyebrow || title || description;
+  const heading = chapter || eyebrow || title || description;
   const eyebrowColor =
     tone === "navy" ? "text-brand-azure" : "text-brand-mid";
+  const chapterColor =
+    tone === "navy" ? "text-brand-ivory/50" : "text-brand-slate";
   const descColor =
     tone === "navy" ? "text-brand-slate-soft" : "text-brand-slate";
   return (
@@ -49,15 +53,25 @@ export function Section({
           <div
             className={`mb-12 max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}
           >
-            {eyebrow ? (
+            {chapter || eyebrow ? (
               <div
-                className={`text-xs font-semibold uppercase tracking-[0.2em] ${eyebrowColor}`}
+                className={`flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] ${eyebrowColor}`}
               >
-                {eyebrow}
+                {chapter ? (
+                  <>
+                    <span className={`font-mono ${chapterColor}`}>
+                      {chapter}
+                    </span>
+                    <span aria-hidden className={chapterColor}>
+                      /
+                    </span>
+                  </>
+                ) : null}
+                {eyebrow ? <span>{eyebrow}</span> : null}
               </div>
             ) : null}
             {title ? (
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
                 {title}
               </h2>
             ) : null}

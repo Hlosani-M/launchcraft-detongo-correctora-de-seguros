@@ -75,11 +75,23 @@
       "Ao longo dos anos, construímos forte experiência nas linhas mais exigentes do mercado: corporativo, petróleo & gás, marítimo, energia, construção todos os riscos, responsabilidade civil e saúde e vida. Complementamos esta oferta com programas de resseguro e gestão de risco corporativo.",
       "O nosso trabalho assenta em estar perto dos clientes, fazer a colocação certa à primeira e gerir os sinistros de forma rigorosa quando acontecem. O resultado é uma corretora em que as principais seguradoras e operadores corporativos angolanos confiam para estruturar, negociar e responder pelos seus programas de risco."
     ],
+    "quote": "Somos a corretora em que as principais seguradoras e operadores angolanos confiam para responder pelos seus programas de risco.",
     "highlights": [
       "Fundada em 2017",
       "Certificada pela ANPG (Petróleo & Gás)",
       "Experiência multi-sectorial",
       "Painel das principais seguradoras"
+    ]
+  },
+  "numbers": {
+    "eyebrow": "A Detondo em síntese",
+    "title": "A Detondo em números",
+    "description": "Um resumo das bases que sustentam cada programa que colocamos.",
+    "items": [
+      { "value": "2017", "label": "Ano de fundação" },
+      { "value": "10+", "label": "Seguradoras parceiras em Angola" },
+      { "value": "12+", "label": "Linhas de negócio especializadas" },
+      { "value": "ANPG", "label": "Certificada para Petróleo & Gás" }
     ]
   },
   "sectors": {

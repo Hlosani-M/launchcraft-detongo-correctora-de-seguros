@@ -18,11 +18,18 @@ const ICONS: Record<string, ComponentType<{ className?: string }>> = {
   oilgas: OilDropIcon,
 };
 
-export function Sectors({ dict }: { dict: Dict }) {
+export function Sectors({
+  dict,
+  chapter,
+}: {
+  dict: Dict;
+  chapter?: string;
+}) {
   return (
     <Section
       id="sectors"
       tone="ivory"
+      chapter={chapter}
       eyebrow={dict.eyebrow}
       title={dict.title}
       description={dict.description}
