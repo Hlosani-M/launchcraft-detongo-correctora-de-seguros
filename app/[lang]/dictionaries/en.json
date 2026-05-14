@@ -243,7 +243,134 @@
         "name": "Travel insurance",
         "description": "Regional or international travel covered for medical expenses, lost luggage, accidental death, and more."
       }
-    ]
+    ],
+    "products": {
+      "motor": {
+        "meta": {
+          "title": "Motor Insurance | Detondo",
+          "description": "Comprehensive vehicle coverage in Angola. Third-party liability, own damage, 24-hour assistance and replacement hire car. Get a quote today."
+        },
+        "eyebrow": "Personal insurance",
+        "title": "Motor insurance",
+        "description": "Comprehensive coverage for your vehicles, with third-party liability, own damage protection, 24-hour roadside assistance and a replacement hire car.",
+        "featuresTitle": "What's included",
+        "features": [
+          "Compulsory third-party liability",
+          "Own damage (collision and rollover)",
+          "Fire, lightning and explosion",
+          "Vehicle theft",
+          "24-hour roadside assistance",
+          "Replacement hire car",
+          "Passenger protection"
+        ],
+        "detailsTitle": "Why choose Detondo for your motor insurance",
+        "details": "We manage the entire process from start to finish: we assess your needs, negotiate with Angola's leading insurers and make sure you get the right cover at the most competitive premium. If you have a claim, our team supports you all the way through to resolution."
+      },
+      "building": {
+        "meta": {
+          "title": "Building Insurance | Detondo",
+          "description": "Protection for your property in Angola. Coverage against fire, flood, structural damage and owner's liability. Contact us today."
+        },
+        "eyebrow": "Personal insurance",
+        "title": "Building insurance",
+        "description": "Your home is likely your most important investment. We make sure it is properly protected, with the right coverage for the true rebuilding value of your property.",
+        "featuresTitle": "What's included",
+        "features": [
+          "Fire, lightning and explosion",
+          "Flood and storm",
+          "Water damage and burst pipes",
+          "Vehicle impact and aircraft collision",
+          "Vandalism",
+          "Owner's liability",
+          "External structures and fences"
+        ],
+        "detailsTitle": "Why choose Detondo for your building insurance",
+        "details": "We ensure the insured value reflects the true rebuilding cost of the property, not just the market value. Many homeowners are underinsured because they don't update their sum insured as construction costs rise. Our team reviews your policy regularly to prevent that."
+      },
+      "home-contents": {
+        "meta": {
+          "title": "Home Contents Insurance | Detondo",
+          "description": "Your home contents protected against theft, fire and water damage in Angola. Tailored coverage for your belongings. Get a quote today."
+        },
+        "eyebrow": "Personal insurance",
+        "title": "Home contents insurance",
+        "description": "Your home contents protected against theft, fire and water damage. We ensure the insured value reflects the true worth of your belongings.",
+        "featuresTitle": "What's included",
+        "features": [
+          "Theft and burglary",
+          "Fire, lightning and explosion",
+          "Water damage",
+          "Electronic and household appliances",
+          "Jewellery and valuables (optional)",
+          "Furniture and personal belongings",
+          "Personal liability"
+        ],
+        "detailsTitle": "Why choose Detondo for your home contents insurance",
+        "details": "Many families underestimate the total value of their belongings and end up exposed when a claim occurs. Our team helps you calculate the right sum insured, ensuring real coverage when you need it most. We also advise on how to protect specific valuables."
+      },
+      "all-risks": {
+        "meta": {
+          "title": "Personal All-Risks Insurance | Detondo",
+          "description": "Protection for your valuables anywhere in the world. Mobile phones, electronics, jewellery and more. Contact us today."
+        },
+        "eyebrow": "Personal insurance",
+        "title": "Personal all-risks",
+        "description": "Protection for your valuables anywhere in the world. Mobile phones, cameras, laptops, jewellery and more, covered even when you're away from home.",
+        "featuresTitle": "What's included",
+        "features": [
+          "Worldwide coverage",
+          "Accidental loss",
+          "Theft and robbery",
+          "Accidental damage",
+          "Mobile phones and portable electronics",
+          "Jewellery, watches and artwork",
+          "Photography and sports equipment"
+        ],
+        "detailsTitle": "Why choose Detondo for your personal all-risks insurance",
+        "details": "Personal all-risks coverage is ideal for those who travel frequently or use valuable equipment away from home. Unlike contents insurance, which covers the home, this product follows you wherever you go. Detondo helps you select the right items to insure and keeps the sum insured current."
+      },
+      "liability": {
+        "meta": {
+          "title": "Personal Liability Insurance | Detondo",
+          "description": "Financial protection for damage caused to others in daily life. Legal costs, compensation and more. Get a quote today."
+        },
+        "eyebrow": "Personal insurance",
+        "title": "Personal liability",
+        "description": "Financial protection when an accident you cause to others leads to legal costs or compensation claims. Coverage that shields your personal assets.",
+        "featuresTitle": "What's included",
+        "features": [
+          "Bodily injury caused to third parties",
+          "Property damage caused to third parties",
+          "Legal defence costs",
+          "Coverage in Angola and abroad",
+          "Accidents during leisure activities",
+          "Damage caused by pets"
+        ],
+        "detailsTitle": "Why choose Detondo for your personal liability insurance",
+        "details": "A seemingly simple accident can lead to legal costs and compensation that quickly exceed a family's savings. Personal liability insurance ensures your financial stability is protected in unforeseen situations. Detondo helps you size the right coverage for your lifestyle."
+      },
+      "travel": {
+        "meta": {
+          "title": "Travel Insurance | Detondo",
+          "description": "Regional and international travel covered for emergency medical expenses, repatriation, luggage and cancellation. Contact us today."
+        },
+        "eyebrow": "Personal insurance",
+        "title": "Travel insurance",
+        "description": "Travel with peace of mind, with coverage for emergency medical expenses, repatriation, lost luggage and trip cancellation, for regional or international destinations.",
+        "featuresTitle": "What's included",
+        "features": [
+          "Emergency medical expenses",
+          "Medical repatriation and repatriation of remains",
+          "Trip cancellation and interruption",
+          "Lost, stolen or damaged luggage",
+          "Accidental death during travel",
+          "Legal assistance abroad",
+          "Flight delay (optional)"
+        ],
+        "detailsTitle": "Why choose Detondo for your travel insurance",
+        "details": "A medical emergency abroad can cost tens of thousands of dollars. Travel insurance ensures you have access to quality care and can return home safely, without that cost falling on you or your family. Detondo offers coverage for individual trips and annual multi-trip programmes."
+      }
+    }
   },
   "business": {
     "eyebrow": "Business insurance",

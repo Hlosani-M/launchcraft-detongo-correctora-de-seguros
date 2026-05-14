@@ -140,7 +140,7 @@ export default async function CategoryPage(
         <PersonalInsurance
           lang={lang}
           dict={dict.personal}
-          cta={dict.common.cta.contact}
+          cta={dict.common.cta.learnMore}
         />
       ) : null}
 
@@ -148,7 +148,7 @@ export default async function CategoryPage(
         <BusinessInsurance
           lang={lang}
           dict={dict.business}
-          cta={dict.common.cta.contact}
+          cta={dict.common.cta.learnMore}
         />
       ) : null}
 
@@ -157,7 +157,7 @@ export default async function CategoryPage(
           <Reinsurance
             lang={lang}
             dict={dict.reinsurance}
-            cta={dict.common.cta.contact}
+            cta={dict.common.cta.learnMore}
           />
           <TreatyAlternative dict={dict.treaty} />
           <Section
@@ -206,7 +206,7 @@ export default async function CategoryPage(
         </>
       ) : null}
 
-      <CtaBand lang={lang} dict={dict.ctaBand} />
+      <CtaBand lang={lang} dict={dict.ctaBand} hideSecondary />
     </>
   );
 }

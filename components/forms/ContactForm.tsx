@@ -143,7 +143,7 @@ export function ContactForm({
             required
             value={fields.name}
             onChange={update("name")}
-            aria-invalid={!!e.name}
+            aria-invalid={e.name ? "true" : undefined}
             aria-describedby={e.name ? "contact-name-error" : undefined}
             placeholder={dict.namePlaceholder}
             className={fieldBase}
@@ -166,7 +166,7 @@ export function ContactForm({
             required
             value={fields.email}
             onChange={update("email")}
-            aria-invalid={!!e.email}
+            aria-invalid={e.email ? "true" : undefined}
             aria-describedby={e.email ? "contact-email-error" : undefined}
             placeholder={dict.emailPlaceholder}
             className={fieldBase}
@@ -208,7 +208,7 @@ export function ContactForm({
           required
           value={fields.message}
           onChange={update("message")}
-          aria-invalid={!!e.message}
+          aria-invalid={e.message ? "true" : undefined}
           aria-describedby={e.message ? "contact-message-error" : undefined}
           placeholder={dict.messagePlaceholder}
           className={`${fieldBase} resize-none`}

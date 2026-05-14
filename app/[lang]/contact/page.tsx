@@ -83,10 +83,16 @@ export default async function ContactPage(
                       +244 921 545 832
                     </a>
                     <a
-                      href="tel:+244990120689"
+                      href="tel:+244923254449"
                       className="transition-colors hover:text-brand-navy"
                     >
-                      +244 990 120 689
+                      +244 923 254 449
+                    </a>
+                    <a
+                      href="tel:+244946451069"
+                      className="transition-colors hover:text-brand-navy"
+                    >
+                      +244 946 451 069
                     </a>
                   </div>
                 </div>
@@ -100,10 +106,10 @@ export default async function ContactPage(
                     {dict.contact.emailTitle}
                   </div>
                   <a
-                    href="mailto:geral@detondocorretora.com"
+                    href="mailto:detondocorretoraseguros@gmail.com"
                     className="mt-1 block text-brand-slate transition-colors hover:text-brand-navy"
                   >
-                    geral@detondocorretora.com
+                    detondocorretoraseguros@gmail.com
                   </a>
                 </div>
               </li>

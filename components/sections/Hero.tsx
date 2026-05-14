@@ -106,10 +106,8 @@ export function Hero({ lang, dict }: { lang: string; dict: HeroDict }) {
             </Link>
           </motion.div>
 
-          <motion.ul
-            variants={item}
-            className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium uppercase tracking-[0.18em] text-brand-ivory/60"
-          >
+          <motion.div variants={item}>
+          <ul className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium uppercase tracking-[0.18em] text-brand-ivory/60">
             {dict.stats.map((s, i) => (
               <li key={s.label} className="flex items-center gap-3">
                 {i > 0 ? (
@@ -119,7 +117,8 @@ export function Hero({ lang, dict }: { lang: string; dict: HeroDict }) {
                 <span>{s.label}</span>
               </li>
             ))}
-          </motion.ul>
+          </ul>
+          </motion.div>
         </motion.div>
       </div>
     </section>

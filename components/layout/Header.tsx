@@ -136,7 +136,7 @@ export function Header({
           <button
             type="button"
             aria-label="Menu"
-            aria-expanded={open}
+            aria-expanded={open ? "true" : "false"}
             onClick={() => setOpen((v) => !v)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-brand-slate/25 lg:hidden"
           >

@@ -54,9 +54,10 @@ export function Sectors({
                     <Image
                       src={img}
                       alt={item.name}
-                      fill
+                      width={800}
+                      height={450}
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover object-center"
+                      className="h-full w-full object-cover object-center"
                     />
                   ) : null}
                   {/* scrim — dissolves photo into the navy card body */}

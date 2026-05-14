@@ -151,20 +151,26 @@ export function Footer({
                     +244 921 545 832
                   </a>
                   <a
-                    href="tel:+244990120689"
+                    href="tel:+244923254449"
                     className="transition-colors hover:text-brand-ivory"
                   >
-                    +244 990 120 689
+                    +244 923 254 449
+                  </a>
+                  <a
+                    href="tel:+244946451069"
+                    className="transition-colors hover:text-brand-ivory"
+                  >
+                    +244 946 451 069
                   </a>
                 </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <EmailIcon className="h-5 w-5 flex-shrink-0 text-brand-azure" />
                 <a
-                  href="mailto:geral@detondocorretora.com"
+                  href="mailto:detondocorretoraseguros@gmail.com"
                   className="transition-colors hover:text-brand-ivory"
                 >
-                  geral@detondocorretora.com
+                  detondocorretoraseguros@gmail.com
                 </a>
               </li>
             </ul>

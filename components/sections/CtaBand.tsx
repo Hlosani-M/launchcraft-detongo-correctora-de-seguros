@@ -12,7 +12,15 @@ type Dict = {
   secondaryCta: string;
 };
 
-export function CtaBand({ lang, dict }: { lang: string; dict: Dict }) {
+export function CtaBand({
+  lang,
+  dict,
+  hideSecondary = false,
+}: {
+  lang: string;
+  dict: Dict;
+  hideSecondary?: boolean;
+}) {
   return (
     <section className="relative overflow-hidden bg-brand-navy text-brand-ivory">
       <ParallelogramAccent
@@ -44,13 +52,15 @@ export function CtaBand({ lang, dict }: { lang: string; dict: Dict }) {
               {dict.primaryCta}
               <ArrowIcon />
             </LinkButton>
-            <LinkButton
-              href={`/${lang}/services`}
-              size="lg"
-              variant="outline-light"
-            >
-              {dict.secondaryCta}
-            </LinkButton>
+            {!hideSecondary && (
+              <LinkButton
+                href={`/${lang}/services`}
+                size="lg"
+                variant="outline-light"
+              >
+                {dict.secondaryCta}
+              </LinkButton>
+            )}
           </div>
         </div>
       </div>

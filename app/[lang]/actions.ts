@@ -13,7 +13,7 @@ export async function contactAction(
   formData: FormData,
 ): Promise<ContactState> {
   // Honeypot: bots that fill the hidden field get a silent success.
-  if (formData.get("_hp_url")) {
+  if (formData.get("website") || formData.get("_hp_url")) {
     return { status: "success" };
   }
 

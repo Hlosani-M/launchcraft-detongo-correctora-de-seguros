@@ -90,7 +90,7 @@ export default async function ServicesHubPage(
         </div>
       </Section>
 
-      <CtaBand lang={lang} dict={dict.ctaBand} />
+      <CtaBand lang={lang} dict={dict.ctaBand} hideSecondary />
     </>
   );
 }

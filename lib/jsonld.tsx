@@ -27,8 +27,8 @@ export function OrganizationJsonLd({
       addressLocality: "Luanda",
       addressCountry: "AO",
     },
-    telephone: ["+244 921 545 832", "+244 990 120 689"],
-    email: "geral@detondocorretora.com",
+    telephone: ["+244 921 545 832", "+244 923 254 449", "+244 946 451 069"],
+    email: "detondocorretoraseguros@gmail.com",
     contactPoint: [
       {
         "@type": "ContactPoint",

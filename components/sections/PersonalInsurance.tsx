@@ -45,6 +45,8 @@ export function PersonalInsurance({
               name={item.name}
               description={item.description}
               image={IMAGES[item.id]}
+              href={`/${lang}/services/personal/${item.id}`}
+              cta={cta}
             />
           </Reveal>
         ))}

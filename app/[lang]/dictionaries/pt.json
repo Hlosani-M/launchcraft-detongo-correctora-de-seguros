@@ -243,7 +243,134 @@
         "name": "Seguro de viagem",
         "description": "Viagens regionais ou internacionais com cobertura para despesas médicas, bagagem perdida, morte acidental e muito mais."
       }
-    ]
+    ],
+    "products": {
+      "motor": {
+        "meta": {
+          "title": "Seguro Automóvel | Detondo",
+          "description": "Cobertura abrangente para os seus veículos em Angola. Responsabilidade civil, danos próprios, assistência 24h e aluguer de viatura. Peça cotação."
+        },
+        "eyebrow": "Seguro particular",
+        "title": "Seguro automóvel",
+        "description": "Cobertura abrangente para os seus veículos, com responsabilidade civil, protecção de danos próprios, assistência em viagem 24 horas e aluguer de viatura substituta.",
+        "featuresTitle": "O que está incluído",
+        "features": [
+          "Responsabilidade civil obrigatória",
+          "Danos próprios (colisão e capotamento)",
+          "Incêndio, raio e explosão",
+          "Roubo e furto do veículo",
+          "Assistência em viagem 24 horas",
+          "Aluguer de viatura substituta",
+          "Protecção de passageiros"
+        ],
+        "detailsTitle": "Porquê escolher a Detondo para o seu seguro automóvel",
+        "details": "Gerimos o processo do início ao fim: analisamos as suas necessidades, negociamos com as principais seguradoras do mercado angolano e garantimos que fica com a cobertura certa ao prémio mais competitivo. Em caso de sinistro, a nossa equipa acompanha-o até à resolução."
+      },
+      "building": {
+        "meta": {
+          "title": "Seguro de Edifícios | Detondo",
+          "description": "Protecção para o seu imóvel em Angola. Cobertura contra incêndio, inundação, danos estruturais e responsabilidade civil. Consulte-nos."
+        },
+        "eyebrow": "Seguro particular",
+        "title": "Seguro de edifícios",
+        "description": "A sua casa é provavelmente o investimento mais importante que tem. Garantimos que está devidamente protegida, com a cobertura certa para o valor real do seu imóvel.",
+        "featuresTitle": "O que está incluído",
+        "features": [
+          "Incêndio, raio e explosão",
+          "Inundação e tempestade",
+          "Danos por água e rebentamento de canos",
+          "Impacto de veículos e queda de aeronaves",
+          "Vandalismo",
+          "Responsabilidade civil do proprietário",
+          "Estruturas exteriores e vedações"
+        ],
+        "detailsTitle": "Porquê escolher a Detondo para o seu seguro de edifícios",
+        "details": "Garantimos que o capital seguro reflecte o valor real de reconstrução do imóvel, não apenas o valor de mercado. Muitos proprietários ficam sub-segurados por não actualizarem o capital à medida que os custos de construção sobem. A nossa equipa revê a sua apólice regularmente para evitar essa situação."
+      },
+      "home-contents": {
+        "meta": {
+          "title": "Seguro de Conteúdo da Casa | Detondo",
+          "description": "O conteúdo do seu lar protegido contra roubo, incêndio e danos por água em Angola. Coberturas à medida. Peça cotação hoje."
+        },
+        "eyebrow": "Seguro particular",
+        "title": "Seguro de conteúdo da casa",
+        "description": "O conteúdo da sua casa protegido contra roubo, incêndio e danos por água. Garantimos que o capital seguro reflecte o valor real dos seus bens.",
+        "featuresTitle": "O que está incluído",
+        "features": [
+          "Roubo e arrombamento",
+          "Incêndio, raio e explosão",
+          "Danos por água",
+          "Equipamentos electrónicos e electrodomésticos",
+          "Joalharia e objectos de valor (opcional)",
+          "Mobiliário e bens pessoais",
+          "Responsabilidade civil pessoal"
+        ],
+        "detailsTitle": "Porquê escolher a Detondo para o seu seguro de conteúdo",
+        "details": "Muitas famílias subestimam o valor total dos seus bens e ficam expostas quando acontece um sinistro. A nossa equipa ajuda-o a calcular o capital adequado, garantindo uma cobertura real no momento em que mais precisa. Aconselhamos também sobre como proteger objectos de valor específicos."
+      },
+      "all-risks": {
+        "meta": {
+          "title": "Todo Risco Pessoal | Detondo",
+          "description": "Protecção para os seus objectos de valor em qualquer parte do mundo. Telemóveis, electrónicos, joalharia e mais. Consulte-nos hoje."
+        },
+        "eyebrow": "Seguro particular",
+        "title": "Todo risco pessoal",
+        "description": "Protecção para os seus objectos de valor em qualquer lugar do mundo. Telemóveis, câmaras, laptops, joalharia e mais, cobertos mesmo fora de casa.",
+        "featuresTitle": "O que está incluído",
+        "features": [
+          "Cobertura mundial",
+          "Perda acidental",
+          "Roubo e furto",
+          "Danos acidentais",
+          "Telemóveis e electrónicos portáteis",
+          "Joalharia, relógios e objectos de arte",
+          "Equipamento fotográfico e desportivo"
+        ],
+        "detailsTitle": "Porquê escolher a Detondo para o seu todo risco pessoal",
+        "details": "A cobertura todo risco pessoal é ideal para quem viaja com frequência ou utiliza equipamentos de valor fora de casa. Ao contrário do seguro de conteúdo, que cobre o lar, este produto acompanha-o onde quer que vá. A Detondo ajuda-o a seleccionar os objectos certos e a garantir que o capital seguro está sempre actualizado."
+      },
+      "liability": {
+        "meta": {
+          "title": "Responsabilidade Pessoal | Detondo",
+          "description": "Protecção financeira para danos causados a terceiros no dia-a-dia. Custos legais, indemnizações e mais. Peça cotação hoje."
+        },
+        "eyebrow": "Seguro particular",
+        "title": "Responsabilidade pessoal",
+        "description": "Protecção financeira quando um acidente que causou a terceiros gera despesas legais ou indemnizações. Uma cobertura que protege o seu património pessoal.",
+        "featuresTitle": "O que está incluído",
+        "features": [
+          "Lesões corporais causadas a terceiros",
+          "Danos materiais causados a terceiros",
+          "Custos legais de defesa",
+          "Cobertura em Angola e no estrangeiro",
+          "Acidentes durante actividades de lazer",
+          "Danos causados por animais domésticos"
+        ],
+        "detailsTitle": "Porquê escolher a Detondo para o seu seguro de responsabilidade pessoal",
+        "details": "Um acidente aparentemente simples pode originar custos legais e indemnizações que ultrapassam facilmente as poupanças de uma família. O seguro de responsabilidade pessoal garante que a sua estabilidade financeira fica protegida em situações imprevistas. A Detondo ajuda-o a dimensionar a cobertura certa para o seu perfil de vida."
+      },
+      "travel": {
+        "meta": {
+          "title": "Seguro de Viagem | Detondo",
+          "description": "Viagens regionais e internacionais com cobertura para despesas médicas, repatriamento, bagagem e cancelamento. Consulte-nos hoje."
+        },
+        "eyebrow": "Seguro particular",
+        "title": "Seguro de viagem",
+        "description": "Viagens em paz, com cobertura para despesas médicas de emergência, repatriamento, bagagem perdida e cancelamento de viagem, para destinos regionais ou internacionais.",
+        "featuresTitle": "O que está incluído",
+        "features": [
+          "Despesas médicas de emergência",
+          "Repatriamento médico e de restos mortais",
+          "Cancelamento e interrupção de viagem",
+          "Bagagem perdida, roubada ou danificada",
+          "Morte acidental durante a viagem",
+          "Assistência jurídica no estrangeiro",
+          "Atraso de voo (opcional)"
+        ],
+        "detailsTitle": "Porquê escolher a Detondo para o seu seguro de viagem",
+        "details": "Uma emergência médica no estrangeiro pode custar dezenas de milhar de dólares. O seguro de viagem garante que tem acesso a cuidados de qualidade e que pode regressar a casa em segurança, sem que esse custo recaia sobre si ou a sua família. A Detondo disponibiliza coberturas para viagens pontuais e para programas anuais com múltiplas viagens."
+      }
+    }
   },
   "business": {
     "eyebrow": "Seguro empresarial",
