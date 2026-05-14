@@ -1,10 +1,11 @@
 "use client";
 
-import { useActionState } from "react";
+import { useState, useActionState, useEffect } from "react";
 import { useFormStatus } from "react-dom";
 import { contactAction, type ContactState } from "@/app/[lang]/actions";
 import { ArrowIcon } from "@/components/ui/Button";
 import { CheckIcon } from "@/components/ui/Icons";
+import { trackEvent } from "@/lib/analytics";
 
 type FormDict = {
   name: string;
@@ -83,6 +84,17 @@ export function ContactForm({
 }) {
   const [state, formAction] = useActionState(contactAction, INITIAL);
   const e = state.errors ?? {};
+  const [fields, setFields] = useState({ name: "", email: "", phone: "", message: "" });
+  const update =
+    (key: keyof typeof fields) =>
+    (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+      setFields((f) => ({ ...f, [key]: ev.target.value }));
+
+  useEffect(() => {
+    if (state.status === "success") {
+      trackEvent("generate_lead", { locale });
+    }
+  }, [state.status, locale]);
 
   const errorLabel = (key: keyof FormDict["errors"]) =>
     dict.errors[key];
@@ -111,11 +123,11 @@ export function ContactForm({
         aria-hidden
         className="pointer-events-none absolute -left-[9999px] h-0 w-0 overflow-hidden"
       >
-        <label htmlFor="website">Website</label>
+        <label htmlFor="_hp_url">Url</label>
         <input
           type="text"
-          id="website"
-          name="website"
+          id="_hp_url"
+          name="_hp_url"
           tabIndex={-1}
           autoComplete="off"
         />
@@ -129,6 +141,8 @@ export function ContactForm({
             name="name"
             autoComplete="name"
             required
+            value={fields.name}
+            onChange={update("name")}
             aria-invalid={!!e.name}
             aria-describedby={e.name ? "contact-name-error" : undefined}
             placeholder={dict.namePlaceholder}
@@ -150,6 +164,8 @@ export function ContactForm({
             name="email"
             autoComplete="email"
             required
+            value={fields.email}
+            onChange={update("email")}
             aria-invalid={!!e.email}
             aria-describedby={e.email ? "contact-email-error" : undefined}
             placeholder={dict.emailPlaceholder}
@@ -177,6 +193,8 @@ export function ContactForm({
           type="tel"
           name="phone"
           autoComplete="tel"
+          value={fields.phone}
+          onChange={update("phone")}
           placeholder={dict.phonePlaceholder}
           className={fieldBase}
         />
@@ -188,6 +206,8 @@ export function ContactForm({
           name="message"
           rows={6}
           required
+          value={fields.message}
+          onChange={update("message")}
           aria-invalid={!!e.message}
           aria-describedby={e.message ? "contact-message-error" : undefined}
           placeholder={dict.messagePlaceholder}

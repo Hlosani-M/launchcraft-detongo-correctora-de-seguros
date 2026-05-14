@@ -1,6 +1,9 @@
+"use client";
+
 import { LinkButton } from "@/components/ui/Button";
 import { ParallelogramAccent } from "@/components/ui/ParallelogramAccent";
 import { ArrowIcon } from "@/components/ui/Button";
+import { trackEvent } from "@/lib/analytics";
 
 type Dict = {
   title: string;
@@ -37,7 +40,7 @@ export function CtaBand({ lang, dict }: { lang: string; dict: Dict }) {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3 lg:justify-end">
-            <LinkButton href={`/${lang}/contact`} size="lg" variant="primary">
+            <LinkButton href={`/${lang}/contact`} size="lg" variant="primary" onClick={() => trackEvent("cta_click", { source: "cta_band" })}>
               {dict.primaryCta}
               <ArrowIcon />
             </LinkButton>

@@ -1,14 +1,6 @@
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { ServiceCard } from "@/components/ui/ServiceCard";
-import {
-  CarIcon,
-  HomeIcon,
-  BoxIcon,
-  ShieldIcon,
-  ScaleIcon,
-  PlaneIcon,
-} from "@/components/ui/Icons";
 
 type Item = { id: string; name: string; description: string };
 
@@ -19,13 +11,13 @@ type Dict = {
   items: Item[];
 };
 
-const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
-  motor: CarIcon,
-  building: HomeIcon,
-  "home-contents": BoxIcon,
-  "all-risks": ShieldIcon,
-  liability: ScaleIcon,
-  travel: PlaneIcon,
+const IMAGES: Record<string, string> = {
+  motor: "/personal/car-cover.jpg",
+  building: "/personal/building-cover.jpg",
+  "home-contents": "/personal/home-content.jpg",
+  "all-risks": "/personal/all-risk.jpg",
+  liability: "/personal/personal-liability.jpg",
+  travel: "/personal/travel.jpg",
 };
 
 export function PersonalInsurance({
@@ -46,19 +38,16 @@ export function PersonalInsurance({
       description={dict.description}
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {dict.items.map((item, i) => {
-          const Icon = ICONS[item.id] ?? ShieldIcon;
-          return (
-            <Reveal key={item.id} delay={i * 0.04}>
-              <ServiceCard
-                tone="light"
-                name={item.name}
-                description={item.description}
-                icon={<Icon className="h-5 w-5" />}
-              />
-            </Reveal>
-          );
-        })}
+        {dict.items.map((item, i) => (
+          <Reveal key={item.id} delay={i * 0.04}>
+            <ServiceCard
+              tone="light"
+              name={item.name}
+              description={item.description}
+              image={IMAGES[item.id]}
+            />
+          </Reveal>
+        ))}
       </div>
       <div className="mt-10">
         <a

@@ -124,9 +124,9 @@
     "viewCertificate": "Ver certificado"
   },
   "partners": {
-    "eyebrow": "Seguradoras parceiras",
-    "title": "Trabalhamos com as principais seguradoras a operar em Angola",
-    "description": "Colocamos negócio com as principais seguradoras do mercado angolano, o que garante aos nossos clientes mais capacidade, melhores preços e gestão de sinistros mais sólida.",
+    "eyebrow": "Parceiros",
+    "title": "Seguradoras e resseguradoras com quem trabalhamos",
+    "description": "Colocamos negócio com as principais seguradoras do mercado angolano e com resseguradoras internacionais de referência, o que garante aos nossos clientes maior capacidade, melhores preços e gestão de sinistros mais sólida.",
     "items": [
       "ENSA Seguros",
       "Nossa Seguros",
@@ -137,8 +137,15 @@
       "Proteja Seguros",
       "Viva Seguros",
       "Unisaúde Seguros",
-      "Fortaleza Seguros"
-    ]
+      "Fortaleza Seguros",
+      "Harmonia Seguros S.A.",
+      "Aliança Seguros",
+      "Mundial Seguros"
+    ],
+    "reinsurers": {
+      "title": "Resseguradoras internacionais",
+      "items": ["Swiss Re", "Munich Re", "Lloyd's of London"]
+    }
   },
   "vision": {
     "eyebrow": "Visão e valores",

@@ -124,9 +124,9 @@
     "viewCertificate": "View certificate"
   },
   "partners": {
-    "eyebrow": "Insurer partners",
-    "title": "We work with the leading insurers in Angola",
-    "description": "We place business with the major insurers in the Angolan market, which gives our clients more capacity, better pricing, and reliable claims-handling.",
+    "eyebrow": "Partners",
+    "title": "Insurers and reinsurers we work with",
+    "description": "We place business with the major insurers in the Angolan market and with leading international reinsurers, giving our clients more capacity, better pricing, and reliable claims-handling.",
     "items": [
       "ENSA Seguros",
       "Nossa Seguros",
@@ -137,8 +137,15 @@
       "Proteja Seguros",
       "Viva Seguros",
       "Unisaúde Seguros",
-      "Fortaleza Seguros"
-    ]
+      "Fortaleza Seguros",
+      "Harmonia Seguros S.A.",
+      "Aliança Seguros",
+      "Mundial Seguros"
+    ],
+    "reinsurers": {
+      "title": "International reinsurers",
+      "items": ["Swiss Re", "Munich Re", "Lloyd's of London"]
+    }
   },
   "vision": {
     "eyebrow": "Vision and values",

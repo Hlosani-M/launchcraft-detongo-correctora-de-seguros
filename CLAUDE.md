@@ -124,7 +124,7 @@ These slipped through the initial build. They are not separate tasks — fix eac
 
 - `components/sections/Testimonials.tsx` — hardcoded Portuguese `aria-label`s (`Testemunho ${i + 1}`, `Anterior`, `Próximo`). Route them through `dict.testimonials.a11y.*` (add the keys to both dictionaries).
 - `app/[lang]/not-found.tsx` — bilingual side-by-side text is hardcoded. The route has `lang`; use `getDictionary(lang)` and render `dict.notFound.*` (keys already exist in both dictionaries).
-- `lib/email/provider.ts` — `renderContactText` / `renderContactHtml` field labels are English-only. Either localize via `message.locale` or document in that file the deliberate decision to keep it English for internal staff and update this bullet when done.
+- `lib/email/provider.ts` — templates are intentionally in Portuguese (staff-facing notifications). Decision documented in that file.
 
 The top-level `app/not-found.tsx` is allowed to stay bilingual-at-once because it renders before any locale is known. Do not "fix" it.
 

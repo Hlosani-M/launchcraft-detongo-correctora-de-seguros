@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowIcon } from "@/components/ui/Button";
 import { ParallelogramAccent } from "@/components/ui/ParallelogramAccent";
+import { trackEvent } from "@/lib/analytics";
 
 type HeroDict = {
   eyebrow: string;
@@ -91,6 +92,7 @@ export function Hero({ lang, dict }: { lang: string; dict: HeroDict }) {
           >
             <Link
               href={`/${lang}/contact`}
+              onClick={() => trackEvent("cta_click", { source: "hero" })}
               className="inline-flex items-center gap-2 rounded-full bg-brand-azure px-7 py-3.5 text-base font-semibold text-brand-navy transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-azure-bright shadow-[0_14px_40px_-18px_rgba(5,187,251,0.9)]"
             >
               {dict.primaryCta}

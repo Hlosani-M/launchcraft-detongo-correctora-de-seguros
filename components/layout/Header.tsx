@@ -8,6 +8,7 @@ import type { Locale } from "@/app/[lang]/dictionaries";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { Logo } from "@/components/layout/Logo";
 import { LinkButton } from "@/components/ui/Button";
+import { trackEvent } from "@/lib/analytics";
 
 type HeaderDict = {
   brand: string;
@@ -127,6 +128,7 @@ export function Header({
               href={`/${lang}/contact`}
               size="md"
               variant="primary"
+              onClick={() => trackEvent("cta_click", { source: "header" })}
             >
               {dict.cta.quote}
             </LinkButton>
@@ -207,6 +209,7 @@ export function Header({
             size="lg"
             variant="primary"
             className="shadow-[0_8px_32px_-8px_rgba(5,187,251,0.6)]"
+            onClick={() => trackEvent("cta_click", { source: "floating_cta" })}
           >
             {dict.cta.quote}
           </LinkButton>
