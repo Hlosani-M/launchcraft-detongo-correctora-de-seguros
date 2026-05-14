@@ -33,6 +33,9 @@ const escapeHtml = (value: string) =>
     .replace(/'/g, "&#039;");
 
 export function renderContactHtml(message: ContactMessage): string {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://detondocorretora.com";
+  const logoUrl = `${siteUrl}/logo-transparent.png`;
   const phoneRow = message.phone
     ? `<tr><td style="padding:4px 0;color:#7D808C">Telefone</td><td style="padding:4px 0;color:#171A35">${escapeHtml(message.phone)}</td></tr>`
     : "";
@@ -42,8 +45,17 @@ export function renderContactHtml(message: ContactMessage): string {
     <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:560px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid rgba(125,128,140,0.15)">
       <tr>
         <td style="background:#171A35;padding:20px 28px;color:#FBFCFC">
-          <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#05BBFB;font-weight:600">Detondo · Novo contacto</div>
-          <div style="font-size:20px;font-weight:700;margin-top:6px">${escapeHtml(message.name)}</div>
+          <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td style="vertical-align:middle">
+                <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#05BBFB;font-weight:600">Detondo &middot; Novo contacto</div>
+                <div style="font-size:20px;font-weight:700;margin-top:6px">${escapeHtml(message.name)}</div>
+              </td>
+              <td style="vertical-align:top;text-align:right;width:48px;padding-left:16px">
+                <img src="${logoUrl}" alt="Detondo" width="44" height="44" style="display:block;margin-left:auto" />
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
       <tr>
