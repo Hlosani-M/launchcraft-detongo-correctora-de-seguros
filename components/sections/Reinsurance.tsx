@@ -97,16 +97,6 @@ export function Reinsurance({
           </div>
         </Reveal>
       </div>
-
-      <div className="mt-10">
-        <a
-          href={`/${lang}/services/reinsurance`}
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-azure transition-all hover:gap-2.5"
-        >
-          {cta}
-          <span aria-hidden>→</span>
-        </a>
-      </div>
     </Section>
   );
 }

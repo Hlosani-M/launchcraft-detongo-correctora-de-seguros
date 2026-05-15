@@ -51,15 +51,6 @@ export function PersonalInsurance({
           </Reveal>
         ))}
       </div>
-      <div className="mt-10">
-        <a
-          href={`/${lang}/services/personal`}
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-azure-dim transition-all hover:gap-2.5 hover:text-brand-azure"
-        >
-          {cta}
-          <span aria-hidden>→</span>
-        </a>
-      </div>
     </Section>
   );
 }
