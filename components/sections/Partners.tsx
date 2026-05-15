@@ -17,6 +17,7 @@ type LogoEntry = {
   src: string;
   width: number;
   height: number;
+  url?: string;
   /** Extra padding class for the card — defaults to "p-5" */
   padding?: string;
   /** Extra classes applied to the card <li> (e.g. dark background) */
@@ -26,22 +27,22 @@ type LogoEntry = {
 };
 
 const LOGO_MAP: Record<string, LogoEntry> = {
-      "ENSA Seguros":         { src: "/partners/ensa-logo.jpg",      width: 320, height: 120 },
-  "Nossa Seguros":        { src: "/partners/nossa-logo.png",     width: 320, height: 120 },
-  "BIC Seguros":          { src: "/partners/bic-logo.png",       width: 320, height: 120 },
-  "Sanlam Seguros":       { src: "/partners/sanlam-logo.svg",    width: 320, height: 120 },
-  "Fidelidade Seguros":   { src: "/partners/fidelidade-logo.png",width: 320, height: 120 },
-  "STAS Seguros":         { src: "/partners/sta-logo.png",       width: 320, height: 120 },
-  "Proteja Seguros":      { src: "/partners/protteja-logo.png",  width: 320, height: 120 },
-  "Viva Seguros":         { src: "/partners/viva-logo.png",      width: 320, height: 120 },
-  "Unisaúde Seguros":     { src: "/partners/unisaude-logo.png",  width: 320, height: 120 },
-  "Fortaleza Seguros":    { src: "/partners/fortaleza-logo.svg", width: 320, height: 120 },
-  "Harmonia Seguros S.A.":{ src: "/partners/harmonia-logo.png",  width: 320, height: 120 },
-  "Aliança Seguros":      { src: "/partners/alianca.jpeg",       width: 320, height: 120 },
-  "Mundial Seguros":      { src: "/partners/mudial-logo.png",    width: 320, height: 120 },
-  "Swiss Re":             { src: "/partners/swiss-logo.png",     width: 320, height: 120 },
-  "Munich Re":            { src: "/partners/munich-logo.png",    width: 320, height: 120 },
-  "Lloyd's of London":    { src: "/partners/lloyds-logo.png",    width: 320, height: 120, cardClass: "bg-brand-navy ring-brand-navy/30 hover:ring-brand-azure/60", padding: "p-4" },
+  "ENSA Seguros":          { src: "/partners/ensa-logo.jpg",       width: 320, height: 120, url: "https://www.ensa.co.ao/" },
+  "Nossa Seguros":         { src: "/partners/nossa-logo.png",      width: 320, height: 120, url: "https://www.nossaseguros.ao/" },
+  "BIC Seguros":           { src: "/partners/bic-logo.png",        width: 320, height: 120, url: "https://www.bicseguros.ao/" },
+  "Sanlam Seguros":        { src: "/partners/sanlam-logo.svg",     width: 320, height: 120, url: "https://www.sanlamallianz.com/" },
+  "Fidelidade Seguros":    { src: "/partners/fidelidade-logo.png", width: 320, height: 120, url: "https://www.fidelidade.co.ao/" },
+  "STAS Seguros":          { src: "/partners/sta-logo.png",        width: 320, height: 120, url: "https://stas.co.ao/" },
+  "Proteja Seguros":       { src: "/partners/protteja-logo.png",   width: 320, height: 120, url: "https://www.prottejaseguros.co.ao/" },
+  "Viva Seguros":          { src: "/partners/viva-logo.png",       width: 320, height: 120, url: "https://www.vivaseguros.ao/" },
+  "Unisaúde Seguros":      { src: "/partners/unisaude-logo.png",   width: 320, height: 120, url: "https://unisaude.co.ao/" },
+  "Fortaleza Seguros":     { src: "/partners/fortaleza-logo.svg",  width: 320, height: 120, url: "https://www.fortalezaseguros.ao/" },
+  "Harmonia Seguros S.A.": { src: "/partners/harmonia-logo.png",   width: 320, height: 120, url: "https://www.harmoniaseguros.co.ao/" },
+  "Aliança Seguros":       { src: "/partners/alianca.jpeg",        width: 320, height: 120, url: "http://www.aliancaseguros.ao/" },
+  "Mundial Seguros":       { src: "/partners/mudial-logo.png",     width: 320, height: 120, url: "https://www.mundial.co.ao/" },
+  "Swiss Re":              { src: "/partners/swiss-logo.png",      width: 320, height: 120, url: "https://www.swissre.com/" },
+  "Munich Re":             { src: "/partners/munich-logo.png",     width: 320, height: 120, url: "https://www.munichre.com/" },
+  "Lloyd's of London":     { src: "/partners/lloyds-logo.png",     width: 320, height: 120, url: "https://www.lloyds.com/", cardClass: "bg-brand-navy ring-brand-navy/30 hover:ring-brand-azure/60", padding: "p-4" },
 };
 
 function LogoCard({ name, sizes }: { name: string; sizes: string }) {
@@ -53,6 +54,15 @@ function LogoCard({ name, sizes }: { name: string; sizes: string }) {
       className={`group relative flex h-24 items-center justify-center overflow-hidden rounded-2xl ${cardClass} ${padding} ring-1 ring-brand-slate/15 shadow-[var(--shadow-soft)] transition-all duration-200 hover:-translate-y-0.5 hover:ring-brand-azure sm:h-28 lg:h-32`}
       title={name}
     >
+      {logo?.url && (
+        <a
+          href={logo.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={name}
+          className="absolute inset-0 z-10"
+        />
+      )}
       {logo ? (
         <Image
           src={logo.src}

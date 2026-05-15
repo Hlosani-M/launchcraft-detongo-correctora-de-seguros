@@ -32,7 +32,13 @@ export function AnpgCertification({ dict }: { dict: Dict }) {
           <div className="flex flex-col items-start gap-10 lg:flex-row lg:items-center lg:gap-16">
             <div className="relative flex-shrink-0">
               <div className="absolute inset-0 -m-4 rounded-3xl bg-brand-ivory/95 blur-2xl opacity-60" />
-              <div className="relative h-32 w-44 overflow-hidden rounded-3xl bg-brand-ivory ring-1 ring-brand-ivory/40 shadow-[var(--shadow-soft)] sm:h-40 sm:w-56">
+              <a
+                href="https://anpg.co.ao/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ANPG"
+                className="relative block h-32 w-44 overflow-hidden rounded-3xl bg-brand-ivory ring-1 ring-brand-ivory/40 shadow-[var(--shadow-soft)] transition-opacity hover:opacity-90 sm:h-40 sm:w-56"
+              >
                 <Image
                   src="/partners/anpg-logo.jpg"
                   alt="ANPG · Agência Nacional de Petróleo, Gás e Biocombustíveis de Angola"
@@ -41,7 +47,7 @@ export function AnpgCertification({ dict }: { dict: Dict }) {
                   className="object-cover"
                   priority={false}
                 />
-              </div>
+              </a>
             </div>
 
             <div className="flex-1">
