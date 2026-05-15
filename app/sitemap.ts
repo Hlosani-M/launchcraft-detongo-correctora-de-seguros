@@ -18,6 +18,10 @@ const ROUTES = [
   "/services/business",
   "/services/reinsurance",
   "/contact",
+  "/privacy-policy",
+  "/terms",
+  "/cookies",
+  "/disclaimer",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
