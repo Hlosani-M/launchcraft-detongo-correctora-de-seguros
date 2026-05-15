@@ -18,6 +18,22 @@
     "contact": {
       "title": "Contacto | Detondo",
       "description": "Fale com a nossa equipa em Luanda. Estamos disponíveis para cotações, esclarecimentos e gestão de sinistros."
+    },
+    "privacy": {
+      "title": "Politica de Privacidade | Detondo",
+      "description": "Como a Detondo Corretora de Seguros recolhe, utiliza e protege os seus dados pessoais."
+    },
+    "terms": {
+      "title": "Termos e Condicoes | Detondo",
+      "description": "Termos e condicoes de utilizacao dos servicos da Detondo Corretora de Seguros."
+    },
+    "cookies": {
+      "title": "Politica de Cookies | Detondo",
+      "description": "Informacao sobre os cookies utilizados pela Detondo Corretora de Seguros e como os gerir."
+    },
+    "disclaimer": {
+      "title": "Aviso Legal | Detondo",
+      "description": "Aviso legal e limitacoes de responsabilidade da Detondo Corretora de Seguros."
     }
   },
   "common": {
@@ -46,14 +62,57 @@
       "tagline": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017.",
       "builtBy": "Website desenvolvido por",
       "partner": "LaunchCraft",
-      "partnerUrl": "https://launchcraft.co.za/"
+      "partnerUrl": "https://launchcraft.co.za/",
+      "support": {
+        "heading": "Suporte",
+        "contact": "Contacto",
+        "faqs": "Perguntas frequentes",
+        "claims": "Apoio a sinistros",
+        "clientSupport": "Apoio ao cliente"
+      },
+      "legal": {
+        "heading": "Legal",
+        "privacy": "Politica de privacidade",
+        "terms": "Termos e condicoes",
+        "cookies": "Politica de cookies",
+        "disclaimer": "Aviso legal"
+      },
+      "regulatory": {
+        "heading": "Regulacao e Conformidade",
+        "arseg": "ARSEG",
+        "compliance": "Quadro de conformidade",
+        "aml": "Politica AML e KYC",
+        "notice": "Aviso regulatorio"
+      },
+      "corporate": {
+        "heading": "Corporativo",
+        "about": "Sobre nos",
+        "partners": "Os nossos parceiros",
+        "reinsurance": "Resseguros",
+        "solutions": "Solucoes corporativas"
+      },
+      "institutional": "A Detondo Corretora de Seguros assume o compromisso com a conformidade internacional, a confidencialidade dos clientes e praticas responsaveis de seguros e resseguros."
     },
     "locale": {
       "pt": "Português",
       "en": "English",
       "switchTo": "Mudar para"
     },
-    "skipToContent": "Saltar para o conteúdo"
+    "skipToContent": "Saltar para o conteúdo",
+    "cookieBanner": {
+      "message": "Utilizamos cookies para melhorar a sua experiencia de navegacao. Ao continuar, esta a aceitar a nossa utilizacao de cookies.",
+      "accept": "Aceitar todos",
+      "reject": "Recusar nao essenciais",
+      "learnMore": "Politica de cookies",
+      "prefsTitle": "Gerir preferencias de cookies",
+      "necessary": "Necessarios",
+      "necessaryDesc": "Cookies essenciais para o funcionamento do website. Nao podem ser desativados.",
+      "analytics": "Analitica",
+      "analyticsDesc": "Ajudam-nos a perceber como os visitantes utilizam o website.",
+      "marketing": "Marketing",
+      "marketingDesc": "Utilizados para apresentar conteudo relevante.",
+      "prefsSave": "Guardar preferencias"
+    }
   },
   "hero": {
     "eyebrow": "Seguros, resseguros e gestão de risco",
@@ -62,9 +121,18 @@
     "primaryCta": "Solicitar cotação",
     "secondaryCta": "Conhecer os serviços",
     "stats": [
-      { "value": "2017", "label": "Ano de fundação" },
-      { "value": "10+", "label": "Seguradoras parceiras" },
-      { "value": "ANPG", "label": "Certificação Petróleo & Gás" }
+      {
+        "value": "2017",
+        "label": "Ano de fundação"
+      },
+      {
+        "value": "10+",
+        "label": "Seguradoras parceiras"
+      },
+      {
+        "value": "ANPG",
+        "label": "Certificação Petróleo & Gás"
+      }
     ]
   },
   "whoWeAre": {
@@ -88,10 +156,22 @@
     "title": "A Detondo em números",
     "description": "Um resumo das bases que sustentam cada programa que colocamos.",
     "items": [
-      { "value": "2017", "label": "Ano de fundação" },
-      { "value": "10+", "label": "Seguradoras parceiras em Angola" },
-      { "value": "12+", "label": "Linhas de negócio especializadas" },
-      { "value": "ANPG", "label": "Certificada para Petróleo & Gás" }
+      {
+        "value": "2017",
+        "label": "Ano de fundação"
+      },
+      {
+        "value": "10+",
+        "label": "Seguradoras parceiras em Angola"
+      },
+      {
+        "value": "12+",
+        "label": "Linhas de negócio especializadas"
+      },
+      {
+        "value": "ANPG",
+        "label": "Certificada para Petróleo & Gás"
+      }
     ]
   },
   "sectors": {
@@ -157,7 +237,11 @@
     ],
     "reinsurers": {
       "title": "Resseguradoras internacionais",
-      "items": ["Swiss Re", "Munich Re", "Lloyd's of London"]
+      "items": [
+        "Swiss Re",
+        "Munich Re",
+        "Lloyd's of London"
+      ]
     }
   },
   "vision": {
@@ -377,22 +461,61 @@
     "title": "Cobertura para os sectores corporativo, energia e petróleo & gás",
     "description": "Os nossos especialistas identificam os riscos do negócio e desenham programas à medida, do seguro corporativo ao petróleo & gás, energia, marítimo e construção todos os riscos. Esquemas de grupo também disponíveis.",
     "items": [
-      { "id": "corporate", "name": "Seguro corporativo" },
-      { "id": "oil-gas", "name": "Seguro de petróleo & gás" },
-      { "id": "energy", "name": "Seguro de energia" },
-      { "id": "marine", "name": "Seguro marítimo" },
-      { "id": "construction-all-risks", "name": "Construção todos os riscos" },
-      { "id": "liability", "name": "Responsabilidade civil" },
-      { "id": "contractors", "name": "Empreiteiros todos os riscos" },
-      { "id": "professional-indemnity", "name": "Responsabilidade profissional" },
-      { "id": "goods-in-transit", "name": "Mercadorias em trânsito" },
-      { "id": "truck", "name": "Camiões e frotas" },
-      { "id": "aviation", "name": "Seguro de aviação" },
-      { "id": "agricultural", "name": "Seguro agrícola" }
+      {
+        "id": "corporate",
+        "name": "Seguro corporativo"
+      },
+      {
+        "id": "oil-gas",
+        "name": "Seguro de petróleo & gás"
+      },
+      {
+        "id": "energy",
+        "name": "Seguro de energia"
+      },
+      {
+        "id": "marine",
+        "name": "Seguro marítimo"
+      },
+      {
+        "id": "construction-all-risks",
+        "name": "Construção todos os riscos"
+      },
+      {
+        "id": "liability",
+        "name": "Responsabilidade civil"
+      },
+      {
+        "id": "contractors",
+        "name": "Empreiteiros todos os riscos"
+      },
+      {
+        "id": "professional-indemnity",
+        "name": "Responsabilidade profissional"
+      },
+      {
+        "id": "goods-in-transit",
+        "name": "Mercadorias em trânsito"
+      },
+      {
+        "id": "truck",
+        "name": "Camiões e frotas"
+      },
+      {
+        "id": "aviation",
+        "name": "Seguro de aviação"
+      },
+      {
+        "id": "agricultural",
+        "name": "Seguro agrícola"
+      }
     ],
     "groupTitle": "Esquemas de grupo",
     "groupDescription": "Também fornecemos soluções de seguro para esquemas de grupo, com a seguinte gama de coberturas:",
-    "groupItems": ["Acidente pessoal em grupo", "Seguro de saúde"]
+    "groupItems": [
+      "Acidente pessoal em grupo",
+      "Seguro de saúde"
+    ]
   },
   "reinsurance": {
     "eyebrow": "Resseguros e retrocessão",
@@ -616,5 +739,31 @@
     "title": "Página não encontrada",
     "description": "A página que procura não existe ou foi movida. Volte ao início para continuar a explorar.",
     "cta": "Voltar ao início"
+  },
+  "legalPages": {
+    "backHome": "Voltar ao inicio",
+    "contactUs": "Contacte-nos",
+    "lastUpdated": "Ultima atualizacao: Janeiro 2026",
+    "comingSoon": "Este conteudo esta a ser preparado. Por favor, contacte-nos directamente para mais informacoes.",
+    "privacy": {
+      "title": "Politica de Privacidade",
+      "intro": "A Detondo Corretora de Seguros respeita a sua privacidade e protege os seus dados pessoais em conformidade com a legislacao aplicavel.",
+      "body": "Este documento descreve como recolhemos, utilizamos e protegemos os dados pessoais dos nossos clientes e utilizadores do website. O conteudo completo desta politica esta a ser finalizado. Para esclarecimentos sobre o tratamento dos seus dados pessoais, contacte-nos directamente."
+    },
+    "terms": {
+      "title": "Termos e Condicoes",
+      "intro": "Ao utilizar os nossos servicos ou este website, concorda com os presentes termos e condicoes.",
+      "body": "Estes termos regem a utilizacao dos servicos da Detondo Corretora de Seguros, Lda. O conteudo completo esta a ser finalizado. Para esclarecimentos, contacte-nos directamente."
+    },
+    "cookies": {
+      "title": "Politica de Cookies",
+      "intro": "Utilizamos cookies para melhorar a experiencia de navegacao e analisar o desempenho do website.",
+      "body": "Os cookies sao pequenos ficheiros de texto armazenados no seu dispositivo. Utilizamos cookies essenciais para o funcionamento do website e, com o seu consentimento, cookies de analitica. Pode gerir as suas preferencias a qualquer momento atraves do banner de cookies ou das definicoes do seu browser."
+    },
+    "disclaimer": {
+      "title": "Aviso Legal",
+      "intro": "A informacao disponibilizada neste website tem caracter informativo e nao constitui aconselhamento juridico ou financeiro.",
+      "body": "A Detondo Corretora de Seguros, Lda. e uma corretora de seguros e resseguros regulada pela ARSEG - Agencia Angolana de Regulacao e Supervisao de Seguros. A informacao contida neste website destina-se a fins informativos gerais. Para aconselhamento especifico, consulte a nossa equipa directamente."
+    }
   }
 }

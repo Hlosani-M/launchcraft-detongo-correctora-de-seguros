@@ -6,6 +6,7 @@ import "../globals.css";
 import { getDictionary, hasLocale, LOCALES, type Locale } from "./dictionaries";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CookieBanner } from "@/components/layout/CookieBanner";
 import { OrganizationJsonLd } from "@/lib/jsonld";
 
 const geistSans = Geist({
@@ -98,6 +99,7 @@ export default async function LangLayout(props: LayoutProps<"/[lang]">) {
           {props.children}
         </main>
         <Footer lang={typedLang} dict={dict.common} />
+        <CookieBanner lang={typedLang} dict={dict.common.cookieBanner} />
         <OrganizationJsonLd lang={typedLang} dict={dict} siteUrl={siteUrl} />
         {gaId && process.env.NODE_ENV === "production" ? (
           <GoogleAnalytics gaId={gaId} />

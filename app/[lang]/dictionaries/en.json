@@ -18,6 +18,22 @@
     "contact": {
       "title": "Contact | Detondo",
       "description": "Talk to our team in Luanda. We are available for quotes, advice, and claims management."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Detondo",
+      "description": "How Detondo Corretora de Seguros collects, uses, and protects your personal data."
+    },
+    "terms": {
+      "title": "Terms & Conditions | Detondo",
+      "description": "Terms and conditions for using the services of Detondo Corretora de Seguros."
+    },
+    "cookies": {
+      "title": "Cookie Policy | Detondo",
+      "description": "Information about the cookies used by Detondo Corretora de Seguros and how to manage them."
+    },
+    "disclaimer": {
+      "title": "Disclaimer | Detondo",
+      "description": "Legal disclaimer and limitations of liability of Detondo Corretora de Seguros."
     }
   },
   "common": {
@@ -46,14 +62,57 @@
       "tagline": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017.",
       "builtBy": "Website built by",
       "partner": "LaunchCraft",
-      "partnerUrl": "https://launchcraft.co.za/"
+      "partnerUrl": "https://launchcraft.co.za/",
+      "support": {
+        "heading": "Support",
+        "contact": "Contact Us",
+        "faqs": "FAQs",
+        "claims": "Claims Support",
+        "clientSupport": "Client Support"
+      },
+      "legal": {
+        "heading": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions",
+        "cookies": "Cookie Policy",
+        "disclaimer": "Disclaimer"
+      },
+      "regulatory": {
+        "heading": "Regulatory & Compliance",
+        "arseg": "ARSEG",
+        "compliance": "Compliance Framework",
+        "aml": "AML & KYC Policy",
+        "notice": "Regulatory Notice"
+      },
+      "corporate": {
+        "heading": "Corporate",
+        "about": "About Us",
+        "partners": "Our Partners",
+        "reinsurance": "Reinsurance",
+        "solutions": "Corporate Solutions"
+      },
+      "institutional": "Detondo Corretora de Seguros is committed to international compliance, client confidentiality, and responsible insurance and reinsurance practices."
     },
     "locale": {
       "pt": "Português",
       "en": "English",
       "switchTo": "Switch to"
     },
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "cookieBanner": {
+      "message": "We use cookies to improve your browsing experience. By continuing, you agree to our use of cookies.",
+      "accept": "Accept All",
+      "reject": "Reject Non-Essential",
+      "learnMore": "Cookie Policy",
+      "prefsTitle": "Manage cookie preferences",
+      "necessary": "Necessary",
+      "necessaryDesc": "Essential cookies required for the website to function. Cannot be disabled.",
+      "analytics": "Analytics",
+      "analyticsDesc": "Help us understand how visitors use the website.",
+      "marketing": "Marketing",
+      "marketingDesc": "Used to show relevant content.",
+      "prefsSave": "Save preferences"
+    }
   },
   "hero": {
     "eyebrow": "Insurance, reinsurance & risk management",
@@ -62,9 +121,18 @@
     "primaryCta": "Get a quote",
     "secondaryCta": "Explore services",
     "stats": [
-      { "value": "2017", "label": "Year founded" },
-      { "value": "10+", "label": "Partner insurers" },
-      { "value": "ANPG", "label": "Oil & Gas certified" }
+      {
+        "value": "2017",
+        "label": "Year founded"
+      },
+      {
+        "value": "10+",
+        "label": "Partner insurers"
+      },
+      {
+        "value": "ANPG",
+        "label": "Oil & Gas certified"
+      }
     ]
   },
   "whoWeAre": {
@@ -88,10 +156,22 @@
     "title": "Detondo by the numbers",
     "description": "A short read on the foundations behind every programme we place.",
     "items": [
-      { "value": "2017", "label": "Year founded" },
-      { "value": "10+", "label": "Insurer partners in Angola" },
-      { "value": "12+", "label": "Specialist business lines" },
-      { "value": "ANPG", "label": "Certified for Oil & Gas" }
+      {
+        "value": "2017",
+        "label": "Year founded"
+      },
+      {
+        "value": "10+",
+        "label": "Insurer partners in Angola"
+      },
+      {
+        "value": "12+",
+        "label": "Specialist business lines"
+      },
+      {
+        "value": "ANPG",
+        "label": "Certified for Oil & Gas"
+      }
     ]
   },
   "sectors": {
@@ -157,7 +237,11 @@
     ],
     "reinsurers": {
       "title": "International reinsurers",
-      "items": ["Swiss Re", "Munich Re", "Lloyd's of London"]
+      "items": [
+        "Swiss Re",
+        "Munich Re",
+        "Lloyd's of London"
+      ]
     }
   },
   "vision": {
@@ -377,22 +461,61 @@
     "title": "Cover for the corporate, energy, and oil & gas sectors",
     "description": "Our specialists identify business risks and design tailored programmes for everything from corporate covers to oil & gas, energy, marine, and construction all risks. Group schemes are also available.",
     "items": [
-      { "id": "corporate", "name": "Corporate insurance" },
-      { "id": "oil-gas", "name": "Oil & gas insurance" },
-      { "id": "energy", "name": "Energy insurance" },
-      { "id": "marine", "name": "Marine insurance" },
-      { "id": "construction-all-risks", "name": "Construction all risks" },
-      { "id": "liability", "name": "Liability insurance" },
-      { "id": "contractors", "name": "Contractors all risks" },
-      { "id": "professional-indemnity", "name": "Professional indemnity" },
-      { "id": "goods-in-transit", "name": "Goods in transit" },
-      { "id": "truck", "name": "Truck & fleet insurance" },
-      { "id": "aviation", "name": "Aviation insurance" },
-      { "id": "agricultural", "name": "Agricultural insurance" }
+      {
+        "id": "corporate",
+        "name": "Corporate insurance"
+      },
+      {
+        "id": "oil-gas",
+        "name": "Oil & gas insurance"
+      },
+      {
+        "id": "energy",
+        "name": "Energy insurance"
+      },
+      {
+        "id": "marine",
+        "name": "Marine insurance"
+      },
+      {
+        "id": "construction-all-risks",
+        "name": "Construction all risks"
+      },
+      {
+        "id": "liability",
+        "name": "Liability insurance"
+      },
+      {
+        "id": "contractors",
+        "name": "Contractors all risks"
+      },
+      {
+        "id": "professional-indemnity",
+        "name": "Professional indemnity"
+      },
+      {
+        "id": "goods-in-transit",
+        "name": "Goods in transit"
+      },
+      {
+        "id": "truck",
+        "name": "Truck & fleet insurance"
+      },
+      {
+        "id": "aviation",
+        "name": "Aviation insurance"
+      },
+      {
+        "id": "agricultural",
+        "name": "Agricultural insurance"
+      }
     ],
     "groupTitle": "Group schemes",
     "groupDescription": "We also provide insurance solutions for group schemes, with the following range of covers:",
-    "groupItems": ["Group personal accident", "Health insurance"]
+    "groupItems": [
+      "Group personal accident",
+      "Health insurance"
+    ]
   },
   "reinsurance": {
     "eyebrow": "Reinsurance and retrocession",
@@ -616,5 +739,31 @@
     "title": "Page not found",
     "description": "The page you are looking for doesn't exist or has been moved. Head back home to keep exploring.",
     "cta": "Back to home"
+  },
+  "legalPages": {
+    "backHome": "Back to homepage",
+    "contactUs": "Contact us",
+    "lastUpdated": "Last updated: January 2026",
+    "comingSoon": "This content is being prepared. Please contact us directly for more information.",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "Detondo Corretora de Seguros respects your privacy and protects your personal data in accordance with applicable law.",
+      "body": "This document describes how we collect, use, and protect the personal data of our clients and website users. The full content of this policy is being finalised. For clarification on the handling of your personal data, please contact us directly."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "intro": "By using our services or this website, you agree to these terms and conditions.",
+      "body": "These terms govern the use of the services of Detondo Corretora de Seguros, Lda. Full content is being finalised. For clarification, please contact us directly."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "intro": "We use cookies to improve your browsing experience and analyse website performance.",
+      "body": "Cookies are small text files stored on your device. We use essential cookies for website functionality and, with your consent, analytics cookies. You can manage your preferences at any time through the cookie banner or your browser settings."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "intro": "The information provided on this website is for informational purposes only and does not constitute legal or financial advice.",
+      "body": "Detondo Corretora de Seguros, Lda. is an insurance and reinsurance brokerage regulated by ARSEG - the Angolan Insurance Supervision and Regulation Agency. The information on this website is intended for general informational purposes. For specific advice, please consult our team directly."
+    }
   }
 }
