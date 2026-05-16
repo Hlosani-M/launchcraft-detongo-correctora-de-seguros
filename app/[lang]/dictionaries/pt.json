@@ -117,7 +117,8 @@
         "about": "Sobre nos",
         "partners": "Os nossos parceiros",
         "reinsurance": "Resseguros",
-        "solutions": "Solucoes corporativas"
+        "solutions": "Solucoes corporativas",
+        "mining": "Seguros de Mineracao"
       },
       "institutional": "A Detondo Corretora de Seguros assume o compromisso com a conformidade internacional, a confidencialidade dos clientes e praticas responsaveis de seguros e resseguros."
     },
@@ -205,7 +206,7 @@
   "sectors": {
     "eyebrow": "Sectores que servimos",
     "title": "Sectores que conhecemos bem",
-    "description": "A Detondo concentra-se em três áreas onde as empresas angolanas mais precisam de uma mão firme: corporativo, energia e petróleo & gás. Desenhamos programas de risco que cumprem padrões internacionais.",
+    "description": "A Detondo concentra-se em corporativo, energia, petróleo & gás e mineração, as áreas onde as empresas angolanas mais precisam de apoio especializado. Desenhamos programas de risco que cumprem padrões internacionais.",
     "items": [
       {
         "id": "corporate",
@@ -221,6 +222,11 @@
         "id": "oilgas",
         "name": "Petróleo & Gás",
         "description": "Coberturas upstream, midstream e downstream. A Detondo está certificada pela ANPG para prestar bens e serviços ao sector de Petróleo e Gás em Angola."
+      },
+      {
+        "id": "mining",
+        "name": "Mineração & Recursos Minerais",
+        "description": "Soluções de seguros especializadas para empresas mineiras, projectos de exploração mineral, pedreiras e operações de pedra natural. Estruturamos programas adaptados para gerir a exposição operacional, financeira e de risco em toda a cadeia de valor mineira."
       }
     ]
   },
@@ -484,8 +490,8 @@
   },
   "business": {
     "eyebrow": "Seguro empresarial",
-    "title": "Cobertura para os sectores corporativo, energia e petróleo & gás",
-    "description": "Os nossos especialistas identificam os riscos do negócio e desenham programas à medida, do seguro corporativo ao petróleo & gás, energia, marítimo e construção todos os riscos. Esquemas de grupo também disponíveis.",
+    "title": "Cobertura para os sectores corporativo, energia, petróleo & gás e mineração",
+    "description": "Os nossos especialistas identificam os riscos do negócio e desenham programas à medida, do seguro corporativo ao petróleo & gás, energia, marítimo, construção todos os riscos e operações mineiras. Esquemas de grupo também disponíveis.",
     "items": [
       {
         "id": "corporate",
@@ -534,6 +540,10 @@
       {
         "id": "agricultural",
         "name": "Seguro agrícola"
+      },
+      {
+        "id": "mining",
+        "name": "Seguro de mineração"
       }
     ],
     "groupTitle": "Esquemas de grupo",
@@ -582,6 +592,60 @@
       "Consultoria de reclamações",
       "Consultoria estratégica de risco",
       "Segurança cibernética e consultoria financeira"
+    ]
+  },
+  "mining": {
+    "eyebrow": "Mineração & Recursos Minerais",
+    "title": "Soluções de Seguros para Mineração",
+    "description": "Programas de seguros adaptados para empresas mineiras, projectos de exploração mineral, pedreiras e operações de pedra natural em Angola. Cobrimos toda a cadeia de valor mineira, desde a extracção até ao transporte e exportação.",
+    "categories": [
+      {
+        "id": "equipment",
+        "title": "Equipamento Pesado & Maquinaria",
+        "items": [
+          "Escavadoras",
+          "Equipamento de perfuração",
+          "Camiões mineiros",
+          "Maquinaria industrial"
+        ]
+      },
+      {
+        "id": "liability",
+        "title": "Seguro de Responsabilidade Civil",
+        "items": [
+          "Responsabilidade operacional mineira",
+          "Responsabilidade ambiental",
+          "Responsabilidade civil perante terceiros"
+        ]
+      },
+      {
+        "id": "transport",
+        "title": "Transporte & Logística",
+        "items": [
+          "Transporte de minerais",
+          "Seguro de carga",
+          "Cobertura marítima e de trânsito"
+        ]
+      },
+      {
+        "id": "people",
+        "title": "Protecção de Pessoas",
+        "items": [
+          "Seguro de saúde",
+          "Seguro de vida",
+          "Acidentes de trabalho",
+          "Evacuação médica"
+        ]
+      },
+      {
+        "id": "operational",
+        "title": "Riscos Operacionais",
+        "items": [
+          "Danos patrimoniais",
+          "Interrupção de negócio",
+          "Riscos de construção e engenharia"
+        ]
+      }
     ]
   },
   "treaty": {

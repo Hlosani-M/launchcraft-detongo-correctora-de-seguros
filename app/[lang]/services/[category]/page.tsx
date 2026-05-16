@@ -5,13 +5,14 @@ import { getDictionary, hasLocale, type Locale } from "../../dictionaries";
 import { PersonalInsurance } from "@/components/sections/PersonalInsurance";
 import { BusinessInsurance } from "@/components/sections/BusinessInsurance";
 import { Reinsurance } from "@/components/sections/Reinsurance";
+import { MiningInsurance } from "@/components/sections/MiningInsurance";
 import { TreatyAlternative } from "@/components/sections/TreatyAlternative";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { ParallelogramAccent } from "@/components/ui/ParallelogramAccent";
 
-const CATEGORIES = ["personal", "business", "reinsurance"] as const;
+const CATEGORIES = ["personal", "business", "reinsurance", "mining"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 const isCategory = (v: string): v is Category =>
@@ -35,13 +36,17 @@ export async function generateMetadata(
       ? dict.personal.title
       : category === "business"
         ? dict.business.title
-        : dict.reinsurance.title;
+        : category === "mining"
+          ? dict.mining.title
+          : dict.reinsurance.title;
   const description =
     category === "personal"
       ? dict.personal.description
       : category === "business"
         ? dict.business.description
-        : dict.reinsurance.description;
+        : category === "mining"
+          ? dict.mining.description
+          : dict.reinsurance.description;
   return {
     title,
     description,
@@ -68,7 +73,9 @@ export default async function CategoryPage(
       ? { eyebrow: dict.personal.eyebrow, title: dict.personal.title, description: dict.personal.description }
       : category === "business"
         ? { eyebrow: dict.business.eyebrow, title: dict.business.title, description: dict.business.description }
-        : { eyebrow: dict.reinsurance.eyebrow, title: dict.reinsurance.title, description: dict.reinsurance.description };
+        : category === "mining"
+          ? { eyebrow: dict.mining.eyebrow, title: dict.mining.title, description: dict.mining.description }
+          : { eyebrow: dict.reinsurance.eyebrow, title: dict.reinsurance.title, description: dict.reinsurance.description };
 
   return (
     <>
@@ -150,6 +157,10 @@ export default async function CategoryPage(
           dict={dict.business}
           cta={dict.common.cta.learnMore}
         />
+      ) : null}
+
+      {category === "mining" ? (
+        <MiningInsurance dict={dict.mining} />
       ) : null}
 
       {category === "reinsurance" ? (

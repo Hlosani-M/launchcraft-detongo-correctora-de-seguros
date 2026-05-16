@@ -117,7 +117,8 @@
         "about": "About Us",
         "partners": "Our Partners",
         "reinsurance": "Reinsurance",
-        "solutions": "Corporate Solutions"
+        "solutions": "Corporate Solutions",
+        "mining": "Mining Insurance"
       },
       "institutional": "Detondo Corretora de Seguros is committed to international compliance, client confidentiality, and responsible insurance and reinsurance practices."
     },
@@ -205,7 +206,7 @@
   "sectors": {
     "eyebrow": "Sectors we serve",
     "title": "Sectors we know best",
-    "description": "Detondo focuses on three areas where Angolan businesses most need a steady hand: corporate, energy, and oil & gas. We design risk programmes that meet international standards.",
+    "description": "Detondo focuses on corporate, energy, oil & gas, and mining, the sectors where Angolan businesses most need a steady hand. We design risk programmes that meet international standards.",
     "items": [
       {
         "id": "corporate",
@@ -221,6 +222,11 @@
         "id": "oilgas",
         "name": "Oil & Gas",
         "description": "Upstream, midstream, and downstream cover. Detondo is certified by ANPG to provide goods and services to Angola's Oil & Gas sector."
+      },
+      {
+        "id": "mining",
+        "name": "Mining & Mineral Resources",
+        "description": "Specialised insurance solutions for mining companies, mineral exploration projects, quarries, and natural stone operations. We structure tailored programmes to manage operational, financial, and risk exposure across the mining value chain."
       }
     ]
   },
@@ -484,8 +490,8 @@
   },
   "business": {
     "eyebrow": "Business insurance",
-    "title": "Cover for the corporate, energy, and oil & gas sectors",
-    "description": "Our specialists identify business risks and design tailored programmes for everything from corporate covers to oil & gas, energy, marine, and construction all risks. Group schemes are also available.",
+    "title": "Cover for the corporate, energy, oil & gas, and mining sectors",
+    "description": "Our specialists identify business risks and design tailored programmes for everything from corporate covers to oil & gas, energy, marine, construction all risks, and mining operations. Group schemes are also available.",
     "items": [
       {
         "id": "corporate",
@@ -534,6 +540,10 @@
       {
         "id": "agricultural",
         "name": "Agricultural insurance"
+      },
+      {
+        "id": "mining",
+        "name": "Mining insurance"
       }
     ],
     "groupTitle": "Group schemes",
@@ -582,6 +592,60 @@
       "Claims consultancy",
       "Strategic risk consultancy",
       "Cyber security and financial advisory"
+    ]
+  },
+  "mining": {
+    "eyebrow": "Mining & Mineral Resources",
+    "title": "Mining Insurance Solutions",
+    "description": "Tailored insurance programmes for mining companies, mineral exploration projects, quarries, and natural stone operations across Angola. We cover the full mining value chain, from extraction through to transport and export.",
+    "categories": [
+      {
+        "id": "equipment",
+        "title": "Heavy Equipment & Machinery",
+        "items": [
+          "Excavators",
+          "Drilling equipment",
+          "Mining trucks",
+          "Industrial machinery"
+        ]
+      },
+      {
+        "id": "liability",
+        "title": "Liability Insurance",
+        "items": [
+          "Mining operational liability",
+          "Environmental liability",
+          "Third-party liability"
+        ]
+      },
+      {
+        "id": "transport",
+        "title": "Transport & Logistics",
+        "items": [
+          "Mineral transportation",
+          "Cargo insurance",
+          "Marine and transit coverage"
+        ]
+      },
+      {
+        "id": "people",
+        "title": "People Protection",
+        "items": [
+          "Health insurance",
+          "Life insurance",
+          "Workers compensation",
+          "Medical evacuation"
+        ]
+      },
+      {
+        "id": "operational",
+        "title": "Operational Risks",
+        "items": [
+          "Property damage",
+          "Business interruption",
+          "Construction and engineering risks"
+        ]
+      }
     ]
   },
   "treaty": {

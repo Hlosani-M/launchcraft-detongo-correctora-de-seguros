@@ -16,6 +16,7 @@ const ROUTES = [
   "/services/personal/liability",
   "/services/personal/travel",
   "/services/business",
+  "/services/mining",
   "/services/reinsurance",
   "/contact",
   "/privacy-policy",

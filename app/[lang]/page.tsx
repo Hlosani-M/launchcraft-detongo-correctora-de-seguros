@@ -25,7 +25,7 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
       <Hero lang={lang} dict={dict.hero} />
       <WhoWeAre chapter="01" dict={dict.whoWeAre} />
       <Numbers dict={dict.numbers} />
-      <Sectors chapter="03" dict={dict.sectors} />
+      <Sectors chapter="03" lang={lang} dict={dict.sectors} />
       <AnpgCertification dict={dict.anpg} />
       <ArSegCompliance dict={dict.arseg} />
       <VisionValues dict={dict.vision} />

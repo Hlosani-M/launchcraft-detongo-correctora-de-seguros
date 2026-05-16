@@ -243,3 +243,21 @@ export const CheckIcon = ({ className = base }: Props) => (
     />
   </svg>
 );
+
+export const MiningIcon = ({ className = base }: Props) => (
+  <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
+    <path
+      d="M12 3l3 3-7 7-3-3 7-7zm3 3l3 3M5 13l-2 6 6-2"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M15 9l2 2"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+  </svg>
+);

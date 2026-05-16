@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
-import { BriefcaseIcon, BoltIcon, OilDropIcon } from "@/components/ui/Icons";
+import { BriefcaseIcon, BoltIcon, OilDropIcon, MiningIcon } from "@/components/ui/Icons";
 import type { ComponentType } from "react";
 
 type Item = { id: string; name: string; description: string };
@@ -17,18 +18,29 @@ const ICONS: Record<string, ComponentType<{ className?: string }>> = {
   corporate: BriefcaseIcon,
   energy: BoltIcon,
   oilgas: OilDropIcon,
+  mining: MiningIcon,
 };
 
 const IMAGES: Record<string, string> = {
   corporate: "/sectors/corporate.jpg",
   energy: "/sectors/energy.jpg",
   oilgas: "/sectors/oil-gas.jpg",
+  mining: "/sectors/mining.jpg",
+};
+
+const ROUTES: Record<string, string> = {
+  corporate: "/services/business",
+  energy: "/services/business",
+  oilgas: "/services/business",
+  mining: "/services/mining",
 };
 
 export function Sectors({
+  lang,
   dict,
   chapter,
 }: {
+  lang: string;
   dict: Dict;
   chapter?: string;
 }) {
@@ -41,13 +53,18 @@ export function Sectors({
       title={dict.title}
       description={dict.description}
     >
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {dict.items.map((item, i) => {
           const Icon = ICONS[item.id] ?? BriefcaseIcon;
           const img = IMAGES[item.id];
+          const href = ROUTES[item.id] ? `/${lang}${ROUTES[item.id]}` : undefined;
           return (
             <Reveal key={item.id} delay={i * 0.05}>
-              <article className="relative h-full overflow-hidden rounded-3xl bg-brand-navy text-brand-ivory ring-1 ring-brand-ivory/10 transition-transform duration-200 hover:-translate-y-1">
+              <Link
+                href={href ?? `/${lang}/services`}
+                className="block h-full"
+              >
+              <article className="relative h-full overflow-hidden rounded-3xl bg-brand-navy text-brand-ivory ring-1 ring-brand-ivory/10 transition-transform duration-200 hover:-translate-y-1 hover:ring-brand-azure/40">
                 {/* 16:9 photo header */}
                 <div className="relative aspect-video w-full overflow-hidden">
                   {img ? (
@@ -83,6 +100,7 @@ export function Sectors({
                   </p>
                 </div>
               </article>
+              </Link>
             </Reveal>
           );
         })}

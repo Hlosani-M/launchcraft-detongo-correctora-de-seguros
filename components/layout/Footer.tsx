@@ -21,6 +21,7 @@ type FooterNavSection = {
   partners?: string;
   reinsurance?: string;
   solutions?: string;
+  mining?: string;
 };
 
 type FooterDict = {
@@ -193,6 +194,7 @@ export function Footer({
               { label: dict.footer.corporate.partners!, href: `/${lang}/partners` },
               { label: dict.footer.corporate.reinsurance!, href: `/${lang}/services/reinsurance` },
               { label: dict.footer.corporate.solutions!, href: `/${lang}/services/business` },
+              { label: dict.footer.corporate.mining!, href: `/${lang}/services/mining` },
             ]}
           />
         </div>
