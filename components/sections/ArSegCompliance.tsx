@@ -11,8 +11,6 @@ type Dict = {
     entityTypeValue: string;
     licence: string;
     licenceValue: string;
-    registered: string;
-    registeredValue: string;
   };
   link: string;
 };
@@ -85,14 +83,6 @@ export function ArSegCompliance({ dict }: { dict: Dict }) {
                 </dt>
                 <dd className="font-mono text-sm font-semibold text-brand-navy">
                   {dict.details.licenceValue}
-                </dd>
-              </div>
-              <div className="flex flex-col gap-1 rounded-xl bg-white px-5 py-4 ring-1 ring-brand-slate/10">
-                <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-slate">
-                  {dict.details.registered}
-                </dt>
-                <dd className="text-sm font-semibold text-brand-navy">
-                  {dict.details.registeredValue}
                 </dd>
               </div>
             </dl>

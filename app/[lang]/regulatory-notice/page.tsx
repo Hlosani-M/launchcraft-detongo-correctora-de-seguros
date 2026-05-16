@@ -6,38 +6,38 @@ import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
 export async function generateMetadata(
-  props: PageProps<"/[lang]/privacy-policy">,
+  props: PageProps<"/[lang]/regulatory-notice">,
 ): Promise<Metadata> {
   const { lang } = await props.params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   return {
-    title: dict.meta.privacy.title,
-    description: dict.meta.privacy.description,
+    title: dict.meta.regulatoryNotice.title,
+    description: dict.meta.regulatoryNotice.description,
     alternates: {
-      canonical: `/${lang}/privacy-policy`,
+      canonical: `/${lang}/regulatory-notice`,
       languages: {
-        pt: "/pt/privacy-policy",
-        en: "/en/privacy-policy",
-        "x-default": "/pt/privacy-policy",
+        pt: "/pt/regulatory-notice",
+        en: "/en/regulatory-notice",
+        "x-default": "/pt/regulatory-notice",
       },
     },
   };
 }
 
-export default async function PrivacyPolicyPage(
-  props: PageProps<"/[lang]/privacy-policy">,
+export default async function RegulatoryNoticePage(
+  props: PageProps<"/[lang]/regulatory-notice">,
 ) {
   const { lang } = await props.params;
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
-  const page = dict.legalPages.privacy;
+  const page = dict.legalPages.regulatoryNotice;
 
   return (
     <Section tone="ivory" containerClassName="max-w-3xl">
       <Reveal>
         <div className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-azure">
-          {dict.common.footer.legal.heading}
+          {dict.common.footer.regulatory.heading}
         </div>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-brand-navy sm:text-5xl">
           {page.title}

@@ -66,7 +66,7 @@ function FooterNavColumn({
       </h4>
       <ul className="mt-4 space-y-2.5 text-sm text-brand-ivory/75">
         {links.map(({ label, href, external }) => (
-          <li key={href}>
+          <li key={label}>
             {external ? (
               <a
                 href={href}
@@ -167,9 +167,9 @@ export function Footer({
             section={dict.footer.support}
             links={[
               { label: dict.footer.support.contact!, href: `/${lang}/contact` },
-              { label: dict.footer.support.faqs!, href: `/${lang}/contact` },
-              { label: dict.footer.support.claims!, href: `/${lang}/contact` },
-              { label: dict.footer.support.clientSupport!, href: `/${lang}/contact` },
+              { label: dict.footer.support.faqs!, href: `/${lang}/faqs` },
+              { label: dict.footer.support.claims!, href: `/${lang}/claims` },
+              { label: dict.footer.support.clientSupport!, href: `/${lang}/client-support` },
             ]}
           />
 
@@ -184,23 +184,14 @@ export function Footer({
             ]}
           />
 
-          {/* Regulatory & Compliance */}
-          <FooterNavColumn
-            section={dict.footer.regulatory}
-            links={[
-              { label: dict.footer.regulatory.arseg!, href: "https://www.arseg.ao", external: true },
-              { label: dict.footer.regulatory.compliance!, href: `/${lang}/contact` },
-              { label: dict.footer.regulatory.aml!, href: `/${lang}/contact` },
-              { label: dict.footer.regulatory.notice!, href: `/${lang}/contact` },
-            ]}
-          />
+          {/* Regulatory & Compliance — hidden */}
 
           {/* Corporate */}
           <FooterNavColumn
             section={dict.footer.corporate}
             links={[
               { label: dict.footer.corporate.about!, href: `/${lang}/about` },
-              { label: dict.footer.corporate.partners!, href: `/${lang}/about` },
+              { label: dict.footer.corporate.partners!, href: `/${lang}/partners` },
               { label: dict.footer.corporate.reinsurance!, href: `/${lang}/services/reinsurance` },
               { label: dict.footer.corporate.solutions!, href: `/${lang}/services/business` },
             ]}

@@ -6,38 +6,36 @@ import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
 export async function generateMetadata(
-  props: PageProps<"/[lang]/privacy-policy">,
+  props: PageProps<"/[lang]/aml-kyc">,
 ): Promise<Metadata> {
   const { lang } = await props.params;
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang as Locale);
   return {
-    title: dict.meta.privacy.title,
-    description: dict.meta.privacy.description,
+    title: dict.meta.aml.title,
+    description: dict.meta.aml.description,
     alternates: {
-      canonical: `/${lang}/privacy-policy`,
+      canonical: `/${lang}/aml-kyc`,
       languages: {
-        pt: "/pt/privacy-policy",
-        en: "/en/privacy-policy",
-        "x-default": "/pt/privacy-policy",
+        pt: "/pt/aml-kyc",
+        en: "/en/aml-kyc",
+        "x-default": "/pt/aml-kyc",
       },
     },
   };
 }
 
-export default async function PrivacyPolicyPage(
-  props: PageProps<"/[lang]/privacy-policy">,
-) {
+export default async function AmlKycPage(props: PageProps<"/[lang]/aml-kyc">) {
   const { lang } = await props.params;
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
-  const page = dict.legalPages.privacy;
+  const page = dict.legalPages.aml;
 
   return (
     <Section tone="ivory" containerClassName="max-w-3xl">
       <Reveal>
         <div className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-azure">
-          {dict.common.footer.legal.heading}
+          {dict.common.footer.regulatory.heading}
         </div>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-brand-navy sm:text-5xl">
           {page.title}

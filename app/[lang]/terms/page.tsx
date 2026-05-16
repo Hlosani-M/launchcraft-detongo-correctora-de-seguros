@@ -44,7 +44,7 @@ export default async function TermsPage(
         </h1>
         <p className="mt-2 text-sm text-brand-navy/50">{dict.legalPages.lastUpdated}</p>
         <p className="mt-6 text-lg leading-8 text-brand-navy/75">{page.intro}</p>
-        <div className="mt-8 rounded-2xl border border-brand-navy/10 bg-white p-6 text-sm leading-7 text-brand-navy/70">
+        <div className="mt-8 whitespace-pre-line rounded-2xl border border-brand-navy/10 bg-white p-6 text-sm leading-7 text-brand-navy/70">
           {page.body}
         </div>
         <div className="mt-10 flex flex-wrap gap-4">

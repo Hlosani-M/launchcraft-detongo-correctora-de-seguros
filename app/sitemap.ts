@@ -22,6 +22,13 @@ const ROUTES = [
   "/terms",
   "/cookies",
   "/disclaimer",
+  "/faqs",
+  "/claims",
+  "/client-support",
+  "/compliance",
+  "/aml-kyc",
+  "/regulatory-notice",
+  "/partners",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

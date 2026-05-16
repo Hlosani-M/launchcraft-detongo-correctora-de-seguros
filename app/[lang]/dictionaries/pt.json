@@ -34,6 +34,34 @@
     "disclaimer": {
       "title": "Aviso Legal | Detondo",
       "description": "Aviso legal e limitacoes de responsabilidade da Detondo Corretora de Seguros."
+    },
+    "faqs": {
+      "title": "Perguntas Frequentes | Detondo",
+      "description": "Perguntas frequentes sobre os servicos de seguros e resseguros da Detondo."
+    },
+    "claims": {
+      "title": "Apoio a Sinistros | Detondo",
+      "description": "Apoio na gestao de sinistros de seguros e resseguros da Detondo Corretora de Seguros."
+    },
+    "clientSupport": {
+      "title": "Apoio ao Cliente | Detondo",
+      "description": "Servicos de apoio ao cliente da Detondo Corretora de Seguros."
+    },
+    "compliance": {
+      "title": "Quadro de Conformidade | Detondo",
+      "description": "Quadro regulatorio e politicas de governacao interna da Detondo."
+    },
+    "aml": {
+      "title": "Politica AML e KYC | Detondo",
+      "description": "Politica de prevencao do branqueamento de capitais e conhecimento do cliente da Detondo."
+    },
+    "regulatoryNotice": {
+      "title": "Aviso Regulatorio | Detondo",
+      "description": "Avisos regulatorios e divulgacoes da Detondo Corretora de Seguros."
+    },
+    "partners": {
+      "title": "Os Nossos Parceiros | Detondo",
+      "description": "Painel de seguradoras e resseguradoras parceiras da Detondo a operar em Angola."
     }
   },
   "common": {
@@ -210,9 +238,7 @@
       "entityType": "Tipo de Entidade",
       "entityTypeValue": "Corretor de Seguro",
       "licence": "Referência",
-      "licenceValue": "112/ASEG/MF/23",
-      "registered": "Data de Registo",
-      "registeredValue": "20/09/2023"
+      "licenceValue": "112/ASEG/MF/23"
     },
     "link": "Ver entidades autorizadas"
   },
@@ -747,13 +773,13 @@
     "comingSoon": "Este conteudo esta a ser preparado. Por favor, contacte-nos directamente para mais informacoes.",
     "privacy": {
       "title": "Politica de Privacidade",
-      "intro": "A Detondo Corretora de Seguros respeita a sua privacidade e protege os seus dados pessoais em conformidade com a legislacao aplicavel.",
-      "body": "Este documento descreve como recolhemos, utilizamos e protegemos os dados pessoais dos nossos clientes e utilizadores do website. O conteudo completo desta politica esta a ser finalizado. Para esclarecimentos sobre o tratamento dos seus dados pessoais, contacte-nos directamente."
+      "intro": "A Detondo Corretora de Seguros esta comprometida com a protecao da privacidade, confidencialidade e seguranca de toda a informacao de clientes, parceiros e utilizadores do website.",
+      "body": "Qualquer informacao pessoal ou empresarial submetida atraves deste website pode ser recolhida e tratada exclusivamente para fins de seguro, resseguro, conformidade, comunicacao e actividade operacional.\n\nA Detondo Corretora de Seguros nao vende nem divulga ilegalmente informacao confidencial a terceiros, salvo quando exigido por lei, autoridades reguladoras, obrigacoes de conformidade, seguradoras, resseguradoras ou parceiros de negocios autorizados.\n\nImplementamos medidas administrativas, tecnicas e organizacionais razoaveis para proteger os dados contra acesso nao autorizado, uso indevido, perda ou divulgacao.\n\nAo utilizar este website, os utilizadores consentem na recolha e utilizacao de informacao em conformidade com esta Politica de Privacidade."
     },
     "terms": {
       "title": "Termos e Condicoes",
-      "intro": "Ao utilizar os nossos servicos ou este website, concorda com os presentes termos e condicoes.",
-      "body": "Estes termos regem a utilizacao dos servicos da Detondo Corretora de Seguros, Lda. O conteudo completo esta a ser finalizado. Para esclarecimentos, contacte-nos directamente."
+      "intro": "Ao aceder e utilizar este website, os utilizadores concordam em cumprir os termos, condicoes e politicas aplicaveis que regem a utilizacao das plataformas e servicos digitais da Detondo Corretora de Seguros.",
+      "body": "A informacao contida neste website e disponibilizada apenas para fins informativos gerais e pode ser actualizada, modificada ou removida sem aviso previo.\n\nA Detondo Corretora de Seguros emprega esforccos razoaveis para garantir a exactidao da informacao publicada, mas nao garante que toda a informacao seja completa, actual ou isenta de erros em todos os momentos.\n\nOs utilizadores nao podem fazer uso indevido, reproduzir, distribuir ou explorar comercialmente o conteudo do website sem autorizacao previa por escrito.\n\nA utilizacao deste website rege-se pelas leis e pelo quadro regulatorio aplicavel da Republica de Angola."
     },
     "cookies": {
       "title": "Politica de Cookies",
@@ -762,8 +788,18 @@
     },
     "disclaimer": {
       "title": "Aviso Legal",
-      "intro": "A informacao disponibilizada neste website tem caracter informativo e nao constitui aconselhamento juridico ou financeiro.",
-      "body": "A Detondo Corretora de Seguros, Lda. e uma corretora de seguros e resseguros regulada pela ARSEG - Agencia Angolana de Regulacao e Supervisao de Seguros. A informacao contida neste website destina-se a fins informativos gerais. Para aconselhamento especifico, consulte a nossa equipa directamente."
+      "intro": "A informacao disponibilizada neste website tem caracter informativo geral e nao constitui aconselhamento em materia de seguros, financas, direito, investimento ou consultoria profissional.",
+      "body": "A cobertura de seguros, os termos das apolices, os precos e as condicoes estao sujeitos a aprovacao por parte das seguradoras, aos requisitos de subscricao e aos acordos contratuais aplicaveis.\n\nA Detondo Corretora de Seguros nao se responsabiliza por quaisquer perdas directas ou indirectas decorrentes da utilizacao da informacao contida neste website.\n\nOs utilizadores sao encorajados a contactar directamente a nossa equipa profissional para suporte especifico em seguros, resseguros, gestao de risco e consultoria empresarial."
+    },
+    "aml": {
+      "title": "Politica AML e KYC",
+      "intro": "A Detondo Corretora de Seguros esta comprometida com o suporte aos principios internacionais de Prevencao do Branqueamento de Capitais (PBC), Combate ao Financiamento do Terrorismo (CFT) e Conhecimento do Cliente (KYC).",
+      "body": "A empresa pode solicitar identificacao, documentacao empresarial, informacao sobre a origem dos fundos e outros documentos relacionados com conformidade, quando exigido pela regulamentacao aplicavel, seguradoras, resseguradoras, instituicoes financeiras ou parceiros de negocios.\n\nA Detondo Corretora de Seguros reserva o direito de recusar, suspender ou encerrar relacoes comerciais que nao satisfacam os padroes internos de conformidade ou os requisitos regulatorios aplicaveis.\n\nO nosso quadro de conformidade promove a transparencia, as praticas de negocio responsaveis e a prevencao da criminalidade financeira."
+    },
+    "regulatoryNotice": {
+      "title": "Aviso Regulatorio",
+      "intro": "A Detondo Corretora de Seguros opera no ambito do quadro regulatorio do sector segurador angolano e esta comprometida com praticas responsaveis de seguro e resseguro.",
+      "body": "A empresa apoia a conformidade regulatoria, a conduta etica nos negocios, a transparencia, a confidencialidade dos clientes e os padroes profissionais alinhados com o sector segurador e de servicos financeiros.\n\nAs referencias a seguradoras, resseguradoras, instituicoes reguladoras ou parceiros internacionais neste website sao apresentadas apenas para fins informativos e institucionais.\n\nA Detondo Corretora de Seguros trabalha continuamente para reforcar os seus padroes operacionais, de conformidade e de governacao corporativa, em linha com as melhores praticas de mercado."
     }
   }
 }
