@@ -168,8 +168,8 @@ export function Footer({
             links={[
               { label: dict.footer.support.contact!, href: `/${lang}/contact` },
               { label: dict.footer.support.faqs!, href: `/${lang}/faqs` },
-              { label: dict.footer.support.claims!, href: `/${lang}/claims` },
-              { label: dict.footer.support.clientSupport!, href: `/${lang}/client-support` },
+              { label: dict.footer.support.claims!, href: `/${lang}/contact?topic=claims` },
+              { label: dict.footer.support.clientSupport!, href: `/${lang}/contact?topic=client` },
             ]}
           />
 

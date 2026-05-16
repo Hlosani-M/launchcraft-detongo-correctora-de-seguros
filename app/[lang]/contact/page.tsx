@@ -38,6 +38,9 @@ export default async function ContactPage(
   const { lang } = await props.params;
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
+  const searchParams = await props.searchParams;
+  const initialTopic =
+    typeof searchParams?.topic === "string" ? searchParams.topic : undefined;
 
   return (
     <Section
@@ -132,7 +135,7 @@ export default async function ContactPage(
 
         <Reveal delay={0.1}>
           <div className="rounded-3xl bg-brand-surface p-6 ring-1 ring-brand-slate/15 sm:p-8 lg:p-10">
-            <ContactForm locale={lang as Locale} dict={dict.contact.form} />
+            <ContactForm locale={lang as Locale} dict={dict.contact.form} initialTopic={initialTopic} />
           </div>
         </Reveal>
       </div>

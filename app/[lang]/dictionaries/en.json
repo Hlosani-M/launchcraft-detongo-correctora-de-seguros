@@ -746,6 +746,16 @@
       "phone": "Phone",
       "phonePlaceholder": "+244 900 000 000",
       "phoneHint": "Optional",
+      "topic": "Subject",
+      "topicPlaceholder": "Select a subject",
+      "topics": {
+        "general": "General enquiry",
+        "quote": "Request a quote",
+        "claims": "Claims support",
+        "client": "Client support",
+        "partnership": "Partnership enquiry",
+        "other": "Other"
+      },
       "message": "Message",
       "messagePlaceholder": "Tell us how we can help...",
       "submit": "Send message",

@@ -23,6 +23,7 @@ export async function contactAction(
     phone: String(formData.get("phone") ?? ""),
     message: String(formData.get("message") ?? ""),
     locale: String(formData.get("locale") ?? "pt"),
+    topic: formData.get("topic") ? String(formData.get("topic")) : undefined,
   };
 
   const parsed = contactSchema.safeParse(raw);

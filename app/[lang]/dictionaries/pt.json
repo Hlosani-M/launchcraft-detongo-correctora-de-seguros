@@ -746,6 +746,16 @@
       "phone": "Telefone",
       "phonePlaceholder": "+244 900 000 000",
       "phoneHint": "Opcional",
+      "topic": "Assunto",
+      "topicPlaceholder": "Selecionar assunto",
+      "topics": {
+        "general": "Consulta geral",
+        "quote": "Pedido de cotacao",
+        "claims": "Apoio a sinistros",
+        "client": "Apoio ao cliente",
+        "partnership": "Consulta de parceria",
+        "other": "Outro"
+      },
       "message": "Mensagem",
       "messagePlaceholder": "Conte-nos como podemos ajudar...",
       "submit": "Enviar mensagem",

@@ -4,4 +4,5 @@ export interface ContactMessage {
   phone?: string;
   message: string;
   locale: "pt" | "en";
+  topic?: string;
 }

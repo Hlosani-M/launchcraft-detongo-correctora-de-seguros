@@ -8,14 +8,27 @@ export interface EmailProvider {
 
 // Email templates are in Portuguese — these are staff-facing notifications
 // delivered to the brokerage inbox, not to the contact form submitter.
+const TOPIC_LABELS_PT: Record<string, string> = {
+  general: "Consulta geral",
+  quote: "Pedido de cotacao",
+  claims: "Apoio a sinistros",
+  client: "Apoio ao cliente",
+  partnership: "Consulta de parceria",
+  other: "Outro",
+};
+
 export function renderContactText(message: ContactMessage): string {
-  const phoneLine = message.phone ? `Telefone: ${message.phone}\n` : "";
+  const phoneLine = message.phone ? `Telefone: ${message.phone}` : null;
+  const topicLine = message.topic
+    ? `Assunto: ${TOPIC_LABELS_PT[message.topic] ?? message.topic}`
+    : null;
   return [
     `Nova mensagem de contacto (${message.locale.toUpperCase()})`,
     "",
     `Nome: ${message.name}`,
     `Email: ${message.email}`,
-    phoneLine ? phoneLine.trim() : null,
+    phoneLine,
+    topicLine,
     "",
     "Mensagem:",
     message.message,
@@ -63,6 +76,7 @@ export function renderContactHtml(message: ContactMessage): string {
           <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="font-size:14px;line-height:22px">
             <tr><td style="padding:4px 0;color:#7D808C;width:80px">Email</td><td style="padding:4px 0;color:#171A35"><a href="mailto:${escapeHtml(message.email)}" style="color:#0399d1">${escapeHtml(message.email)}</a></td></tr>
             ${phoneRow}
+            ${message.topic ? `<tr><td style="padding:4px 0;color:#7D808C">Assunto</td><td style="padding:4px 0;color:#171A35;font-weight:600">${escapeHtml(TOPIC_LABELS_PT[message.topic] ?? message.topic)}</td></tr>` : ""}
             <tr><td style="padding:4px 0;color:#7D808C">Idioma</td><td style="padding:4px 0;color:#171A35">${message.locale.toUpperCase()}</td></tr>
           </table>
           <div style="height:1px;background:rgba(125,128,140,0.2);margin:20px 0"></div>

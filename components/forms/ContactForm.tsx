@@ -15,6 +15,9 @@ type FormDict = {
   phone: string;
   phonePlaceholder: string;
   phoneHint: string;
+  topic: string;
+  topicPlaceholder: string;
+  topics: Record<string, string>;
   message: string;
   messagePlaceholder: string;
   submit: string;
@@ -78,16 +81,18 @@ const fieldBase =
 export function ContactForm({
   locale,
   dict,
+  initialTopic,
 }: {
   locale: "pt" | "en";
   dict: FormDict;
+  initialTopic?: string;
 }) {
   const [state, formAction] = useActionState(contactAction, INITIAL);
   const e = state.errors ?? {};
-  const [fields, setFields] = useState({ name: "", email: "", phone: "", message: "" });
+  const [fields, setFields] = useState({ name: "", email: "", phone: "", topic: initialTopic ?? "", message: "" });
   const update =
     (key: keyof typeof fields) =>
-    (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    (ev: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
       setFields((f) => ({ ...f, [key]: ev.target.value }));
 
   useEffect(() => {
@@ -198,6 +203,23 @@ export function ContactForm({
           placeholder={dict.phonePlaceholder}
           className={fieldBase}
         />
+      </label>
+
+      <label className="block text-sm font-semibold text-brand-navy">
+        {dict.topic}
+        <select
+          name="topic"
+          value={fields.topic}
+          onChange={update("topic")}
+          className={`${fieldBase} cursor-pointer`}
+        >
+          <option value="">{dict.topicPlaceholder}</option>
+          {Object.entries(dict.topics).map(([key, label]) => (
+            <option key={key} value={key}>
+              {label}
+            </option>
+          ))}
+        </select>
       </label>
 
       <label className="block text-sm font-semibold text-brand-navy">
