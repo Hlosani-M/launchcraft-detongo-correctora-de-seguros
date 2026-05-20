@@ -14,6 +14,7 @@ export function OrganizationJsonLd({
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
     name: dict.meta.siteName,
+    alternateName: "Detondo Seguros",
     legalName: "Detondo Corretora de Seguros, Lda.",
     url: `${siteUrl}/${lang}`,
     logo: `${siteUrl}/logo-transparent.png`,

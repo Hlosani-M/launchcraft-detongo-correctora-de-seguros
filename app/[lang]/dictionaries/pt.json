@@ -4,68 +4,68 @@
     "tagline": "Seguros, resseguros e gestão de risco para Angola",
     "description": "Corretora angolana de seguros e resseguros, fundada em 2017. Soluções à medida para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Certificada pela ANPG.",
     "home": {
-      "title": "Detondo | Corretora de Seguros e Resseguros em Angola",
+      "title": "Detondo Seguros | Corretora de Seguros e Resseguros em Angola",
       "description": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017. Certificação ANPG."
     },
     "about": {
-      "title": "Sobre nós | Detondo",
+      "title": "Sobre nós | Detondo Seguros",
       "description": "Corretora angolana fundada em 2017. Experiência multi-sectorial, certificação ANPG e painel das principais seguradoras a operar em Angola."
     },
     "services": {
-      "title": "Serviços | Detondo",
+      "title": "Serviços | Detondo Seguros",
       "description": "Soluções corporativas, petróleo & gás, energia, marítimo, construção todos os riscos, responsabilidade civil, saúde e vida e resseguros para Angola."
     },
     "contact": {
-      "title": "Contacto | Detondo",
+      "title": "Contacto | Detondo Seguros",
       "description": "Fale com a nossa equipa em Luanda. Estamos disponíveis para cotações, esclarecimentos e gestão de sinistros."
     },
     "privacy": {
-      "title": "Politica de Privacidade | Detondo",
+      "title": "Politica de Privacidade | Detondo Seguros",
       "description": "Como a Detondo Corretora de Seguros recolhe, utiliza e protege os seus dados pessoais."
     },
     "terms": {
-      "title": "Termos e Condicoes | Detondo",
+      "title": "Termos e Condicoes | Detondo Seguros",
       "description": "Termos e condicoes de utilizacao dos servicos da Detondo Corretora de Seguros."
     },
     "cookies": {
-      "title": "Politica de Cookies | Detondo",
+      "title": "Politica de Cookies | Detondo Seguros",
       "description": "Informacao sobre os cookies utilizados pela Detondo Corretora de Seguros e como os gerir."
     },
     "disclaimer": {
-      "title": "Aviso Legal | Detondo",
+      "title": "Aviso Legal | Detondo Seguros",
       "description": "Aviso legal e limitacoes de responsabilidade da Detondo Corretora de Seguros."
     },
     "faqs": {
-      "title": "Perguntas Frequentes | Detondo",
+      "title": "Perguntas Frequentes | Detondo Seguros",
       "description": "Perguntas frequentes sobre os servicos de seguros e resseguros da Detondo."
     },
     "claims": {
-      "title": "Apoio a Sinistros | Detondo",
+      "title": "Apoio a Sinistros | Detondo Seguros",
       "description": "Apoio na gestao de sinistros de seguros e resseguros da Detondo Corretora de Seguros."
     },
     "clientSupport": {
-      "title": "Apoio ao Cliente | Detondo",
+      "title": "Apoio ao Cliente | Detondo Seguros",
       "description": "Servicos de apoio ao cliente da Detondo Corretora de Seguros."
     },
     "compliance": {
-      "title": "Quadro de Conformidade | Detondo",
+      "title": "Quadro de Conformidade | Detondo Seguros",
       "description": "Quadro regulatorio e politicas de governacao interna da Detondo."
     },
     "aml": {
-      "title": "Politica AML e KYC | Detondo",
+      "title": "Politica AML e KYC | Detondo Seguros",
       "description": "Politica de prevencao do branqueamento de capitais e conhecimento do cliente da Detondo."
     },
     "regulatoryNotice": {
-      "title": "Aviso Regulatorio | Detondo",
+      "title": "Aviso Regulatorio | Detondo Seguros",
       "description": "Avisos regulatorios e divulgacoes da Detondo Corretora de Seguros."
     },
     "partners": {
-      "title": "Os Nossos Parceiros | Detondo",
+      "title": "Os Nossos Parceiros | Detondo Seguros",
       "description": "Painel de seguradoras e resseguradoras parceiras da Detondo a operar em Angola."
     }
   },
   "common": {
-    "brand": "Detondo",
+    "brand": "Detondo Seguros",
     "brandSubtitle": "Corretora de Seguros e Resseguros",
     "cta": {
       "quote": "Solicitar cotação",
@@ -363,7 +363,7 @@
     "products": {
       "motor": {
         "meta": {
-          "title": "Seguro Automóvel | Detondo",
+          "title": "Seguro Automóvel | Detondo Seguros",
           "description": "Cobertura abrangente para os seus veículos em Angola. Responsabilidade civil, danos próprios, assistência 24h e aluguer de viatura. Peça cotação."
         },
         "eyebrow": "Seguro particular",
@@ -384,7 +384,7 @@
       },
       "building": {
         "meta": {
-          "title": "Seguro de Edifícios | Detondo",
+          "title": "Seguro de Edifícios | Detondo Seguros",
           "description": "Protecção para o seu imóvel em Angola. Cobertura contra incêndio, inundação, danos estruturais e responsabilidade civil. Consulte-nos."
         },
         "eyebrow": "Seguro particular",
@@ -405,7 +405,7 @@
       },
       "home-contents": {
         "meta": {
-          "title": "Seguro de Conteúdo da Casa | Detondo",
+          "title": "Seguro de Conteúdo da Casa | Detondo Seguros",
           "description": "O conteúdo do seu lar protegido contra roubo, incêndio e danos por água em Angola. Coberturas à medida. Peça cotação hoje."
         },
         "eyebrow": "Seguro particular",
@@ -426,7 +426,7 @@
       },
       "all-risks": {
         "meta": {
-          "title": "Todo Risco Pessoal | Detondo",
+          "title": "Todo Risco Pessoal | Detondo Seguros",
           "description": "Protecção para os seus objectos de valor em qualquer parte do mundo. Telemóveis, electrónicos, joalharia e mais. Consulte-nos hoje."
         },
         "eyebrow": "Seguro particular",
@@ -447,7 +447,7 @@
       },
       "liability": {
         "meta": {
-          "title": "Responsabilidade Pessoal | Detondo",
+          "title": "Responsabilidade Pessoal | Detondo Seguros",
           "description": "Protecção financeira para danos causados a terceiros no dia-a-dia. Custos legais, indemnizações e mais. Peça cotação hoje."
         },
         "eyebrow": "Seguro particular",
@@ -467,7 +467,7 @@
       },
       "travel": {
         "meta": {
-          "title": "Seguro de Viagem | Detondo",
+          "title": "Seguro de Viagem | Detondo Seguros",
           "description": "Viagens regionais e internacionais com cobertura para despesas médicas, repatriamento, bagagem e cancelamento. Consulte-nos hoje."
         },
         "eyebrow": "Seguro particular",
