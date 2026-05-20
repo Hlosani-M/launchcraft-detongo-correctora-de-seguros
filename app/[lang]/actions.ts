@@ -5,7 +5,7 @@ import { getEmailProvider } from "@/lib/email/factory";
 
 export type ContactState = {
   status: "idle" | "success" | "error";
-  errors?: Partial<Record<"name" | "email" | "phone" | "message", string>>;
+  errors?: Partial<Record<"name" | "email" | "consent", string>>;
 };
 
 export async function contactAction(
@@ -17,20 +17,35 @@ export async function contactAction(
     return { status: "success" };
   }
 
+  const str = (key: string) => {
+    const v = formData.get(key);
+    return v !== null ? String(v) : undefined;
+  };
+
   const raw = {
     name: String(formData.get("name") ?? ""),
     email: String(formData.get("email") ?? ""),
-    phone: String(formData.get("phone") ?? ""),
-    message: String(formData.get("message") ?? ""),
+    phone: str("phone"),
     locale: String(formData.get("locale") ?? "pt"),
-    topic: formData.get("topic") ? String(formData.get("topic")) : undefined,
+    consent: String(formData.get("consent") ?? ""),
+    serviceType: str("serviceType"),
+    purpose: str("purpose"),
+    comments: str("comments"),
+    motorBrand: str("motorBrand"),
+    motorModel: str("motorModel"),
+    motorYear: str("motorYear"),
+    healthPlan: str("healthPlan"),
+    oilGasSegment: str("oilGasSegment"),
+    miningCoverages: str("miningCoverages"),
+    reinsuranceType: str("reinsuranceType"),
+    otherDescription: str("otherDescription"),
   };
 
   const parsed = contactSchema.safeParse(raw);
   if (!parsed.success) {
     const flat = parsed.error.flatten().fieldErrors;
     const errors: ContactState["errors"] = {};
-    for (const key of ["name", "email", "phone", "message"] as const) {
+    for (const key of ["name", "email", "consent"] as const) {
       if (flat[key]?.length) errors[key] = flat[key]![0];
     }
     return { status: "error", errors };

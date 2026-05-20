@@ -21,7 +21,7 @@ const validPayload = {
   name: "Maria Silva",
   email: "maria@example.com",
   phone: "+244 900 000 000",
-  message: "Gostaria de receber uma cotação de seguro automóvel.",
+  consent: "on",
   locale: "pt",
 };
 
@@ -47,11 +47,11 @@ describe("contactAction", () => {
     const { contactAction } = await import("@/app/[lang]/actions");
     const result = await contactAction(
       { status: "idle" },
-      formData({ ...validPayload, email: "not-an-email", message: "too" }),
+      formData({ ...validPayload, email: "not-an-email", consent: undefined }),
     );
     expect(result.status).toBe("error");
     expect(result.errors?.email).toBeTruthy();
-    expect(result.errors?.message).toBeTruthy();
+    expect(result.errors?.consent).toBeTruthy();
     expect(sendContactMessage).not.toHaveBeenCalled();
   });
 

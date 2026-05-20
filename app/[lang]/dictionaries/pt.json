@@ -803,34 +803,115 @@
     "hoursTitle": "Horário",
     "hours": "Segunda a sexta, 08h00 às 17h00",
     "form": {
-      "name": "Nome completo",
-      "namePlaceholder": "O seu nome",
-      "email": "Email",
-      "emailPlaceholder": "voce@exemplo.com",
-      "phone": "Telefone",
-      "phonePlaceholder": "+244 900 000 000",
-      "phoneHint": "Opcional",
-      "topic": "Assunto",
-      "topicPlaceholder": "Selecionar assunto",
-      "topics": {
-        "general": "Consulta geral",
-        "quote": "Pedido de cotacao",
-        "claims": "Apoio a sinistros",
-        "client": "Apoio ao cliente",
-        "partnership": "Consulta de parceria",
-        "other": "Outro"
+      "steps": {
+        "labels": ["Servico", "Finalidade", "Detalhes", "Contacto"],
+        "of": "de",
+        "next": "Continuar",
+        "back": "Voltar"
       },
-      "message": "Mensagem",
-      "messagePlaceholder": "Conte-nos como podemos ajudar...",
-      "submit": "Enviar mensagem",
+      "step1": {
+        "heading": "Que tipo de seguro ou servico procura?",
+        "services": {
+          "motor": "Seguro Automovel",
+          "health": "Seguro de Saude",
+          "life": "Seguro de Vida",
+          "travel": "Seguro de Viagem",
+          "corporate": "Seguro Empresarial",
+          "oilgas": "Petroleo & Gas",
+          "marine": "Maritimo / Carga",
+          "mining": "Mineracao e Recursos Minerais",
+          "reinsurance": "Resseguro",
+          "riskManagement": "Gestao de Risco",
+          "other": "Outro"
+        }
+      },
+      "step2": {
+        "heading": "Qual o objectivo do seu pedido?",
+        "purposes": {
+          "quote": "Pedido de cotacao",
+          "consultant": "Falar com um consultor",
+          "claim": "Participar um sinistro",
+          "renewal": "Renovacao de apolice",
+          "info": "Pedido de informacao",
+          "partnership": "Oportunidade de parceria",
+          "support": "Apoio ao cliente"
+        }
+      },
+      "step3": {
+        "heading": "Diga-nos mais sobre a sua necessidade",
+        "motor": {
+          "brand": "Marca",
+          "brandPlaceholder": "Ex: Toyota",
+          "model": "Modelo",
+          "modelPlaceholder": "Ex: Land Cruiser",
+          "year": "Ano",
+          "yearPlaceholder": "Ex: 2022"
+        },
+        "health": {
+          "label": "Tipo de plano",
+          "individual": "Individual",
+          "family": "Familiar",
+          "corporate": "Empresarial"
+        },
+        "oilgas": {
+          "label": "Segmento",
+          "upstream": "Upstream",
+          "midstream": "Midstream",
+          "downstream": "Downstream",
+          "marine": "Maritimo"
+        },
+        "mining": {
+          "label": "Coberturas de interesse",
+          "operations": "Operacoes mineiras",
+          "equipment": "Equipamentos mineiros",
+          "transport": "Transporte mineral",
+          "liability": "Responsabilidade civil",
+          "operational": "Riscos operacionais"
+        },
+        "reinsurance": {
+          "label": "Tipo de resseguro",
+          "treaty": "Tratado",
+          "facultative": "Facultativo",
+          "consulting": "Consultoria",
+          "riskMgmt": "Gestao de risco"
+        },
+        "other": {
+          "label": "Descreva a sua necessidade",
+          "placeholder": "Descreva brevemente o que procura..."
+        },
+        "noDetails": "Sem campos adicionais para este servico. Continue para o passo seguinte."
+      },
+      "step4": {
+        "heading": "Os seus dados de contacto",
+        "name": "Nome completo",
+        "namePlaceholder": "O seu nome",
+        "email": "Email",
+        "emailPlaceholder": "voce@exemplo.com",
+        "phone": "Telefone",
+        "phonePlaceholder": "+244 900 000 000",
+        "phoneHint": "Opcional",
+        "comments": "Observacoes adicionais",
+        "commentsPlaceholder": "Alguma informacao adicional ou questao especifica?",
+        "commentsHint": "Opcional",
+        "consent": "Concordo com o tratamento dos meus dados pessoais para fins de contacto.",
+        "privacyNotice": "Os seus dados sao tratados de forma confidencial, de acordo com a nossa",
+        "privacyLink": "Politica de Privacidade"
+      },
+      "submit": "Enviar pedido",
       "submitting": "A enviar...",
-      "successTitle": "Mensagem recebida. Obrigado!",
-      "successBody": "A nossa equipa irá responder-lhe brevemente. Para assuntos urgentes, contacte-nos por telefone.",
-      "errorTitle": "Não foi possível enviar",
+      "success": {
+        "title": "Pedido recebido. Obrigado!",
+        "body": "A nossa equipa ira contacta-lo brevemente para dar seguimento ao seu pedido.",
+        "summaryLabel": "Resumo do pedido",
+        "serviceLabel": "Servico",
+        "purposeLabel": "Finalidade"
+      },
+      "errorTitle": "Nao foi possivel enviar",
       "errorBody": "Verifique os campos e tente novamente. Se o problema persistir, envie-nos email directamente.",
       "errors": {
         "name": "Indique o seu nome.",
-        "email": "Indique um email válido.",
+        "email": "Indique um email valido.",
+        "consent": "Por favor confirme o seu consentimento.",
         "message": "Indique uma mensagem com pelo menos 10 caracteres."
       }
     }
