@@ -118,7 +118,7 @@ export function Testimonials({ dict }: { dict: Dict }) {
               <button
                 type="button"
                 onClick={next}
-                aria-label="Próximo"
+                aria-label={dict.a11y.next}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-brand-slate/25 text-brand-navy transition-colors hover:border-brand-azure hover:text-brand-azure"
               >
                 <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none">

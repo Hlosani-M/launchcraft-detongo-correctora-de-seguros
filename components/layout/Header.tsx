@@ -17,9 +17,12 @@ type HeaderDict = {
     home: string;
     about: string;
     services: string;
+    personal: string;
+    business: string;
+    reinsurance: string;
     contact: string;
   };
-  cta: { quote: string };
+  cta: { quote: string; callUs: string };
   locale: { pt: string; en: string; switchTo: string };
 };
 
@@ -175,19 +178,81 @@ export function Header({
               aria-label="Mobile"
               className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-6 py-4"
             >
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`rounded-xl px-4 py-3 text-base font-medium ${
-                    isActive(link.href, link.exact)
-                      ? "bg-brand-azure/15 text-brand-navy"
-                      : "text-brand-slate hover:bg-brand-navy/5 hover:text-brand-navy"
-                  }`}
+              <Link
+                href={`/${lang}`}
+                className={`rounded-xl px-4 py-3 text-base font-medium ${
+                  isActive(`/${lang}`, true)
+                    ? "bg-brand-azure/15 text-brand-navy"
+                    : "text-brand-slate hover:bg-brand-navy/5 hover:text-brand-navy"
+                }`}
+              >
+                {dict.nav.home}
+              </Link>
+              <Link
+                href={`/${lang}/about`}
+                className={`rounded-xl px-4 py-3 text-base font-medium ${
+                  isActive(`/${lang}/about`)
+                    ? "bg-brand-azure/15 text-brand-navy"
+                    : "text-brand-slate hover:bg-brand-navy/5 hover:text-brand-navy"
+                }`}
+              >
+                {dict.nav.about}
+              </Link>
+              <Link
+                href={`/${lang}/services`}
+                className={`rounded-xl px-4 py-3 text-base font-medium ${
+                  isActive(`/${lang}/services`)
+                    ? "bg-brand-azure/15 text-brand-navy"
+                    : "text-brand-slate hover:bg-brand-navy/5 hover:text-brand-navy"
+                }`}
+              >
+                {dict.nav.services}
+              </Link>
+              <div className="ml-3 flex flex-col gap-0.5 border-l border-brand-slate/20 pl-3">
+                {(
+                  [
+                    { segment: "personal", label: dict.nav.personal },
+                    { segment: "business", label: dict.nav.business },
+                    { segment: "reinsurance", label: dict.nav.reinsurance },
+                  ] as const
+                ).map(({ segment, label }) => (
+                  <Link
+                    key={segment}
+                    href={`/${lang}/services/${segment}`}
+                    className={`rounded-lg px-3 py-2 text-sm font-medium ${
+                      isActive(`/${lang}/services/${segment}`)
+                        ? "bg-brand-azure/10 text-brand-navy"
+                        : "text-brand-slate hover:bg-brand-navy/5 hover:text-brand-navy"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+              <Link
+                href={`/${lang}/contact`}
+                className={`rounded-xl px-4 py-3 text-base font-medium ${
+                  isActive(`/${lang}/contact`)
+                    ? "bg-brand-azure/15 text-brand-navy"
+                    : "text-brand-slate hover:bg-brand-navy/5 hover:text-brand-navy"
+                }`}
+              >
+                {dict.nav.contact}
+              </Link>
+              <div className="mt-2 border-t border-brand-slate/15 pt-3">
+                <LinkButton
+                  href={`/${lang}/contact`}
+                  size="md"
+                  variant="primary"
+                  className="w-full justify-center"
+                  onClick={() => {
+                    trackEvent("cta_click", { source: "mobile_menu" });
+                    setOpen(false);
+                  }}
                 >
-                  {link.label}
-                </Link>
-              ))}
+                  {dict.cta.quote}
+                </LinkButton>
+              </div>
             </nav>
           </motion.div>
         ) : null}
@@ -202,8 +267,23 @@ export function Header({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 16 }}
           transition={{ duration: 0.25, ease: "easeOut" }}
-          className="fixed bottom-6 right-6 z-40 lg:hidden"
+          className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 lg:hidden"
         >
+          <a
+            href="tel:+244921545832"
+            aria-label={dict.cta.callUs}
+            className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-navy text-brand-ivory shadow-[0_8px_32px_-8px_rgba(23,26,53,0.5)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-navy-deep"
+          >
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden>
+              <path
+                d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C9.4 21 3 14.6 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
           <LinkButton
             href={`/${lang}/contact`}
             size="lg"

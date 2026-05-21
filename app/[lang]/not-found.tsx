@@ -1,32 +1,45 @@
+import { headers } from "next/headers";
 import Link from "next/link";
+import { getDictionary, DEFAULT_LOCALE, LOCALES } from "./dictionaries";
 import { Section } from "@/components/ui/Section";
+import { LinkButton, ArrowIcon } from "@/components/ui/Button";
 
-export default function LocaleNotFound() {
+export default async function LocaleNotFound() {
+  const heads = await headers();
+
+  // Infer locale from headers that may contain the request path.
+  // Falls back to DEFAULT_LOCALE when no path header is present.
+  const candidates = [heads.get("x-invoke-path"), heads.get("referer")];
+  let lang = DEFAULT_LOCALE;
+  for (const candidate of candidates) {
+    if (!candidate) continue;
+    const found = LOCALES.find(
+      (l) => candidate.includes(`/${l}/`) || candidate.endsWith(`/${l}`),
+    );
+    if (found) {
+      lang = found;
+      break;
+    }
+  }
+
+  const dict = await getDictionary(lang);
+
   return (
     <Section tone="navy" containerClassName="max-w-3xl">
       <div className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-azure">
         404
       </div>
       <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-        Página não encontrada · Page not found
+        {dict.notFound.title}
       </h1>
       <p className="mt-4 text-base leading-7 text-brand-ivory/75">
-        A página que procura não existe. The page you are looking for does not
-        exist.
+        {dict.notFound.description}
       </p>
-      <div className="mt-8 flex flex-wrap gap-3">
-        <Link
-          href="/pt"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-azure px-6 py-3 text-sm font-semibold text-brand-navy transition-colors hover:bg-brand-azure-bright"
-        >
-          Voltar ao início
-        </Link>
-        <Link
-          href="/en"
-          className="inline-flex items-center gap-2 rounded-full border border-brand-ivory/25 px-6 py-3 text-sm font-semibold text-brand-ivory transition-colors hover:bg-brand-ivory/10"
-        >
-          Go to homepage
-        </Link>
+      <div className="mt-8">
+        <LinkButton href={`/${lang}`} variant="primary">
+          {dict.notFound.cta}
+          <ArrowIcon />
+        </LinkButton>
       </div>
     </Section>
   );
