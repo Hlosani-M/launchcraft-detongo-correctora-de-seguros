@@ -1,5 +1,5 @@
 import type { EmailProvider } from "./provider";
-import { renderContactHtml, renderContactText } from "./provider";
+import { renderContactHtml, renderContactSubject, renderContactText } from "./provider";
 import type { ContactMessage } from "./types";
 
 export interface BrevoConfig {
@@ -22,7 +22,7 @@ export class BrevoProvider implements EmailProvider {
       },
       to: [{ email: this.config.to }],
       replyTo: { email: message.email, name: message.name },
-      subject: `[detondocorretora.com] ${message.name}`,
+      subject: renderContactSubject(message),
       htmlContent: renderContactHtml(message),
       textContent: renderContactText(message),
     };

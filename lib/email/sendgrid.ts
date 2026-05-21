@@ -1,5 +1,5 @@
 import type { EmailProvider } from "./provider";
-import { renderContactHtml, renderContactText } from "./provider";
+import { renderContactHtml, renderContactSubject, renderContactText } from "./provider";
 import type { ContactMessage } from "./types";
 
 export interface SendGridConfig {
@@ -19,7 +19,7 @@ export class SendGridProvider implements EmailProvider {
       personalizations: [
         {
           to: [{ email: this.config.to }],
-          subject: `[detondocorretora.com] ${message.name}`,
+          subject: renderContactSubject(message),
         },
       ],
       from: {
