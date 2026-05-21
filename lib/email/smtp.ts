@@ -1,5 +1,5 @@
 import type { EmailProvider } from "./provider";
-import { renderContactHtml, renderContactText } from "./provider";
+import { renderContactHtml, renderContactSubject, renderContactText } from "./provider";
 import type { ContactMessage } from "./types";
 
 export interface SmtpConfig {
@@ -46,7 +46,7 @@ export class SmtpProvider implements EmailProvider {
         : this.config.from,
       to: this.config.to,
       replyTo: `"${message.name}" <${message.email}>`,
-      subject: `[detondocorretora.com] ${message.name}`,
+      subject: renderContactSubject(message),
       text: renderContactText(message),
       html: renderContactHtml(message),
     });

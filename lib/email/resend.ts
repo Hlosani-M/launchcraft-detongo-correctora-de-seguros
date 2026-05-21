@@ -1,5 +1,5 @@
 import type { EmailProvider } from "./provider";
-import { renderContactHtml, renderContactText } from "./provider";
+import { renderContactHtml, renderContactSubject, renderContactText } from "./provider";
 import type { ContactMessage } from "./types";
 
 export interface ResendConfig {
@@ -24,7 +24,7 @@ export class ResendProvider implements EmailProvider {
         from: this.config.from,
         to: [this.config.to],
         reply_to: message.email,
-        subject: `[detondocorretora.com] ${message.name}`,
+        subject: renderContactSubject(message),
         html: renderContactHtml(message),
         text: renderContactText(message),
       }),

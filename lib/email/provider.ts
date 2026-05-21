@@ -60,6 +60,18 @@ const REINSURANCE_TYPE_LABELS_PT: Record<string, string> = {
   riskMgmt: "Gestao de risco",
 };
 
+export function renderContactSubject(message: ContactMessage): string {
+  const parts: string[] = ["Detondo"];
+  if (message.serviceType) {
+    parts.push(SERVICE_LABELS_PT[message.serviceType] ?? message.serviceType);
+  }
+  if (message.purpose) {
+    parts.push(PURPOSE_LABELS_PT[message.purpose] ?? message.purpose);
+  }
+  parts.push(message.name);
+  return parts.join(" | ");
+}
+
 export function renderContactText(message: ContactMessage): string {
   const lines: (string | null)[] = [
     `Nova mensagem de contacto (${message.locale.toUpperCase()})`,
