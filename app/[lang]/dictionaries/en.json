@@ -1,72 +1,72 @@
 {
   "meta": {
-    "siteName": "Detondo Insurance and Reinsurance Brokerage",
+    "siteName": "Detondo Seguros",
     "tagline": "Insurance, reinsurance, and risk management for Angola",
     "description": "Angolan insurance and reinsurance brokerage, established in 2017. Tailored solutions for corporate, energy, and oil & gas clients in Angola. ANPG-certified.",
     "home": {
-      "title": "Detondo Insurance",
+      "title": "Detondo Seguros | Insurance and Reinsurance Brokerage",
       "description": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017. ANPG-certified."
     },
     "about": {
-      "title": "About us | Detondo Insurance",
+      "title": "About us | Detondo Seguros",
       "description": "Angolan brokerage, established 2017. Multi-sector experience, ANPG certification, and a panel of the leading insurers in Angola."
     },
     "services": {
-      "title": "Services | Detondo Insurance",
+      "title": "Services | Detondo Seguros",
       "description": "Corporate, oil & gas, energy, marine, construction all risks, liability, health and life, and reinsurance solutions for Angola."
     },
     "contact": {
-      "title": "Contact | Detondo Insurance",
+      "title": "Contact | Detondo Seguros",
       "description": "Talk to our team in Luanda. We are available for quotes, advice, and claims management."
     },
     "privacy": {
-      "title": "Privacy Policy | Detondo Insurance",
+      "title": "Privacy Policy | Detondo Seguros",
       "description": "How Detondo collects, uses, and protects your personal data."
     },
     "terms": {
-      "title": "Terms & Conditions | Detondo Insurance",
+      "title": "Terms & Conditions | Detondo Seguros",
       "description": "Terms and conditions for using Detondo's services."
     },
     "cookies": {
-      "title": "Cookie Policy | Detondo Insurance",
+      "title": "Cookie Policy | Detondo Seguros",
       "description": "Information about the cookies used by Detondo and how to manage them."
     },
     "disclaimer": {
-      "title": "Disclaimer | Detondo Insurance",
+      "title": "Disclaimer | Detondo Seguros",
       "description": "Legal disclaimer and limitations of liability of Detondo."
     },
     "faqs": {
-      "title": "FAQs | Detondo Insurance",
+      "title": "FAQs | Detondo Seguros",
       "description": "Frequently asked questions about Detondo's insurance and reinsurance services."
     },
     "claims": {
-      "title": "Claims Support | Detondo Insurance",
+      "title": "Claims Support | Detondo Seguros",
       "description": "Support for insurance and reinsurance claims managed by Detondo."
     },
     "clientSupport": {
-      "title": "Client Support | Detondo Insurance",
+      "title": "Client Support | Detondo Seguros",
       "description": "Client support services from Detondo."
     },
     "compliance": {
-      "title": "Compliance Framework | Detondo Insurance",
+      "title": "Compliance Framework | Detondo Seguros",
       "description": "Detondo's regulatory compliance framework and internal governance policies."
     },
     "aml": {
-      "title": "AML & KYC Policy | Detondo Insurance",
+      "title": "AML & KYC Policy | Detondo Seguros",
       "description": "Anti-money laundering and know-your-customer policy of Detondo."
     },
     "regulatoryNotice": {
-      "title": "Regulatory Notice | Detondo Insurance",
+      "title": "Regulatory Notice | Detondo Seguros",
       "description": "Regulatory notices and disclosures from Detondo."
     },
     "partners": {
-      "title": "Our Partners | Detondo Insurance",
+      "title": "Our Partners | Detondo Seguros",
       "description": "Detondo's panel of insurer and reinsurer partners operating in Angola."
     }
   },
   "common": {
-    "brand": "Detondo Insurance",
-    "brandSubtitle": "Insurance Brokerage | Reinsurance | Risk Management",
+    "brand": "Detondo Seguros",
+    "brandSubtitle": "Insurance and Reinsurance Brokerage",
     "cta": {
       "quote": "Get a quote",
       "contact": "Talk to us",
@@ -369,7 +369,7 @@
     "products": {
       "motor": {
         "meta": {
-          "title": "Motor Insurance | Detondo Insurance",
+          "title": "Motor Insurance | Detondo Seguros",
           "description": "Comprehensive vehicle coverage in Angola. Third-party liability, own damage, 24-hour assistance and replacement hire car. Get a quote today."
         },
         "eyebrow": "Personal insurance",
@@ -390,7 +390,7 @@
       },
       "building": {
         "meta": {
-          "title": "Building Insurance | Detondo Insurance",
+          "title": "Building Insurance | Detondo Seguros",
           "description": "Protection for your property in Angola. Coverage against fire, flood, structural damage and owner's liability. Contact us today."
         },
         "eyebrow": "Personal insurance",
@@ -411,7 +411,7 @@
       },
       "home-contents": {
         "meta": {
-          "title": "Home Contents Insurance | Detondo Insurance",
+          "title": "Home Contents Insurance | Detondo Seguros",
           "description": "Your home contents protected against theft, fire and water damage in Angola. Tailored coverage for your belongings. Get a quote today."
         },
         "eyebrow": "Personal insurance",
@@ -432,7 +432,7 @@
       },
       "all-risks": {
         "meta": {
-          "title": "Personal All-Risks Insurance | Detondo Insurance",
+          "title": "Personal All-Risks Insurance | Detondo Seguros",
           "description": "Protection for your valuables anywhere in the world. Mobile phones, electronics, jewellery and more. Contact us today."
         },
         "eyebrow": "Personal insurance",
@@ -453,7 +453,7 @@
       },
       "liability": {
         "meta": {
-          "title": "Personal Liability Insurance | Detondo Insurance",
+          "title": "Personal Liability Insurance | Detondo Seguros",
           "description": "Financial protection for damage caused to others in daily life. Legal costs, compensation and more. Get a quote today."
         },
         "eyebrow": "Personal insurance",
@@ -473,7 +473,7 @@
       },
       "travel": {
         "meta": {
-          "title": "Travel Insurance | Detondo Insurance",
+          "title": "Travel Insurance | Detondo Seguros",
           "description": "Regional and international travel covered for emergency medical expenses, repatriation, luggage and cancellation. Contact us today."
         },
         "eyebrow": "Personal insurance",
