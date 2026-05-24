@@ -87,6 +87,7 @@
       "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
       "phoneLabel": "Telefone",
       "emailLabel": "Email",
+      "email": "geral@detondocorretora.com",
       "rights": "Todos os direitos reservados.",
       "tagline": "Seguros, resseguros e gestão de risco para clientes corporativos, do sector energético e de Petróleo & Gás em Angola. Fundada em 2017.",
       "builtBy": "Website desenvolvido por",
@@ -806,6 +807,7 @@
     "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
     "phoneTitle": "Telefone",
     "emailTitle": "Email",
+    "emailAddress": "geral@detondocorretora.com",
     "hoursTitle": "Horário",
     "hours": "Segunda a sexta, 08h00 às 17h00",
     "form": {
@@ -938,6 +940,10 @@
     "contactUs": "Contacte-nos",
     "lastUpdated": "Ultima atualizacao: Maio 2026",
     "comingSoon": "Este conteudo esta a ser preparado. Por favor, contacte-nos directamente para mais informacoes.",
+    "claimsEmail": "claims@detondocorretora.com",
+    "claimsEmailLabel": "Participar um sinistro por email:",
+    "supportEmail": "support@detondocorretora.com",
+    "supportEmailLabel": "Apoio ao cliente por email:",
     "privacy": {
       "title": "Politica de Privacidade",
       "intro": "A Detondo Corretora de Seguros esta comprometida com a protecao da privacidade, confidencialidade e seguranca das informacoes pessoais e empresariais obtidas atraves do website, servicos e actividades comerciais.",

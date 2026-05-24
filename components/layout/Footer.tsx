@@ -40,6 +40,7 @@ type FooterDict = {
     address: string;
     phoneLabel: string;
     emailLabel: string;
+    email: string;
     rights: string;
     tagline: string;
     builtBy: string;
@@ -154,10 +155,10 @@ export function Footer({
               <li className="flex items-center gap-2.5">
                 <EmailIcon className="h-4 w-4 flex-shrink-0 text-brand-azure" />
                 <a
-                  href="mailto:detondocorretoraseguros@gmail.com"
+                  href={`mailto:${dict.footer.email}`}
                   className="break-all transition-colors hover:text-brand-ivory"
                 >
-                  detondocorretoraseguros@gmail.com
+                  {dict.footer.email}
                 </a>
               </li>
             </ul>

@@ -109,10 +109,10 @@ export default async function ContactPage(
                     {dict.contact.emailTitle}
                   </div>
                   <a
-                    href="mailto:detondocorretoraseguros@gmail.com"
+                    href={`mailto:${dict.contact.emailAddress}`}
                     className="mt-1 block text-brand-slate transition-colors hover:text-brand-navy"
                   >
-                    detondocorretoraseguros@gmail.com
+                    {dict.contact.emailAddress}
                   </a>
                 </div>
               </li>

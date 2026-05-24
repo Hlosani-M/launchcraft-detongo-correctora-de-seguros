@@ -38,6 +38,8 @@ export default async function ClientSupportPage(
       body={dict.legalPages.comingSoon}
       contactLabel={dict.legalPages.contactUs}
       backHomeLabel={dict.legalPages.backHome}
+      contactEmail={dict.legalPages.supportEmail}
+      contactEmailLabel={dict.legalPages.supportEmailLabel}
     />
   );
 }

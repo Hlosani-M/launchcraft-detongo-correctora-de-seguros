@@ -10,9 +10,11 @@ type Props = {
   body: string;
   contactLabel: string;
   backHomeLabel: string;
+  contactEmail?: string;
+  contactEmailLabel?: string;
 };
 
-export function ComingSoon({ lang, eyebrow, title, body, contactLabel, backHomeLabel }: Props) {
+export function ComingSoon({ lang, eyebrow, title, body, contactLabel, backHomeLabel, contactEmail, contactEmailLabel }: Props) {
   return (
     <Section tone="ivory" containerClassName="max-w-3xl">
       <Reveal>
@@ -37,6 +39,17 @@ export function ComingSoon({ lang, eyebrow, title, body, contactLabel, backHomeL
             {backHomeLabel}
           </Link>
         </div>
+        {contactEmail && (
+          <p className="mt-8 text-sm text-brand-slate">
+            {contactEmailLabel && <span>{contactEmailLabel} </span>}
+            <a
+              href={`mailto:${contactEmail}`}
+              className="font-medium text-brand-navy transition-colors hover:text-brand-azure"
+            >
+              {contactEmail}
+            </a>
+          </p>
+        )}
       </Reveal>
     </Section>
   );

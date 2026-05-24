@@ -87,6 +87,7 @@
       "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
       "phoneLabel": "Phone",
       "emailLabel": "Email",
+      "email": "info@detondocorretora.com",
       "rights": "All rights reserved.",
       "tagline": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017.",
       "builtBy": "Website built by",
@@ -806,6 +807,7 @@
     "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
     "phoneTitle": "Phone",
     "emailTitle": "Email",
+    "emailAddress": "info@detondocorretora.com",
     "hoursTitle": "Hours",
     "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
     "form": {
@@ -938,6 +940,10 @@
     "contactUs": "Contact us",
     "lastUpdated": "Last updated: May 2026",
     "comingSoon": "This content is being prepared. Please contact us directly for more information.",
+    "claimsEmail": "claims@detondocorretora.com",
+    "claimsEmailLabel": "Submit a claim by email:",
+    "supportEmail": "support@detondocorretora.com",
+    "supportEmailLabel": "Client support by email:",
     "privacy": {
       "title": "Privacy Policy",
       "intro": "Detondo Corretora de Seguros is committed to protecting the privacy, confidentiality, and security of personal and corporate information obtained through its website, services, and business activities.",

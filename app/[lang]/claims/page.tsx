@@ -36,6 +36,8 @@ export default async function ClaimsSupportPage(props: PageProps<"/[lang]/claims
       body={dict.legalPages.comingSoon}
       contactLabel={dict.legalPages.contactUs}
       backHomeLabel={dict.legalPages.backHome}
+      contactEmail={dict.legalPages.claimsEmail}
+      contactEmailLabel={dict.legalPages.claimsEmailLabel}
     />
   );
 }
