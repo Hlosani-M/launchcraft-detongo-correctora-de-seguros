@@ -810,7 +810,12 @@
     "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
     "form": {
       "steps": {
-        "labels": ["Service", "Purpose", "Details", "Your Details"],
+        "labels": [
+          "Service",
+          "Purpose",
+          "Details",
+          "Your Details"
+        ],
         "of": "of",
         "next": "Continue",
         "back": "Back"
@@ -931,12 +936,12 @@
   "legalPages": {
     "backHome": "Back to homepage",
     "contactUs": "Contact us",
-    "lastUpdated": "Last updated: January 2026",
+    "lastUpdated": "Last updated: May 2026",
     "comingSoon": "This content is being prepared. Please contact us directly for more information.",
     "privacy": {
       "title": "Privacy Policy",
-      "intro": "Detondo Insurance Brokerage is committed to protecting the privacy, confidentiality, and security of all information belonging to clients, partners, and website users.",
-      "body": "DATA CONTROLLER\nDetondo Insurance Brokerage, Lda\nRua n.o 121, casa n.o 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola\nARSEG Licence: 112/ASEG/MF/23\n\nPURPOSE OF PROCESSING\nYour personal data is collected and processed solely for:\n- Responding to enquiries, quote requests, and questions about our services\n- Issuing, managing, and renewing insurance and reinsurance policies\n- Managing and handling claims\n- Meeting legal and regulatory obligations (ARSEG, AML/KYC, Lei n.o 5/20)\n- Communications related to contracted services\n- Continuous improvement of our services and website\n\nCATEGORIES OF DATA COLLECTED\n- Identification data: full name, national identity card or passport number, tax identification number\n- Contact data: email address, phone number, postal address\n- Professional and corporate data: company name, role, sector\n- Financial data: information required for insurance underwriting and AML/KYC compliance\n- Navigation data: IP address, device type, and browser (with consent, via cookies)\n\nLEGAL BASIS FOR PROCESSING\n- Contract performance: where necessary to provide the requested services\n- Legal obligation: where required by Angolan law or regulatory authorities\n- Consent: for marketing communications and non-essential cookies\n- Legitimate interest: to improve our services and prevent fraud\n\nINFORMATION SHARING\nYour data may be shared with:\n- Insurers and reinsurers for policy placement and management\n- Loss adjusters and service providers involved in claims\n- Regulatory authorities (ARSEG) and supervisory bodies, where legally required\n- International reinsurance partners (Swiss Re, Munich Re, Lloyd's of London Market)\n- Technology service providers supporting our systems\n\nWe do not sell or transfer personal data to third parties for their own commercial use.\n\nDATA RETENTION\n- Active policies: for the duration and 10 years after termination\n- Claims: 10 years after resolution\n- Enquiries and contacts: 3 years after the last interaction\n- AML/KYC data: 10 years after the end of the commercial relationship (legal obligation)\n- Navigation data (cookies): up to 13 months\n\nDATA SUBJECT RIGHTS\nYou have the right to:\n- Access: obtain confirmation and a copy of the data processed\n- Rectification: correct inaccurate or incomplete data\n- Erasure: request deletion of your data, within the limits of the law\n- Restriction: limit processing in certain circumstances\n- Portability: receive your data in a structured format\n- Objection: object to processing for direct marketing purposes\n- Withdrawal of consent: without affecting the lawfulness of prior processing\n\nTo exercise your rights or raise questions about privacy, please contact us through the contact form on the website or at the postal address above."
+      "intro": "Detondo Corretora de Seguros is committed to protecting the privacy, confidentiality, and security of personal and corporate information obtained through its website, services, and business activities.",
+      "body": "DATA CONTROLLER\nDetondo Corretora de Seguros is responsible for the collection, processing, storage, and protection of personal information submitted through this website.\n\nPURPOSE OF DATA COLLECTION\nInformation may be collected and processed for the following purposes:\n- Insurance and reinsurance quotations\n- Risk assessment and underwriting support\n- Client relationship management\n- Regulatory and compliance requirements\n- Communication and customer support\n- Marketing and service improvement initiatives\n- Legal and contractual obligations\n\nCATEGORIES OF DATA COLLECTED\nThe company may collect:\n- Name and surname\n- Company details\n- Contact information\n- Identification information where required\n- Insurance-related information\n- Communication records\n- Other information voluntarily provided by users\n\nDATA SHARING\nPersonal information may be shared where necessary with:\n- Insurers and reinsurers\n- Regulatory authorities\n- Financial institutions\n- Technology providers\n- Authorised business partners\n- Legal or compliance service providers\n\nDATA RETENTION\nPersonal data will only be retained for as long as necessary for operational, legal, regulatory, and contractual purposes.\n\nDATA SUBJECT RIGHTS\nUsers may request:\n- Access to their information\n- Correction of inaccurate data\n- Restriction of processing\n- Deletion where legally permitted\n- Withdrawal of consent where applicable\n\nPRIVACY CONTACT\nQuestions relating to privacy matters may be directed to:\nEmail: privacy@detondocorretora.com\n\nBy using this website, users consent to the collection and use of information in accordance with this Privacy Policy."
     },
     "terms": {
       "title": "Terms & Conditions",
@@ -945,8 +950,8 @@
     },
     "cookies": {
       "title": "Cookie Policy",
-      "intro": "We use cookies to improve your browsing experience and analyse website performance.",
-      "body": "Cookies are small text files stored on your device. We use essential cookies for website functionality and, with your consent, analytics cookies.\n\nYou can manage your preferences at any time through the cookie banner or your browser settings. Withdrawing consent does not affect the lawfulness of processing carried out before withdrawal.\n\nIf you have questions about our cookie policy, please contact us through the contact form.",
+      "intro": "Detondo Corretora de Seguros uses cookies and similar technologies to improve website performance, user experience, security, and analytics.",
+      "body": "Users may accept, reject, or withdraw cookie preferences at any time through the cookie management settings available on the website.\n\nDisabling certain cookies may affect website functionality.",
       "table": {
         "category": "Category",
         "purpose": "Purpose",
@@ -958,17 +963,31 @@
       },
       "categories": [
         {
-          "name": "Necessary cookies",
-          "purpose": "Essential for website operation. They enable browsing and access to basic functions.",
+          "name": "Essential Cookies",
+          "purpose": "Website functionality and security.",
           "provider": "Detondo",
-          "retention": "Session / 1 year",
+          "retention": "Session or persistent",
           "essential": true
         },
         {
-          "name": "Analytics cookies",
-          "purpose": "Help us understand how visitors use the website, to improve performance and experience.",
-          "provider": "Google Analytics",
-          "retention": "_ga: 2 years, _gid: 24 hours",
+          "name": "Analytics Cookies",
+          "purpose": "Website traffic and performance measurement.",
+          "provider": "Google Analytics or equivalent",
+          "retention": "Up to 24 months",
+          "essential": false
+        },
+        {
+          "name": "Functional Cookies",
+          "purpose": "Language settings and user preferences.",
+          "provider": "Detondo",
+          "retention": "Variable",
+          "essential": false
+        },
+        {
+          "name": "Marketing Cookies",
+          "purpose": "Advertising and campaign performance.",
+          "provider": "Various",
+          "retention": "Variable",
           "essential": false
         }
       ]
@@ -980,13 +999,13 @@
     },
     "aml": {
       "title": "AML & KYC Policy",
-      "intro": "Detondo Insurance Brokerage is committed to supporting international Anti-Money Laundering (AML), Counter-Financing of Terrorism (CFT), and Know Your Customer (KYC) compliance principles.",
-      "body": "INDIVIDUAL CLIENT IDENTIFICATION\nFor all individual clients, the following documents are required:\n- Valid Angolan national identity card or passport\n- Tax Identification Number (NIF)\n- Proof of address (utility bill or bank statement, not older than 3 months)\n- Beneficial owner declaration, where applicable\n\nCORPORATE DOCUMENTATION\nFor corporate clients, the following are required:\n- Up-to-date commercial certificate (Registo Comercial)\n- Articles of association, including all amendments\n- Identification of directors and managers\n- Beneficial ownership declaration (shareholders with 25% or more participation)\n- Corporate Tax Identification Number (NIF)\n- Registered office address\n\nSOURCE OF FUNDS\nDocumentation evidencing the source of funds may be requested, including bank statements, sales invoices, contracts, or other documents appropriate to the nature of the business.\n\nBENEFICIAL OWNERSHIP\nUnder Angolan law (Lei n.o 5/20, of 27 January), a beneficial owner is any natural person who ultimately owns or controls the client, or on whose behalf a transaction is carried out, including direct or indirect holdings of 25% or more in the share capital.\n\nINTERNAL COMPLIANCE STANDARDS\nOur compliance programme includes:\n- Internal Anti-Money Laundering and Counter-Financing of Terrorism (AML/CFT) policy\n- Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) procedures\n- Regular staff training on compliance and AML/CFT matters\n- Ongoing monitoring of transactions and business relationships\n- Reporting of suspicious transactions to the competent authorities\n- Periodic review of client risk profiles\n- Designated compliance officer\n\nDetondo Insurance Brokerage reserves the right to refuse, suspend, or terminate business relationships that do not satisfy internal compliance standards or applicable regulatory requirements."
+      "intro": "Detondo Corretora de Seguros supports international Anti-Money Laundering (AML), Counter-Terrorism Financing (CFT), and Know Your Customer (KYC) principles.",
+      "body": "The company may request:\n- Identification documents\n- Corporate registration documents\n- Source of funds information\n- Beneficial ownership information\n- Compliance-related supporting documents\n\nDetondo Corretora de Seguros reserves the right to refuse, suspend, or terminate relationships that do not satisfy internal compliance requirements or regulatory obligations.\n\nThe company is committed to transparency and the prevention of financial crime."
     },
     "regulatoryNotice": {
       "title": "Regulatory Notice",
-      "intro": "Detondo Insurance Brokerage operates within the Angolan insurance sector regulatory framework and is committed to responsible insurance and reinsurance practices.",
-      "body": "REGULATORY REGISTRATION\nDetondo Insurance Brokerage, Lda is registered as an authorised insurance broker by the Angolan Insurance Regulation and Supervision Agency (ARSEG), under licence reference 112/ASEG/MF/23. The list of authorised entities can be consulted directly on the ARSEG website.\n\nPROFESSIONAL CONDUCT\nThe company is committed to:\n- Acting in the best interest of clients at all times\n- Presenting clear, accurate, and complete information about products and services\n- Managing conflicts of interest in a transparent and responsible manner\n- Maintaining the professional qualification levels required by regulation\n- Meeting all reporting deadlines and obligations to ARSEG\n\nCLIENT CONFIDENTIALITY\nDetondo Insurance Brokerage is committed to:\n- Treating all client information with strict confidentiality\n- Not disclosing client data to unauthorised third parties\n- Maintaining accurate and secure records of all commercial relationships\n\nREGULATORY COMPLIANCE\nThe company's activities are regulated by the following legal provisions:\n- Insurance Law and complementary legislation of the Angolan insurance sector\n- Lei n.o 5/20, of 27 January (Prevention and Combat of Money Laundering and Financing of Terrorism)\n- Reporting and disclosure obligations to ARSEG\n- Solvency and capital requirements applicable to insurance brokers\n\nETHICAL BUSINESS PRACTICES\nThe company operates under a code of conduct based on the following principles:\n- Zero tolerance for corruption, bribery, or dishonest conduct\n- Refusal to participate in transactions with suspicious origins\n- Maintaining commercial relationships grounded in integrity and transparency\n- Proactive disclosure of any situation that may constitute a conflict of interest\n\nNOTICES AND DISCLOSURES\nReferences to insurers, reinsurers, international markets, or partners on this website are presented solely for informational and institutional purposes and do not constitute a binding offer of services or coverage. For specific enquiries, contact our compliance team: conformidade@detondo.ao"
+      "intro": "Detondo Corretora de Seguros operates within the Angolan insurance regulatory framework and supports responsible insurance and reinsurance practices.",
+      "body": "The company is committed to professional conduct, transparency, client confidentiality, regulatory compliance, and ethical business standards.\n\nAny references to insurers, reinsurers, international markets, partners, or institutions are presented for informational and institutional purposes only.\n\nInsurance placement remains subject to underwriting acceptance, policy conditions, and applicable regulatory requirements."
     }
   }
 }
