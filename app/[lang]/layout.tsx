@@ -43,6 +43,14 @@ export async function generateMetadata(
       template: `%s · ${dict.common.brand}`,
     },
     description: home.description,
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "16x16 32x32", type: "image/x-icon" },
+        { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+      shortcut: "/favicon.ico",
+    },
     alternates: {
       canonical: `/${lang}`,
       languages: {
