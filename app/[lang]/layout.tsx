@@ -65,6 +65,7 @@ export async function generateMetadata(
       description: home.description,
     },
     robots: { index: true, follow: true },
+    other: { google: "notranslate" },
   };
 }
 
@@ -84,6 +85,7 @@ export default async function LangLayout(props: LayoutProps<"/[lang]">) {
   return (
     <html
       lang={typedLang}
+      translate="no"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >

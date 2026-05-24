@@ -120,7 +120,7 @@ export function Footer({
               aria-label={dict.brand}
             >
               <Logo size={44} />
-              <span className="flex flex-col leading-tight">
+              <span className="flex flex-col leading-tight" translate="no">
                 <span className="text-xl font-bold tracking-tight">
                   {dict.brand}
                 </span>
@@ -209,7 +209,7 @@ export function Footer({
         {/* Bottom bar */}
         <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-brand-ivory/10 pt-6 text-xs text-brand-ivory/40 sm:flex-row sm:items-center">
           <p>
-            &copy; {year} {dict.brand}, Corretora de Seguros, Lda. {dict.footer.rights}
+            &copy; {year} <span translate="no">{dict.brand}, Corretora de Seguros, Lda.</span> {dict.footer.rights}
           </p>
           <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span>{dict.footer.builtBy}</span>

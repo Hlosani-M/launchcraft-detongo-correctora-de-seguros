@@ -87,7 +87,7 @@ export function Header({
           className="flex items-center gap-2.5"
         >
           <Logo size={40} priority />
-          <span className="flex flex-col leading-tight">
+          <span className="flex flex-col leading-tight" translate="no">
             <span className="text-lg font-bold tracking-tight text-brand-navy">
               {dict.brand}
             </span>
