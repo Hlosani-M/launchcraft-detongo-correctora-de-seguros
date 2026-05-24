@@ -44,9 +44,41 @@ export default async function CookiePolicyPage(
         </h1>
         <p className="mt-2 text-sm text-brand-navy/50">{dict.legalPages.lastUpdated}</p>
         <p className="mt-6 text-lg leading-8 text-brand-navy/75">{page.intro}</p>
-        <div className="mt-8 rounded-2xl border border-brand-navy/10 bg-white p-6 text-sm leading-7 text-brand-navy/70">
+        <div className="mt-8 rounded-2xl border border-brand-navy/10 bg-white p-6 text-sm leading-7 text-brand-navy/70 whitespace-pre-line">
           {page.body}
         </div>
+
+        {page.categories && page.table && (
+          <div className="mt-8 overflow-x-auto rounded-2xl border border-brand-navy/10">
+            <table className="min-w-full text-sm">
+              <thead className="bg-brand-navy text-white">
+                <tr>
+                  <th className="px-4 py-3 text-left font-semibold tracking-wide">{page.table.category}</th>
+                  <th className="px-4 py-3 text-left font-semibold tracking-wide">{page.table.purpose}</th>
+                  <th className="px-4 py-3 text-left font-semibold tracking-wide">{page.table.provider}</th>
+                  <th className="px-4 py-3 text-left font-semibold tracking-wide">{page.table.retention}</th>
+                  <th className="px-4 py-3 text-left font-semibold tracking-wide">{page.table.type}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-brand-navy/10 bg-white">
+                {page.categories.map((cat: { name: string; purpose: string; provider: string; retention: string; essential: boolean }) => (
+                  <tr key={cat.name} className="hover:bg-brand-surface/50">
+                    <td className="px-4 py-3 font-medium text-brand-navy">{cat.name}</td>
+                    <td className="px-4 py-3 text-brand-navy/70">{cat.purpose}</td>
+                    <td className="px-4 py-3 text-brand-navy/70">{cat.provider}</td>
+                    <td className="px-4 py-3 text-brand-navy/70">{cat.retention}</td>
+                    <td className="px-4 py-3">
+                      <span className={`inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold ${cat.essential ? "bg-brand-azure/20 text-brand-navy" : "bg-brand-slate/10 text-brand-slate"}`}>
+                        {cat.essential ? page.table.essential : page.table.nonEssential}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
             href={`/${lang}/contact`}

@@ -11,6 +11,10 @@ type Dict = {
     title: string;
     items: string[];
   };
+  market?: {
+    title: string;
+    items: string[];
+  };
 };
 
 type LogoEntry = {
@@ -126,6 +130,25 @@ export function Partners({
           </ul>
         </div>
       </Reveal>
+
+      {dict.market && (
+        <Reveal>
+          <div className="mt-12 border-t border-brand-slate/10 pt-10">
+            <p className="mb-6 text-center text-sm font-semibold uppercase tracking-widest text-brand-slate">
+              {dict.market.title}
+            </p>
+            <ul className="mx-auto flex max-w-xs justify-center gap-4">
+              {dict.market.items.map((name) => (
+                <LogoCard
+                  key={name}
+                  name={name}
+                  sizes="(max-width: 640px) 30vw, 20vw"
+                />
+              ))}
+            </ul>
+          </div>
+        </Reveal>
+      )}
     </Section>
   );
 }

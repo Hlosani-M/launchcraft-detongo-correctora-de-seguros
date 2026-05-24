@@ -68,6 +68,7 @@ type FormDict = {
     commentsPlaceholder: string;
     commentsHint: string;
     consent: string;
+    consentSuffix: string;
     privacyNotice: string;
     privacyLink: string;
   };
@@ -779,6 +780,7 @@ function Step4({
             >
               {dict.privacyLink}
             </Link>
+            {" "}{dict.consentSuffix}
           </span>
         </label>
         {e.consent && (

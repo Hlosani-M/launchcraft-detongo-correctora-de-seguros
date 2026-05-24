@@ -4,69 +4,69 @@
     "tagline": "Insurance, reinsurance, and risk management for Angola",
     "description": "Angolan insurance and reinsurance brokerage, established in 2017. Tailored solutions for corporate, energy, and oil & gas clients in Angola. ANPG-certified.",
     "home": {
-      "title": "Detondo Seguros | Insurance and Reinsurance Brokerage in Angola",
+      "title": "Detondo | Insurance and Reinsurance Brokerage in Angola",
       "description": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017. ANPG-certified."
     },
     "about": {
-      "title": "About us | Detondo Seguros",
+      "title": "About us | Detondo Insurance",
       "description": "Angolan brokerage, established 2017. Multi-sector experience, ANPG certification, and a panel of the leading insurers in Angola."
     },
     "services": {
-      "title": "Services | Detondo Seguros",
+      "title": "Services | Detondo Insurance",
       "description": "Corporate, oil & gas, energy, marine, construction all risks, liability, health and life, and reinsurance solutions for Angola."
     },
     "contact": {
-      "title": "Contact | Detondo Seguros",
+      "title": "Contact | Detondo Insurance",
       "description": "Talk to our team in Luanda. We are available for quotes, advice, and claims management."
     },
     "privacy": {
-      "title": "Privacy Policy | Detondo Seguros",
-      "description": "How Detondo Corretora de Seguros collects, uses, and protects your personal data."
+      "title": "Privacy Policy | Detondo Insurance",
+      "description": "How Detondo collects, uses, and protects your personal data."
     },
     "terms": {
-      "title": "Terms & Conditions | Detondo Seguros",
-      "description": "Terms and conditions for using the services of Detondo Corretora de Seguros."
+      "title": "Terms & Conditions | Detondo Insurance",
+      "description": "Terms and conditions for using Detondo's services."
     },
     "cookies": {
-      "title": "Cookie Policy | Detondo Seguros",
-      "description": "Information about the cookies used by Detondo Corretora de Seguros and how to manage them."
+      "title": "Cookie Policy | Detondo Insurance",
+      "description": "Information about the cookies used by Detondo and how to manage them."
     },
     "disclaimer": {
-      "title": "Disclaimer | Detondo Seguros",
-      "description": "Legal disclaimer and limitations of liability of Detondo Corretora de Seguros."
+      "title": "Disclaimer | Detondo Insurance",
+      "description": "Legal disclaimer and limitations of liability of Detondo."
     },
     "faqs": {
-      "title": "FAQs | Detondo Seguros",
+      "title": "FAQs | Detondo Insurance",
       "description": "Frequently asked questions about Detondo's insurance and reinsurance services."
     },
     "claims": {
-      "title": "Claims Support | Detondo Seguros",
-      "description": "Support for insurance and reinsurance claims managed by Detondo Corretora de Seguros."
+      "title": "Claims Support | Detondo Insurance",
+      "description": "Support for insurance and reinsurance claims managed by Detondo."
     },
     "clientSupport": {
-      "title": "Client Support | Detondo Seguros",
-      "description": "Client support services from Detondo Corretora de Seguros."
+      "title": "Client Support | Detondo Insurance",
+      "description": "Client support services from Detondo."
     },
     "compliance": {
-      "title": "Compliance Framework | Detondo Seguros",
+      "title": "Compliance Framework | Detondo Insurance",
       "description": "Detondo's regulatory compliance framework and internal governance policies."
     },
     "aml": {
-      "title": "AML & KYC Policy | Detondo Seguros",
-      "description": "Anti-money laundering and know-your-customer policy of Detondo Corretora de Seguros."
+      "title": "AML & KYC Policy | Detondo Insurance",
+      "description": "Anti-money laundering and know-your-customer policy of Detondo."
     },
     "regulatoryNotice": {
-      "title": "Regulatory Notice | Detondo Seguros",
-      "description": "Regulatory notices and disclosures from Detondo Corretora de Seguros."
+      "title": "Regulatory Notice | Detondo Insurance",
+      "description": "Regulatory notices and disclosures from Detondo."
     },
     "partners": {
-      "title": "Our Partners | Detondo Seguros",
+      "title": "Our Partners | Detondo Insurance",
       "description": "Detondo's panel of insurer and reinsurer partners operating in Angola."
     }
   },
   "common": {
-    "brand": "Detondo Seguros",
-    "brandSubtitle": "Insurance and Reinsurance Brokerage",
+    "brand": "Detondo",
+    "brandSubtitle": "Insurance Brokerage | Reinsurance | Risk Management",
     "cta": {
       "quote": "Get a quote",
       "contact": "Talk to us",
@@ -121,7 +121,7 @@
         "solutions": "Corporate Solutions",
         "mining": "Mining Insurance"
       },
-      "institutional": "Detondo Corretora de Seguros is committed to international compliance, client confidentiality, and responsible insurance and reinsurance practices."
+      "institutional": "Detondo is committed to international compliance, client confidentiality, and responsible insurance and reinsurance practices."
     },
     "locale": {
       "pt": "Português",
@@ -240,7 +240,7 @@
   "arseg": {
     "eyebrow": "ARSEG Authorised Entity",
     "title": "Registered and supervised by ARSEG",
-    "description": "DETONDO - Corretora de Seguros, Lda is listed among the authorised insurance mediation entities by ARSEG, Angola's Insurance Regulation and Supervision Agency, as a registered insurance broker.",
+    "description": "DETONDO - Insurance Brokerage, Lda is listed among the authorised insurance mediation entities by ARSEG, Angola's Insurance Regulation and Supervision Agency, as a registered insurance broker.",
     "details": {
       "entityType": "Entity Type",
       "entityTypeValue": "Insurance Broker",
@@ -254,25 +254,30 @@
     "title": "Insurers and reinsurers we work with",
     "description": "We place business with the major insurers in the Angolan market and with leading international reinsurers, giving our clients more capacity, better pricing, and reliable claims-handling.",
     "items": [
-      "ENSA Seguros",
-      "Nossa Seguros",
-      "BIC Seguros",
-      "Sanlam Seguros",
-      "Fidelidade Seguros",
-      "STAS Seguros",
-      "Proteja Seguros",
-      "Viva Seguros",
-      "Unisaúde Seguros",
-      "Fortaleza Seguros",
-      "Harmonia Seguros S.A.",
-      "Aliança Seguros",
-      "Mundial Seguros"
+      "ENSA Insurance",
+      "Nossa Insurance",
+      "BIC Insurance",
+      "Sanlam Insurance",
+      "Fidelidade Insurance",
+      "STAS Insurance",
+      "Proteja Insurance",
+      "Viva Insurance",
+      "Unisaúde Insurance",
+      "Fortaleza Insurance",
+      "Harmonia Insurance S.A.",
+      "Aliança Insurance",
+      "Mundial Insurance"
     ],
     "reinsurers": {
       "title": "International reinsurers",
       "items": [
         "Swiss Re",
-        "Munich Re",
+        "Munich Re"
+      ]
+    },
+    "market": {
+      "title": "International Insurance Market",
+      "items": [
         "Lloyd's of London"
       ]
     }
@@ -364,7 +369,7 @@
     "products": {
       "motor": {
         "meta": {
-          "title": "Motor Insurance | Detondo Seguros",
+          "title": "Motor Insurance | Detondo Insurance",
           "description": "Comprehensive vehicle coverage in Angola. Third-party liability, own damage, 24-hour assistance and replacement hire car. Get a quote today."
         },
         "eyebrow": "Personal insurance",
@@ -385,7 +390,7 @@
       },
       "building": {
         "meta": {
-          "title": "Building Insurance | Detondo Seguros",
+          "title": "Building Insurance | Detondo Insurance",
           "description": "Protection for your property in Angola. Coverage against fire, flood, structural damage and owner's liability. Contact us today."
         },
         "eyebrow": "Personal insurance",
@@ -406,7 +411,7 @@
       },
       "home-contents": {
         "meta": {
-          "title": "Home Contents Insurance | Detondo Seguros",
+          "title": "Home Contents Insurance | Detondo Insurance",
           "description": "Your home contents protected against theft, fire and water damage in Angola. Tailored coverage for your belongings. Get a quote today."
         },
         "eyebrow": "Personal insurance",
@@ -427,7 +432,7 @@
       },
       "all-risks": {
         "meta": {
-          "title": "Personal All-Risks Insurance | Detondo Seguros",
+          "title": "Personal All-Risks Insurance | Detondo Insurance",
           "description": "Protection for your valuables anywhere in the world. Mobile phones, electronics, jewellery and more. Contact us today."
         },
         "eyebrow": "Personal insurance",
@@ -448,7 +453,7 @@
       },
       "liability": {
         "meta": {
-          "title": "Personal Liability Insurance | Detondo Seguros",
+          "title": "Personal Liability Insurance | Detondo Insurance",
           "description": "Financial protection for damage caused to others in daily life. Legal costs, compensation and more. Get a quote today."
         },
         "eyebrow": "Personal insurance",
@@ -468,7 +473,7 @@
       },
       "travel": {
         "meta": {
-          "title": "Travel Insurance | Detondo Seguros",
+          "title": "Travel Insurance | Detondo Insurance",
           "description": "Regional and international travel covered for emergency medical expenses, repatriation, luggage and cancellation. Contact us today."
         },
         "eyebrow": "Personal insurance",
@@ -652,7 +657,7 @@
   "treaty": {
     "eyebrow": "Treaty reinsurance & alternative risk",
     "title": "Treaty reinsurance handled at a strategic level",
-    "description": "We treat treaty reinsurance as a strategic decision, focused on our clients' underwriting and capital objectives across the whole portfolio. Our international reach lets us put together flexible, structured, fairly priced treaty programmes that match each client's challenges and goals.",
+    "description": "We treat treaty reinsurance as a strategic decision, focused on our clients' underwriting and capital objectives across the whole portfolio. Our network of international markets and partners lets us put together flexible, structured, fairly priced treaty programmes that match each client's challenges and goals.",
     "capabilitiesTitle": "Alternative risk transfer capabilities",
     "capabilities": [
       "Finite quota share insurance",
@@ -894,9 +899,10 @@
         "comments": "Additional comments",
         "commentsPlaceholder": "Any additional information or specific questions?",
         "commentsHint": "Optional",
-        "consent": "I agree to the processing of my personal data for contact purposes.",
+        "consent": "I have read and accept the",
         "privacyNotice": "Your data is handled confidentially, in accordance with our",
-        "privacyLink": "Privacy Policy"
+        "privacyLink": "Privacy Policy",
+        "consentSuffix": "and authorise the processing of my personal information."
       },
       "submit": "Submit enquiry",
       "submitting": "Submitting...",
@@ -929,33 +935,58 @@
     "comingSoon": "This content is being prepared. Please contact us directly for more information.",
     "privacy": {
       "title": "Privacy Policy",
-      "intro": "Detondo Corretora de Seguros is committed to protecting the privacy, confidentiality, and security of all client, partner, and website user information.",
-      "body": "Any personal or corporate information submitted through this website may be collected and processed solely for insurance, reinsurance, compliance, communication, and operational purposes.\n\nDetondo Corretora de Seguros does not sell or unlawfully disclose confidential information to third parties, except where required by law, regulatory authorities, compliance obligations, insurers, reinsurers, or authorised business partners.\n\nWe implement reasonable administrative, technical, and organisational measures to protect data against unauthorised access, misuse, loss, or disclosure.\n\nBy using this website, users consent to the collection and use of information in accordance with this Privacy Policy."
+      "intro": "Detondo Insurance Brokerage is committed to protecting the privacy, confidentiality, and security of all information belonging to clients, partners, and website users.",
+      "body": "DATA CONTROLLER\nDetondo Insurance Brokerage, Lda\nRua n.o 121, casa n.o 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola\nARSEG Licence: 112/ASEG/MF/23\n\nPURPOSE OF PROCESSING\nYour personal data is collected and processed solely for:\n- Responding to enquiries, quote requests, and questions about our services\n- Issuing, managing, and renewing insurance and reinsurance policies\n- Managing and handling claims\n- Meeting legal and regulatory obligations (ARSEG, AML/KYC, Lei n.o 5/20)\n- Communications related to contracted services\n- Continuous improvement of our services and website\n\nCATEGORIES OF DATA COLLECTED\n- Identification data: full name, national identity card or passport number, tax identification number\n- Contact data: email address, phone number, postal address\n- Professional and corporate data: company name, role, sector\n- Financial data: information required for insurance underwriting and AML/KYC compliance\n- Navigation data: IP address, device type, and browser (with consent, via cookies)\n\nLEGAL BASIS FOR PROCESSING\n- Contract performance: where necessary to provide the requested services\n- Legal obligation: where required by Angolan law or regulatory authorities\n- Consent: for marketing communications and non-essential cookies\n- Legitimate interest: to improve our services and prevent fraud\n\nINFORMATION SHARING\nYour data may be shared with:\n- Insurers and reinsurers for policy placement and management\n- Loss adjusters and service providers involved in claims\n- Regulatory authorities (ARSEG) and supervisory bodies, where legally required\n- International reinsurance partners (Swiss Re, Munich Re, Lloyd's of London Market)\n- Technology service providers supporting our systems\n\nWe do not sell or transfer personal data to third parties for their own commercial use.\n\nDATA RETENTION\n- Active policies: for the duration and 10 years after termination\n- Claims: 10 years after resolution\n- Enquiries and contacts: 3 years after the last interaction\n- AML/KYC data: 10 years after the end of the commercial relationship (legal obligation)\n- Navigation data (cookies): up to 13 months\n\nDATA SUBJECT RIGHTS\nYou have the right to:\n- Access: obtain confirmation and a copy of the data processed\n- Rectification: correct inaccurate or incomplete data\n- Erasure: request deletion of your data, within the limits of the law\n- Restriction: limit processing in certain circumstances\n- Portability: receive your data in a structured format\n- Objection: object to processing for direct marketing purposes\n- Withdrawal of consent: without affecting the lawfulness of prior processing\n\nTo exercise your rights or raise questions about privacy, please contact us through the contact form on the website or at the postal address above."
     },
     "terms": {
       "title": "Terms & Conditions",
-      "intro": "By accessing and using this website, users agree to comply with the applicable terms, conditions, and policies governing the use of Detondo Corretora de Seguros digital platforms and services.",
-      "body": "The information contained on this website is provided for general informational purposes only and may be updated, modified, or removed without prior notice.\n\nDetondo Corretora de Seguros makes reasonable efforts to ensure the accuracy of the information published but does not guarantee that all information is complete, current, or error-free at all times.\n\nUsers may not misuse, reproduce, distribute, or commercially exploit website content without prior written authorisation.\n\nThe use of this website shall be governed by the applicable laws and regulatory framework of the Republic of Angola."
+      "intro": "By accessing and using this website, users agree to comply with the applicable terms, conditions, and policies governing the use of Detondo Insurance Brokerage digital platforms and services.",
+      "body": "The information contained on this website is provided for general informational purposes only and may be updated, modified, or removed without prior notice.\n\nDetondo Insurance Brokerage makes reasonable efforts to ensure the accuracy of the information published but does not guarantee that all information is complete, current, or error-free at all times.\n\nUsers may not misuse, reproduce, distribute, or commercially exploit website content without prior written authorisation.\n\nThe use of this website shall be governed by the applicable laws and regulatory framework of the Republic of Angola."
     },
     "cookies": {
       "title": "Cookie Policy",
       "intro": "We use cookies to improve your browsing experience and analyse website performance.",
-      "body": "Cookies are small text files stored on your device. We use essential cookies for website functionality and, with your consent, analytics cookies. You can manage your preferences at any time through the cookie banner or your browser settings."
+      "body": "Cookies are small text files stored on your device. We use essential cookies for website functionality and, with your consent, analytics cookies.\n\nYou can manage your preferences at any time through the cookie banner or your browser settings. Withdrawing consent does not affect the lawfulness of processing carried out before withdrawal.\n\nIf you have questions about our cookie policy, please contact us through the contact form.",
+      "table": {
+        "category": "Category",
+        "purpose": "Purpose",
+        "provider": "Provider",
+        "retention": "Retention",
+        "type": "Type",
+        "essential": "Essential",
+        "nonEssential": "Non-essential"
+      },
+      "categories": [
+        {
+          "name": "Necessary cookies",
+          "purpose": "Essential for website operation. They enable browsing and access to basic functions.",
+          "provider": "Detondo",
+          "retention": "Session / 1 year",
+          "essential": true
+        },
+        {
+          "name": "Analytics cookies",
+          "purpose": "Help us understand how visitors use the website, to improve performance and experience.",
+          "provider": "Google Analytics",
+          "retention": "_ga: 2 years, _gid: 24 hours",
+          "essential": false
+        }
+      ]
     },
     "disclaimer": {
       "title": "Disclaimer",
       "intro": "The information provided on this website is for general informational purposes only and does not constitute insurance, financial, legal, investment, or professional advice.",
-      "body": "Insurance coverage, policy terms, pricing, and conditions remain subject to insurer approval, underwriting requirements, and applicable contractual agreements.\n\nDetondo Corretora de Seguros shall not be held liable for any direct or indirect losses arising from the use of information contained on this website.\n\nUsers are encouraged to contact our professional team directly for specific insurance, reinsurance, risk management, and corporate advisory support."
+      "body": "Insurance coverage, policy terms, pricing, and conditions remain subject to insurer approval, underwriting requirements, and applicable contractual agreements.\n\nDetondo Insurance Brokerage shall not be held liable for any direct or indirect losses arising from the use of information contained on this website.\n\nUsers are encouraged to contact our professional team directly for specific insurance, reinsurance, risk management, and corporate advisory support."
     },
     "aml": {
       "title": "AML & KYC Policy",
-      "intro": "Detondo Corretora de Seguros is committed to supporting international Anti-Money Laundering (AML), Counter-Financing of Terrorism (CFT), and Know Your Customer (KYC) compliance principles.",
-      "body": "The company may request identification, corporate documentation, source of funds information, and other compliance-related documents where required by applicable regulations, insurers, reinsurers, financial institutions, or business partners.\n\nDetondo Corretora de Seguros reserves the right to refuse, suspend, or terminate business relationships that do not satisfy internal compliance standards or applicable regulatory requirements.\n\nOur compliance framework supports transparency, responsible business practices, and the prevention of financial crime."
+      "intro": "Detondo Insurance Brokerage is committed to supporting international Anti-Money Laundering (AML), Counter-Financing of Terrorism (CFT), and Know Your Customer (KYC) compliance principles.",
+      "body": "INDIVIDUAL CLIENT IDENTIFICATION\nFor all individual clients, the following documents are required:\n- Valid Angolan national identity card or passport\n- Tax Identification Number (NIF)\n- Proof of address (utility bill or bank statement, not older than 3 months)\n- Beneficial owner declaration, where applicable\n\nCORPORATE DOCUMENTATION\nFor corporate clients, the following are required:\n- Up-to-date commercial certificate (Registo Comercial)\n- Articles of association, including all amendments\n- Identification of directors and managers\n- Beneficial ownership declaration (shareholders with 25% or more participation)\n- Corporate Tax Identification Number (NIF)\n- Registered office address\n\nSOURCE OF FUNDS\nDocumentation evidencing the source of funds may be requested, including bank statements, sales invoices, contracts, or other documents appropriate to the nature of the business.\n\nBENEFICIAL OWNERSHIP\nUnder Angolan law (Lei n.o 5/20, of 27 January), a beneficial owner is any natural person who ultimately owns or controls the client, or on whose behalf a transaction is carried out, including direct or indirect holdings of 25% or more in the share capital.\n\nINTERNAL COMPLIANCE STANDARDS\nOur compliance programme includes:\n- Internal Anti-Money Laundering and Counter-Financing of Terrorism (AML/CFT) policy\n- Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) procedures\n- Regular staff training on compliance and AML/CFT matters\n- Ongoing monitoring of transactions and business relationships\n- Reporting of suspicious transactions to the competent authorities\n- Periodic review of client risk profiles\n- Designated compliance officer\n\nDetondo Insurance Brokerage reserves the right to refuse, suspend, or terminate business relationships that do not satisfy internal compliance standards or applicable regulatory requirements."
     },
     "regulatoryNotice": {
       "title": "Regulatory Notice",
-      "intro": "Detondo Corretora de Seguros operates within the Angolan insurance sector regulatory framework and is committed to responsible insurance and reinsurance practices.",
-      "body": "The company supports regulatory compliance, ethical business conduct, transparency, client confidentiality, and professional standards aligned with the insurance and financial services industry.\n\nReferences to insurers, reinsurers, regulatory institutions, or international partners on this website are presented for informational and institutional purposes only.\n\nDetondo Corretora de Seguros continuously works to strengthen its operational, compliance, and corporate governance standards in line with market best practices."
+      "intro": "Detondo Insurance Brokerage operates within the Angolan insurance sector regulatory framework and is committed to responsible insurance and reinsurance practices.",
+      "body": "REGULATORY REGISTRATION\nDetondo Insurance Brokerage, Lda is registered as an authorised insurance broker by the Angolan Insurance Regulation and Supervision Agency (ARSEG), under licence reference 112/ASEG/MF/23. The list of authorised entities can be consulted directly on the ARSEG website.\n\nPROFESSIONAL CONDUCT\nThe company is committed to:\n- Acting in the best interest of clients at all times\n- Presenting clear, accurate, and complete information about products and services\n- Managing conflicts of interest in a transparent and responsible manner\n- Maintaining the professional qualification levels required by regulation\n- Meeting all reporting deadlines and obligations to ARSEG\n\nCLIENT CONFIDENTIALITY\nDetondo Insurance Brokerage is committed to:\n- Treating all client information with strict confidentiality\n- Not disclosing client data to unauthorised third parties\n- Maintaining accurate and secure records of all commercial relationships\n\nREGULATORY COMPLIANCE\nThe company's activities are regulated by the following legal provisions:\n- Insurance Law and complementary legislation of the Angolan insurance sector\n- Lei n.o 5/20, of 27 January (Prevention and Combat of Money Laundering and Financing of Terrorism)\n- Reporting and disclosure obligations to ARSEG\n- Solvency and capital requirements applicable to insurance brokers\n\nETHICAL BUSINESS PRACTICES\nThe company operates under a code of conduct based on the following principles:\n- Zero tolerance for corruption, bribery, or dishonest conduct\n- Refusal to participate in transactions with suspicious origins\n- Maintaining commercial relationships grounded in integrity and transparency\n- Proactive disclosure of any situation that may constitute a conflict of interest\n\nNOTICES AND DISCLOSURES\nReferences to insurers, reinsurers, international markets, or partners on this website are presented solely for informational and institutional purposes and do not constitute a binding offer of services or coverage. For specific enquiries, contact our compliance team: conformidade@detondo.ao"
     }
   }
 }
