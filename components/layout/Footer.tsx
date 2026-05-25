@@ -185,7 +185,16 @@ export function Footer({
             ]}
           />
 
-          {/* Regulatory & Compliance — hidden */}
+          {/* Regulatory & Compliance */}
+          <FooterNavColumn
+            section={dict.footer.regulatory}
+            links={[
+              { label: dict.footer.regulatory.arseg!, href: "https://www.arseg.ao", external: true },
+              // { label: dict.footer.regulatory.compliance!, href: `/${lang}/compliance` },
+              { label: dict.footer.regulatory.aml!, href: `/${lang}/aml-kyc` },
+              { label: dict.footer.regulatory.notice!, href: `/${lang}/regulatory-notice` },
+            ]}
+          />
 
           {/* Corporate */}
           <FooterNavColumn
