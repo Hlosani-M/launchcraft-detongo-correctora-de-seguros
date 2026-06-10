@@ -1,27 +1,32 @@
 # Full SEO Audit Report — Detondo Corretora de Seguros
 
-**Domain:** https://detondocorretora.com
-**Audit date:** 2026-05-24
+**Domain:** https://www.detondocorretora.com
+**Audit date:** 2026-05-25 (LIVE site audit)
 **Business type:** Insurance and reinsurance brokerage (YMYL) — Luanda, Angola
 **Stack:** Next.js 16 App Router · React 19 · Tailwind v4 · TypeScript · Bilingual (pt/en)
-**Audited by:** 8 specialist subagents — Technical, Content/E-E-A-T, Schema, Sitemap, Local SEO, Performance/Images, GEO/AI, SXO
+**Audited by:** 8 specialist subagents — Technical, Content/E-E-A-T, Schema, Sitemap, Local SEO, Performance, GEO/AI, SXO
 
 ---
 
-## SEO Health Score: 60 / 100
+## SEO Health Score: 55 / 100
 
 | Category | Weight | Score | Weighted |
 |---|---|---|---|
-| Technical SEO | 22% | 71 | 15.6 |
-| Content Quality (E-E-A-T) | 23% | 58 | 13.3 |
+| Technical SEO | 22% | 58 | 12.8 |
+| Content Quality (E-E-A-T) | 23% | 56 | 12.9 |
 | On-Page SEO | 20% | 62 | 12.4 |
-| Schema / Structured Data | 10% | 45 | 4.5 |
-| Performance (CWV) | 10% | 65 | 6.5 |
-| AI Search Readiness (GEO) | 10% | 48 | 4.8 |
+| Schema / Structured Data | 10% | 32 | 3.2 |
+| Performance (CWV) | 10% | 55 | 5.5 |
+| AI Search Readiness (GEO) | 10% | 41 | 4.1 |
+| Local SEO | 5% | 38 | 1.9 |
 | Images | 5% | 55 | 2.8 |
-| **Total** | | | **59.9 → 60** |
+| **Total** | | | **55.6 → 56** |
 
-The site has a strong structural and architectural foundation — SSR/SSG via Next.js, clean URL structure, bilingual hreflang, well-implemented design system, and genuine authority signals (ARSEG licence 112/ASEG/MF/23, ANPG certification, Lloyd's/Swiss Re/Munich Re panel). The score is suppressed by five indexed empty YMYL pages, ghost sitemap routes, missing HSTS, oversized images, empty entity signals (`sameAs`), and critically thin content on the highest-value service segment (oil and gas / corporate).
+Score fell 4 points from the initial codebase audit after live testing revealed zero Vercel edge caching on all pages, schema issues confirmed in live HTML, email NAP fragmentation (3 different addresses), and the GEO/Local audits surfacing the empty `sameAs` and no Google Business Profile.
+
+**Strengths:** SSR with full HTML rendered to crawlers, bilingual hreflang correctly wired, ARSEG licence 112/ASEG/MF/23 visible in HTML, ANPG certification section, Swiss Re/Munich Re/Lloyd's panel, 25 routes all returning HTTP 200.
+
+**Root problems:** No entity disambiguation (empty `sameAs`), no edge caching (every request is a fresh server render), testimonials component built but never mounted, and the oil & gas persona — the site's highest commercial value segment — has no dedicated landing page.
 
 ---
 
@@ -29,478 +34,469 @@ The site has a strong structural and architectural foundation — SSR/SSG via Ne
 
 **Brick-and-mortar Local Service + B2B Specialist**
 
-- Primary audience: corporate clients, oil and gas operators, energy/mining companies (Angola)
-- Secondary: individuals (personal insurance)
-- Regulatory classification: ARSEG-supervised, ANPG-certified
-- YMYL category: all pages (insurance = financial services)
+Primary market: Corporate clients, oil & gas operators (ANPG-regulated), energy sector, individual. HQ: Kilamba Kiaxi, Luanda, Angola. Regulated by ARSEG (licence 112/ASEG/MF/23), ANPG-certified.
 
 ---
 
-## Top 5 Critical Issues
+## Live Site Snapshot
 
-1. **10 sitemap routes return 404** — `/services/personal`, `/services/business`, `/services/mining`, `/services/reinsurance`, and all 6 personal product detail pages have no `page.tsx`. Google is being asked to index 20 ghost URLs.
-2. **5 empty YMYL pages are indexed** — `/faqs`, `/claims`, `/client-support`, `/compliance`, `/partners` all render a "coming soon" screen yet are submitted in the sitemap with `index: true`. In a YMYL category this accumulates thin-content signals.
-3. **No Google Business Profile** — zero GBP signals on-site or in schema. For a Luanda brick-and-mortar brokerage, GBP is the single highest-leverage local ranking factor.
-4. **No `llms.txt`** — the site has no machine-readable declaration of business identity for AI search engines (Perplexity, ChatGPT, Claude). The ARSEG licence number, ANPG certification, and insurer panel are exactly the citable signals that belong there.
-5. **`sameAs: []` is empty** — the JSON-LD Organization schema cannot be connected to any external identity (LinkedIn, GBP, ARSEG registry). AI systems cannot confirm "Detondo" on this site is the same entity as any other indexed mention.
-
----
-
-## Top 5 Quick Wins
-
-1. Add `llms.txt` to `/public/` — 30 minutes, zero risk, immediate AI citation improvement.
-2. Restore the `Testimonials` component to the homepage — the component and copy exist; it is simply missing from the `page.tsx` import list. One-line fix.
-3. Delete 5 boilerplate Next.js SVGs from `public/` (`file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg`).
-4. Add HSTS header to `next.config.ts` — one line: `{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }`.
-5. Fix `treaty.description` in `pt.json` line 660 — the text has stripped diacritics ("decisao estrategica", "subscricao", "aprecados") indicating an unproofread draft. The English counterpart is polished; this is a bilingual parity violation.
-
----
-
-## Technical SEO — 71/100
-
-### Critical
-
-**C-1. Missing HSTS header** (`next.config.ts`)
-`Strict-Transport-Security` is absent. Without it, browsers accept HTTP on first visit and the site cannot enter Chrome's HSTS preload list. HSTS is also a Google HTTPS ranking signal.
-
-Fix: Add to `securityHeaders` in `next.config.ts`:
-```
-{ key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" }
-```
-
-**C-2. Ghost sitemap routes** (`app/sitemap.ts`)
-The following routes are in the sitemap but have no corresponding `page.tsx`, meaning they will 404:
-
-| Route | Status |
+| Signal | Status |
 |---|---|
-| `/services/personal` | No page.tsx |
-| `/services/personal/motor` | No page.tsx (verify) |
-| `/services/personal/building` | No page.tsx (verify) |
-| `/services/personal/home-contents` | No page.tsx (verify) |
-| `/services/personal/all-risks` | No page.tsx (verify) |
-| `/services/personal/liability` | No page.tsx (verify) |
-| `/services/personal/travel` | No page.tsx (verify) |
-| `/services/business` | No page.tsx |
-| `/services/mining` | No page.tsx (directory exists, has [category] page) |
-| `/services/reinsurance` | No page.tsx |
-
-Action: Remove these from `ROUTES` in `sitemap.ts` until pages are built, OR build the pages (dictionary content already exists for all of them).
-
-### High
-
-**H-1. Canonical/hreflang URLs are relative, not absolute**
-Every `generateMetadata` uses `canonical: "/${lang}/about"` style paths. `metadataBase` in the layout resolves these, but this is fragile — any future route group change or layout bypass would produce invalid relative canonicals. Same for `alternates.languages`.
-
-Fix: Extract `siteUrl` to `lib/constants.ts` and use absolute URLs: `` canonical: `${siteUrl}/${lang}/about` `` in all per-page `generateMetadata` calls.
-
-**H-2. CSP uses `'unsafe-inline'` for scripts in production** (`next.config.ts`)
-This neutralises XSS protection. Long-term fix: implement nonce-based CSP. Short-term: audit whether `'unsafe-inline'` is strictly required in production `script-src`; add a `report-uri` endpoint to catch violations.
-
-**H-3. Missing security headers** (`next.config.ts`)
-Add at minimum:
-```
-{ key: "X-DNS-Prefetch-Control", value: "off" },
-{ key: "X-Permitted-Cross-Domain-Policies", value: "none" },
-{ key: "Cross-Origin-Opener-Policy", value: "same-origin" },
-{ key: "Cross-Origin-Resource-Policy", value: "same-origin" },
-```
-
-**H-4. Home page has no `generateMetadata`** (`app/[lang]/page.tsx`)
-The homepage relies entirely on layout-level metadata. Add an explicit `generateMetadata` export with its own `alternates` block, following the pattern in `about/page.tsx`.
-
-**H-5. Boilerplate files in `public/`**
-Delete: `file.svg`, `glob.svg`, `next.svg`, `vercel.svg`, `window.svg`. These are Next.js starter template assets that have no place on a production insurance broker site. Also remove `.DS_Store` files and add `**/.DS_Store` to `.gitignore`.
-
-### Medium
-
-**M-1. No IndexNow implementation** — Implement URL submission to Bing/Yandex on deploy.
-
-**M-2. `host` directive in `robots.ts`** — Yandex-only, ignored by Google. Remove.
-
-**M-3. Coming-soon pages indexed** — Add `robots: { index: false, follow: true }` to `/faqs`, `/claims`, `/client-support`, `/compliance`, `/partners` page `generateMetadata` until content is live. Also remove from `ROUTES` in `sitemap.ts`.
-
-**M-4. `lastModified: new Date()` in sitemap** — Always evaluates to build time. Either remove the field or maintain a `ROUTE_DATES` map with real last-modified dates.
-
-**M-5. `priority` and `changeFrequency` in sitemap** — Google ignores both fields. Remove them to reduce XML payload.
-
-**M-6. OG image not explicitly declared** — Add `openGraph.images` with width, height, and alt to layout `generateMetadata`.
-
-**M-7. Title separator inconsistency** — Layout template uses ` · ` but CLAUDE.md specifies ` | `. Align to one convention; check if page titles already include the brand name (double-suffix risk).
-
-### Low
-
-**L-1. Geist Mono font loaded but unused** — Remove `Geist_Mono` import from layout if `--font-geist-mono` is not applied anywhere.
-
-**L-2. ANPG certificate PDF indexed without control** — Add `X-Robots-Tag: noindex` header for `.pdf` via `next.config.ts` `headers()` if PDF indexing is not desired.
-
-**L-3. Menu `aria-label` hardcoded in English** (`components/layout/Header.tsx`) — Route through `dict.common.nav.menuLabel` (bilingual contract).
-
-**L-4. `translate="no"` trade-off** — `<html translate="no">` plus `other: { google: "notranslate" }` is correct for a managed bilingual site but suppresses discovery from Angola's other local languages. Informational.
+| Root `/` redirect | 308 → `/pt` (correct) |
+| HSTS | Present on Vercel edge (max-age=63072000) |
+| All 30 sitemap routes | HTTP 200 |
+| `x-vercel-cache` across all pages | **MISS** (critical — no edge caching) |
+| `cache-control` | `private, no-cache` |
+| hreflang (HTML) | `pt`, `en`, `x-default` all present |
+| Canonical | Absolute URL, correct |
+| llms.txt | 404 — file does not exist |
+| GA4 | G-W62W0GTQ4R, preloaded unconditionally |
+| Live JSON-LD `name` | "Detondo Seguros" |
+| Live JSON-LD `alternateName` | "Detondo Seguros" (identical — entity bug) |
+| Live JSON-LD `sameAs` | `[]` — empty |
+| Footer regulatory column | Present and working (recently added) |
 
 ---
 
-## Content Quality / E-E-A-T — 58/100
+## Technical SEO
 
-### E-E-A-T Breakdown
+### Critical
 
-| Dimension | Score | Key Gap |
+**T-1 — Zero Vercel edge caching: every page serves `x-vercel-cache: MISS`**
+
+Confirmed on live site across `/pt`, `/pt/about`, `/pt/services`, `/pt/services/personal/motor`, `/pt/contact` and every other route. Cache-Control is `private, no-cache`. This means every visitor request triggers a fresh server render in the Vercel lambda, multiplying TTFB and increasing costs.
+
+Root cause candidates from codebase audit:
+- `CookieBanner` component (used in `app/[lang]/layout.tsx`) reads cookie state — if it calls `cookies()` from `next/headers`, it opts the entire layout into dynamic rendering
+- `GoogleAnalytics` component from `@next/third-parties/google` may trigger dynamic headers
+- Any call to `headers()` or `cookies()` in a Server Component in the layout tree poisons the entire page's static generation
+
+Fix: Audit all imports in `app/[lang]/layout.tsx` for `cookies()` or `headers()` calls. If `CookieBanner` reads cookies server-side, move that check to client-side localStorage or a `useEffect`. The goal is a clean `export const dynamic = 'force-static'` on the layout, or at least `x-vercel-cache: HIT` on second request.
+
+**T-2 — 5 empty YMYL pages not noindexed, included in sitemap**
+
+`/[lang]/faqs`, `/[lang]/claims`, `/[lang]/client-support`, `/[lang]/compliance`, `/[lang]/partners` all render the `ComingSoon` component. These are 10 URLs (2 locales × 5 routes) in the sitemap with no `robots: { index: false }`. Google will crawl and attempt to index thin placeholder pages in the YMYL (insurance) category, which is a soft quality signal penalty.
+
+Fix: Add `robots: { index: false, follow: true }` to `generateMetadata` in each of the five page files, OR remove the 5 routes from `app/sitemap.ts` ROUTES array.
+
+### High
+
+**T-3 — `siteUrl` fallback in `app/sitemap.ts` omits `www`**
+
+Line 5: `const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://detondocorretora.com"`. The fallback omits `www`. Every preview deployment or local build without the env var will produce 50 sitemap URLs pointing to the non-canonical bare domain. The canonical is `https://www.detondocorretora.com`.
+
+Fix: Change the fallback string to `"https://www.detondocorretora.com"`.
+
+**T-4 — All 50 sitemap `lastmod` values are identical build timestamps**
+
+`app/sitemap.ts` sets `lastModified: new Date()` which produces the same timestamp for all 50 URLs. Google treats uniform lastmod as unreliable and ignores it. Every deploy bumps all 50 lastmod values simultaneously, further degrading the signal.
+
+Fix: Use static per-route dates in the ROUTES structure and update only when content genuinely changes.
+
+**T-5 — Missing security headers: COOP, CORP, X-DNS-Prefetch-Control**
+
+Live response headers confirm HSTS (Vercel-managed), X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, and CSP are present. Missing: `Cross-Origin-Opener-Policy`, `Cross-Origin-Resource-Policy`, `X-DNS-Prefetch-Control`. These are medium-priority browser security signals.
+
+Fix: Add to `next.config.ts` headers array.
+
+**T-6 — GA4 loads unconditionally before cookie consent**
+
+`GoogleAnalytics` renders in the layout without checking the `cookieBanner.accepted` cookie state. GA4 is a tracking script — loading before consent may violate GDPR/LGPD principles. The `CookieBanner` component records consent but the analytics script does not gate on it.
+
+Fix: Move `GoogleAnalytics` rendering to a client component that reads the consent cookie before mounting.
+
+### Medium
+
+**T-7 — `changeFrequency` and `priority` fields in sitemap**
+
+Google confirmed it ignores both fields. 50 URLs × ~60 bytes = 3 KB of noise. Remove from `app/sitemap.ts` for cleanliness.
+
+---
+
+## Content Quality / E-E-A-T
+
+### Critical
+
+**E-1 — Testimonials component built but never rendered on homepage**
+
+`components/sections/Testimonials.tsx` is complete, fully translated in both dictionaries (3 testimonials with job titles and companies), and has correct `a11y` keys. `app/[lang]/page.tsx` never imports or renders it. The homepage has zero social proof. For YMYL insurance content, testimonials are an E-E-A-T requirement.
+
+Fix: Import and add `<Testimonials dict={dict.testimonials} />` to `app/[lang]/page.tsx`. Recommended position: after `<Commitment>` and before `<Partners>`.
+
+### High
+
+**E-2 — No dedicated oil & gas landing page**
+
+The oil & gas / energy persona (highest commercial value: ANPG-regulated operators) has no dedicated URL. `/services/business` shows "Seguro de petróleo & gás" as one plain text line among 13. The contact form captures upstream/midstream/downstream/marine as sub-options (proving internal taxonomy exists), but none of that appears as indexable content. ANPG certification is prominently featured on the homepage but leads nowhere deeper.
+
+Fix: Create `/[lang]/services/business/oil-gas` as a dedicated product page mirroring `/services/personal/motor`. Content scaffold is already in the contact form's oil & gas step options.
+
+**E-3 — Business insurance page shows names only, no descriptions**
+
+`dict.business.items` contains only `id` and `name` per line. Contrast with `dict.personal.items` where every product has a `description`. The `BusinessInsurance` component renders a flat name list. Zero body copy per insurance line.
+
+Fix: Add `description` strings to all 13 business items in both locale dictionaries. Update `BusinessInsurance.tsx` to render them.
+
+**E-4 — No named authors, no staff credentials on any page**
+
+Zero named individuals appear on the site. No founder, no director, no account manager. For YMYL insurance content, E-E-A-T requires demonstrable expertise from named humans with verifiable credentials. The About page presents the company narrative but no people.
+
+Fix: Add at minimum a founding director's name, photo, and professional designation to the About page. This is also the strongest AI citability improvement available.
+
+**E-5 — Vision description contains AI filler language**
+
+`dict.vision.description` (PT): "Ser um fornecedor global de escolha em soluções de risco, entregando resultados excepcionais através do equilíbrio entre os nossos pontos fortes: inovação, precisão e serviço." Matches the CLAUDE.md AI filler profile: "global provider of choice", "exceptional results".
+
+Fix: Rewrite as direct positioning. Example: "Ser a corretora de referência em Angola para empresas com exposição a risco nos sectores de energia, petróleo & gás e grandes corporativos." Apply in both locales.
+
+**E-6 — PT diacritics stripped in `legalPages` dictionary content**
+
+`pt.json` `legalPages.aml.*` and surrounding entries contain "decisao estrategica", "subscricao", "aprecados", "publicacao" — missing accents throughout. This is visible on the live AML/KYC page and reads as draft-quality content on a YMYL legal page.
+
+Fix: Restore proper Portuguese diacritics in both the AML/KYC and regulatory content dictionary entries.
+
+**E-7 — Treaty reinsurance description has stripped diacritics**
+
+`pt.json` line ~660: `treaty.description` shows "decisao estrategica", "subscricao" — same class of error as E-6.
+
+Fix: Restore diacritics.
+
+### Medium
+
+**E-8 — No question-form headings on any page**
+
+All H1/H2/H3 headings are declarative statements. Zero headings across all pages use question form. Question-form headings are the primary trigger for Google AI Overview matching and improve citability on Perplexity, Bing Copilot, and ChatGPT Browse.
+
+Fix: Reframe at least one H2 per major page as a question matching user search intent. Examples: "O que é a ARSEG e qual o seu papel?" instead of "Registada e supervisionada pela ARSEG". Apply in both locales.
+
+**E-9 — No blog or insights section**
+
+No dated, authoritative content exists on the site. Legal pages state "Ultima atualização: Maio 2026" which provides some freshness signal, but service and company pages have no timestamps. AI citation platforms heavily favour dated, topic-specific content.
+
+Fix: Create a minimal `/[lang]/insights` or `/[lang]/news` route with 2-3 short articles: Angola regulatory updates, ANPG certification explainer, insurance market overview. Establishes freshness signals and AI-citable surfaces.
+
+**E-10 — Prose passages too short for optimal AI citation (45-60 words vs. 134-167 word ideal)**
+
+All key body paragraphs across homepage and service pages run 45-60 words per element. The optimal AI citation passage window is 134-167 words in a single `<p>` or `<section>`. Multiple short paragraphs are not treated as a single citable unit.
+
+Fix: Merge or extend `whoWeAre.paragraphs` into one block of 134+ words. Extend service product `details` fields.
+
+---
+
+## On-Page SEO
+
+### Medium
+
+**O-1 — `<title>` template separator mismatch**
+
+`layout.tsx` uses `template: '%s · ${dict.common.brand}'` with a middle-dot separator. CLAUDE.md section 7 requires `|` as the separator. Some product pages also embed the brand suffix in their `meta.title` dictionary entry, causing "Seguro Automóvel | Detondo Seguros · Detondo Seguros" in rendered tab titles.
+
+Fix: Change template to `'%s | ${dict.common.brand}'`. Remove brand suffixes from per-page `meta.title` values in both dictionaries.
+
+**O-2 — Mining service has no header nav entry point**
+
+`/services/mining` is linked only from the footer Corporate column. The header nav and the `/services` hub page (3 cards: Personal, Business, Reinsurance) omit Mining entirely. A prospect searching for mining insurance cannot reach this page through primary navigation.
+
+Fix: Add a fourth card to the services hub, or add Mining to header mobile nav sub-items.
+
+**O-3 — ANPG certification link goes to agency homepage, not certificate**
+
+The `AnpgCertification` component links to `https://anpg.co.ao/` rather than the supplier registry entry or certificate document. A procurement officer verifying supplier credentials gets no direct evidence.
+
+Fix: Link to the ANPG supplier registry URL for Detondo's entry, or add `/public/anpg-certificate.pdf` as a downloadable link with "Descarregar certificado" label.
+
+---
+
+## Schema / Structured Data
+
+**Score: 32/100** — The `InsuranceAgency` type is correct, but 9 of 14 recommended properties fail validation.
+
+### Critical
+
+**S-1 — `name` and `alternateName` are identical**
+
+Both resolve to `"Detondo Seguros"`. `name` should be the full trading name ("Detondo Corretora de Seguros e Resseguros") and `alternateName` should be the common short form ("Detondo" or "Detondo Seguros"). Having them identical wastes the disambiguation signal Google uses for Knowledge Panel entity matching.
+
+File: `lib/jsonld.tsx` line 16-17. Also requires `dict.meta.siteName` to be kept at "Detondo Seguros" (for `<title>` / OG) while adding a new `dict.meta.organizationName` key for the structured data name field.
+
+**S-2 — `url` includes locale path**
+
+`` url: `${siteUrl}/${lang}` `` produces `https://www.detondocorretora.com/pt` on PT and `/en` on EN. `Organization.url` should always be the root domain. Two locale-specific URLs on the same organization creates an entity conflict — Google may resolve `/pt` and `/en` as two separate businesses.
+
+File: `lib/jsonld.tsx` line 19. Fix: `url: siteUrl`.
+
+### High
+
+**S-3 — `areaServed` contains invalid value "Africa"**
+
+`areaServed: ["AO", "Africa"]` — "Africa" is a continent with no ISO 3166-1 code. Schema.org `areaServed` accepts `Country`, `State`, `City`, or an `AdministrativeArea`. Google will either ignore "Africa" or penalise the block.
+
+File: `lib/jsonld.tsx` line 23. Fix: `areaServed: { "@type": "Country", "name": "Angola", "sameAs": "https://www.wikidata.org/wiki/Q916" }`.
+
+**S-4 — No per-page schema**
+
+Zero JSON-LD on any non-homepage route. Missing:
+- `BreadcrumbList` on all service, about, contact, and legal pages
+- `Service` schema on all service category and product pages
+- `AboutPage` on `/about`
+- `WebPage` with `inLanguage` on all pages
+
+`BreadcrumbList` is a supported Google rich result. Service pages with `Service` schema get better entity matching in AI knowledge graphs.
+
+**S-5 — No `WebSite` schema**
+
+No `WebSite` block anywhere. This is the correct home for `inLanguage` (currently wrongly attached to `InsuranceAgency`), `SearchAction` for Sitelinks Searchbox, and `potentialAction`.
+
+### Medium
+
+**S-6 — `sameAs: []` is empty**
+
+Empty array is technically valid JSON-LD but signals no external entity links. Google, ChatGPT, Perplexity, and Bing Copilot all weight `sameAs` for entity disambiguation. No `sameAs` = no Knowledge Panel candidate, no cross-platform entity matching.
+
+Fix: Populate with: Google Business Profile URL (once claimed), LinkedIn company page, ARSEG directory listing URL, ANPG certification registry URL.
+
+**S-7 — `inLanguage` on `InsuranceAgency`**
+
+`inLanguage` is a `CreativeWork` property. Placing it on an `Organization` subtype is semantically invalid. Parsers silently ignore it. Move to a `WebSite` or `WebPage` schema block.
+
+**S-8 — Missing `foundingDate`, `openingHoursSpecification`, `identifier`**
+
+- `foundingDate: "2017"` — stated in prose but not in structured data. AI models use this for entity verification.
+- `openingHoursSpecification` — Monday-Friday 08:00-17:00 is in the dictionaries as visible text but not machine-readable. Required for rich results.
+- `identifier` — ARSEG licence 112/ASEG/MF/23 and ANPG certification are high-trust identifiers for a regulated financial entity.
+
+**S-9 — Email in schema is a Gmail address**
+
+`email: "detondocorretoraseguros@gmail.com"` in `lib/jsonld.tsx`. This is a pre-rebrand Gmail address. Contact page and footer use `geral@detondocorretora.com` (PT) and `info@detondocorretora.com` (EN). Three different email addresses across three surfaces is a NAP fragmentation issue beyond just schema.
+
+Fix: Standardise to `geral@detondocorretora.com` across schema, PT, and EN. Remove `info@` alias or redirect it.
+
+---
+
+## Performance
+
+### Critical
+
+**P-1 — No edge caching (repeat of T-1 from performance perspective)**
+
+With every request as a fresh server render, TTFB is elevated for all users. Vercel's edge network cannot serve cached HTML. This directly impacts LCP scores.
+
+### High
+
+**P-2 — Oversized images (3.5 MB files)**
+
+Prior codebase audit identified `public/` images reaching 3.5 MB. Next.js `<Image>` handles AVIF/WebP conversion and lazy loading for components that use it, but any `<img>` tags or CSS background images bypass this. Static `opengraph-image.png`, `logo-dark.jpg`, `apple-icon.png` should be compressed.
+
+Fix: Run all `public/` images through Squoosh or similar. Target <200 KB for hero/OG images, <50 KB for logos.
+
+**P-3 — GA4 preloads unconditionally (cookie consent gap + performance)**
+
+`GoogleAnalytics` renders on every page regardless of consent state. This adds a third-party script request to every page load before the user accepts cookies, impacting INP and potentially violating consent requirements.
+
+---
+
+## GEO / AI Search Readiness
+
+**Score: 41/100**
+
+| Platform | Score | Key Blockers |
 |---|---|---|
-| Experience | 30/100 | No named team, no case studies, no founder story, anonymous testimonials |
-| Expertise | 55/100 | Strong service breadth; ANPG/ARSEG signals; but business lines are name-only lists |
-| Authoritativeness | 65/100 | ARSEG licence, ANPG cert, Swiss Re/Munich Re/Lloyd's panel — solid. `sameAs` empty. |
-| Trustworthiness | 62/100 | Good legal pages; but 5 empty pages, gmail address, Privacy Policy as a wall of text |
+| Google AI Overviews | 28/100 | No FAQPage schema, no question headings, no named authors, `sameAs` empty |
+| ChatGPT (Browse) | 35/100 | No YouTube, no Wikipedia, no Reddit, `sameAs` empty |
+| Perplexity | 45/100 | SSR is a strength; ARSEG licence visible; but no Q&A, passages too short |
+| Bing Copilot | 38/100 | Schema present but incomplete; no FAQPage; good English parity |
 
 ### Critical
 
-**Draft text in `pt.json` line 660 — bilingual parity violation**
-`treaty.description` contains unproofread Portuguese without diacritics: "decisao estrategica", "objectivos", "subscricao", "flexiveis", "aprecados". The English equivalent is polished. This is a CLAUDE.md section 2 violation.
+**G-1 — `sameAs: []` empty — entity cannot be cross-referenced**
 
-Fix: Rewrite line 660 with correct Portuguese diacritics, matching the quality of the English version.
+This is the single highest-impact GEO gap. Without external entity links (LinkedIn, GBP, ARSEG directory), AI models cannot verify or disambiguate this entity. ChatGPT, Perplexity, and Bing Copilot all weight `sameAs` for citation decisions.
 
-**5 indexed empty YMYL pages**
-`/faqs`, `/claims`, `/client-support`, `/compliance`, `/partners` all render a "coming soon" placeholder with no substantive content. In a YMYL insurance category, Google's QRG requires content that demonstrates Experience, Expertise, Authoritativeness, and Trustworthiness. An empty page fails all four.
+**G-2 — No FAQPage content or schema**
 
-The compliance page is the most damaging — corporate clients doing supplier due diligence will click it and find nothing.
+`/[lang]/faqs` renders `ComingSoon`. No Q&A content anywhere on the site. FAQPage schema is one of the strongest Google AI Overview triggers. Insurance FAQs are high-volume informational queries.
 
-Fix: Prioritise content for Compliance, Claims, and FAQs. At minimum, add a descriptive intro paragraph, process overview, contact details, and noindex the page until full content ships.
+**G-3 — llms.txt returns 404**
 
-**Business insurance pages have zero body copy**
-`business.items` in both dictionaries is a flat array of `{ id, name }` — 13 insurance line names with no description. The highest-value audience (corporate, oil and gas, energy) has the thinnest product content on the site.
+`public/llms.txt` does not exist. All AI crawlers are implicitly allowed (correct via robots.txt), but there is no structured guide telling AI indexers what to cite, how to interpret the entity, or what the canonical contact/regulatory information is.
 
-Fix: Add `description` field to each `business.items` entry. For oil and gas, marine, energy, and construction: create dedicated sub-pages.
+A ready-to-deploy `llms.txt` is provided in the Action Plan.
 
 ### High
 
-**AI filler phrases in `vision.description`** (both dictionaries)
-"To be a global risk solutions provider of choice, delivering exceptional results through the balance of our strengths: innovation, precision, and service" — this violates CLAUDE.md section 7 ("sentences that read like a marketing-deck headline that nobody at the company would actually say").
+**G-4 — Zero question-form headings (repeat of E-8)**
 
-Fix: Rewrite in both `pt.json` and `en.json` with a concrete, specific statement of what Detondo does for Angolan clients. Same for `valuesDescription`: "We hold the highest standards in everything we do."
+None of the H1/H2/H3 headings across any page are phrased as questions. Question headings are the primary trigger for AI Overview answer box selection.
 
-**Missing diacritics in `legalPages` PT body text**
-Privacy Policy, Terms, AML/KYC, and Regulatory Notice body content in `pt.json` contains "responsavel", "informacoes", "subscricao", "obrigacoes" throughout. For YMYL legal content governing data subjects' rights, this undermines the trust these pages are meant to establish.
+**G-5 — `name` equals `alternateName` (repeat of S-1 from GEO perspective)**
 
-Fix: Proofread all `legalPages.*` PT body entries and restore correct Portuguese diacritics.
+Identical name and alternateName prevent AI knowledge graphs from matching both "Detondo" (short brand) and "Detondo Corretora de Seguros" (formal name) to the same entity.
 
-**Missing E-E-A-T signals for YMYL compliance**
-- No named team members or professional credentials anywhere on the site
-- Testimonials exist in the dictionary but `Testimonials` is not imported in `app/[lang]/page.tsx`
-- No case studies or client outcomes with specificity
-- No professional association membership cited (e.g., ABSA)
+**G-6 — JSON-LD email is a Gmail address (repeat of S-9)**
 
-**Missing meta description diacritics**
-`meta.faqs.description`, `meta.claims.description`, `meta.compliance.description` in `pt.json` have "servicos", "gestao", "regulatorio" without accent marks. These appear in `<meta name="description">` tags visible to users in SERPs.
+AI citation platforms down-weight financial services entities with free email addresses in their structured data.
 
-### Medium
+**G-7 — No named authors or expert attribution**
 
-**Content citation thresholds**
-The `commitment.pillars` descriptions are 30-50 words each. For AI Overview citation, the optimal passage length is 130-160 words. Expand each pillar with a direct-answer opening sentence, concrete process steps, and a closing sentence naming the ARSEG/ANPG credential.
+No person's name, credential, or photo appears on any page. All major AI search platforms use E-E-A-T signals — named, credentialled experts — for deciding whether to cite YMYL content.
 
 ---
 
-## On-Page SEO — 62/100
+## Local SEO
 
-### Key Findings
-
-- Metadata is well-structured across 16 of 17 page routes; home page relies on layout inheritance only
-- Meta descriptions are compelling and unique on most pages; legal/thin pages have unaccented Portuguese
-- H1 tags are present and correct on all pages
-- `alternates.languages` with `x-default: /pt` correctly set on all confirmed pages and in sitemap
-- Internal linking: service pages link to contact; no breadcrumb navigation links; business sub-items are a list without links to sub-pages (because sub-pages don't exist)
-- No desktop navigation dropdown — clicking Services requires an intermediate hub click
-- Mining page not reachable from mobile sub-navigation despite being a valid route
-
----
-
-## Schema / Structured Data — 45/100
-
-### Current Implementation
-
-One `InsuranceAgency` JSON-LD block rendered globally in layout. No other schema anywhere.
-
-### Critical / High
-
-**Empty `sameAs` array** — `sameAs: []` provides zero entity disambiguation. Populate with: ARSEG registry URL, LinkedIn company page, Google Business Profile URL, ANPG supplier registry URL.
-
-**Invalid `areaServed`** — `["AO", "Africa"]` mixes an ISO 3166-1 alpha-2 code with a plain string. Fix:
-```json
-"areaServed": { "@type": "Country", "name": "Angola" }
-```
-
-**No `BreadcrumbList` schema** — Service pages have 3-level URL depth but no breadcrumb schema. This prevents SERP breadcrumb display.
-
-**No `Service` schema** — Each service category page should carry a `Service` block with `provider`, `areaServed`, `serviceType`, and `hasOfferCatalog`.
-
-**`url` property alternates between `/pt` and `/en`** — An `Organization` entity must have one canonical URL. Fix: use `siteUrl` (root domain) for the `url` property.
-
-**`inLanguage` on `InsuranceAgency`** — Semantically incorrect; this property belongs on `WebPage` or `WebSite`, not `Organization`. Remove.
-
-### Medium
-
-**Missing `openingHoursSpecification`** — Hours exist in the dictionary (Mon–Fri 08:00–17:00) but not in schema.
-
-**No `WebSite` schema** — Add globally in layout alongside `OrganizationJsonLd`.
-
-**Missing `foundingDate: "2017"`** — Stated throughout copy; add to schema payload.
-
-**`logo` URL must be verified** — `logo-transparent.png` must exist at `/public/` or Knowledge Panel candidates will silently drop.
-
-**Missing `identifier` for ARSEG licence** — Add:
-```json
-"identifier": { "@type": "PropertyValue", "name": "ARSEG Licence", "value": "112/ASEG/MF/23" }
-```
-
-**Address separator inconsistency** — JSON-LD uses "Nova Vida - Kilamba Kiaxi" (hyphen); footer and contact page use "Nova Vida, Kilamba Kiaxi" (comma). Standardise to comma form.
-
-### Schema to Add
-
-**WebSite (add to layout):**
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Detondo Corretora de Seguros e Resseguros",
-  "alternateName": ["Detondo Seguros", "Detondo Corretora de Seguros"],
-  "url": "https://detondocorretora.com",
-  "inLanguage": ["pt-AO", "en"],
-  "publisher": {
-    "@type": "InsuranceAgency",
-    "name": "Detondo Corretora de Seguros e Resseguros",
-    "url": "https://detondocorretora.com/pt"
-  }
-}
-```
-
-**FAQPage schema** — Not applicable until FAQs page content exists. Note: Google restricts FAQPage rich results to government/healthcare sites post-Aug 2023, but the schema retains GEO/AI citation value.
-
-**Review/AggregateRating** — Not applicable; testimonials are anonymous without numeric ratings.
-
----
-
-## Performance / Images — 65/100
+**Score: 38/100** — Angola market specifics heavily penalise absence of GBP and WhatsApp.
 
 ### Critical
 
-**Oversized source images**
+**L-1 — No Google Business Profile claimed**
 
-| File | Size | Target |
+No GBP URL anywhere on the site. `sameAs: []` confirms no GBP link in schema. Without a verified GBP, Detondo cannot appear in Google Maps or the local 3-pack for any Luanda insurance query. Proximity weighting (55% of local ranking variance per Search Atlas) cannot be applied to an unverified location.
+
+Fix: Claim and verify at `business.google.com` under `InsuranceAgency` category. Once verified, add the GBP URL to `sameAs` in `lib/jsonld.tsx`.
+
+**L-2 — Email NAP fragmentation across 3 addresses**
+
+| Surface | Email |
+|---|---|
+| JSON-LD (`lib/jsonld.tsx`) | `detondocorretoraseguros@gmail.com` |
+| PT contact page + PT footer | `geral@detondocorretora.com` |
+| EN contact page + EN footer | `info@detondocorretora.com` |
+
+Citation algorithms treat different emails on the same entity as mismatches. Fix: Standardise all surfaces to `geral@detondocorretora.com`. Redirect or alias `info@` to it.
+
+**L-3 — No Google Maps embed or directions link on contact page**
+
+The contact page has a MapPin icon and address text but no iframe, no maps link, no static map image. For Angolan users, Google Maps is the primary navigation tool.
+
+Fix: Add `<iframe src="https://maps.google.com/maps?q=...&output=embed">` or a click-through link adjacent to the address block.
+
+### High
+
+**L-4 — No WhatsApp contact option**
+
+WhatsApp is the dominant professional communication channel in Angola. No `wa.me` link, no WhatsApp floating button, no WhatsApp number appears anywhere on the site. This is both a conversion gap and a local engagement signal gap.
+
+Fix: Add WhatsApp link (`https://wa.me/244XXXXXXXXX`) to: floating mobile CTA layer, contact page info block, and footer. Requires a business WhatsApp number.
+
+**L-5 — No `openingHoursSpecification` in schema**
+
+Hours "Segunda a sexta, 08h00 às 17h00" are in the dictionaries and visible on the contact page but not in machine-readable schema. Required for rich result eligibility.
+
+Fix: Add `openingHoursSpecification` to `lib/jsonld.tsx` with Monday-Friday 08:00-17:00.
+
+**L-6 — No `geo` coordinates in schema**
+
+No `GeoCoordinates` with `latitude`/`longitude` in `lib/jsonld.tsx`. For Kilamba Kiaxi, Luanda, verify exact coordinates from Google Maps (approximately -8.91667, 13.26667) and add `geo: { "@type": "GeoCoordinates", latitude: -8.XXXXX, longitude: 13.XXXXX }`.
+
+**L-7 — Address separator inconsistency between schema and HTML**
+
+JSON-LD `streetAddress`: "Nova Vida - Kilamba Kiaxi" (hyphen)
+Visible HTML (contact page + footer): "Nova Vida, Kilamba Kiaxi" (comma)
+
+Fix: Change `streetAddress` in `lib/jsonld.tsx` to use comma to match the visible HTML.
+
+---
+
+## SXO / Search Experience
+
+**Overall SXO Score: 53/100**
+
+| Dimension | Max | Score |
 |---|---|---|
-| `personal/personal-liability.jpg` | 3.5 MB | < 350 KB |
-| `personal/building-cover.jpg` | 3.5 MB | < 350 KB |
-| `sectors/mining.jpg` | 3.2 MB | < 300 KB |
-| `sectors/oil-gas.jpg` | 1.6 MB | < 200 KB |
-| `sectors/corporate.jpg` | 1.5 MB | < 200 KB |
-| `personal/travel.jpg` | 1.5 MB | < 200 KB |
-| `partners/nossa-logo.png` | 384 KB | < 30 KB |
+| Page Type Match | 15 | 9 |
+| Content Depth | 15 | 6 |
+| UX Signals | 15 | 8 |
+| Schema | 15 | 7 |
+| Media | 15 | 9 |
+| Authority | 15 | 10 |
+| Freshness | 10 | 4 |
 
-Next.js Image handles runtime transcoding to AVIF/WebP, but the server must read the full source file to generate the first optimized variant. 3.5 MB source files degrade cold-start performance.
+### Persona Journey Scores
 
-Compress with `sharp` or `squoosh-cli` before committing. Target: 150-300 KB for full-bleed photos, 200 KB for section images, 30 KB max for logos.
-
-### High
-
-**Google Analytics fires before cookie consent** — `<GoogleAnalytics>` in `layout.tsx` mounts unconditionally when `gaId` is set in production, regardless of the user's consent state stored in `localStorage`. The `CookieBanner` component manages consent but the GA component does not read it. This is an Angolan data protection law (Lei 22/11) compliance issue.
-
-Fix: Wrap `<GoogleAnalytics>` in a client component that reads the consent cookie before rendering.
-
-**Logo alt text is empty** (`components/layout/Logo.tsx`) — The brand mark in the navigation landmark has `alt=""`. A linked logo in a header landmark must have descriptive alt text.
-
-Fix: `alt="Detondo Corretora de Seguros"`.
-
-**Partner logo quality** — `nossa-logo.png` is 384 KB for a logo — unoptimized raster export. `ensa-logo.jpg` and `alianca.jpeg` are JPEGs (no transparency support). Re-export from vector sources.
-
-### Medium
-
-**Boilerplate SVGs in `public/`** — `file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg` should be deleted.
-
-**Root-level content images** — `business-insurance.jpg`, `life-health.jpg`, `personal.jpg`, `reinsurance.jpg` are 864 KB–1.2 MB each. Compress to 200–400 KB.
-
-### Low
-
-**LCP element** — The `<h1>` text in the Hero is the LCP candidate (not the background image, which is 12% opacity and decorative). Text LCP is fast. `luanda.jpg` is correctly preloaded with `priority`.
-
-**Font loading** — `display: "swap"` correctly set on both Geist fonts. Self-hosted via `next/font/google` (no external DNS). Next.js 14+ injects `size-adjust`/`ascent-override` to minimise CLS from font swap.
-
-**Framer Motion on Hero** — `Hero.tsx` is a `"use client"` component using Framer Motion (~136 KB). Consider CSS-only animations for the hero entrance to reduce JS parse time. Verify impact with Lighthouse before acting.
-
-**CSS** — `globals.css` is lean (83 lines), Tailwind v4 purging is automatic, no large `@keyframes` blocks. Clean.
+| Persona | Score | Bottleneck |
+|---|---|---|
+| Corporate risk manager | 60/100 | Business page has no descriptions per line |
+| Oil & gas procurement officer (ANPG) | 53/100 | No dedicated oil & gas page |
+| Individual / personal insurance | 81/100 | Best-served journey; motor page is strong |
 
 ---
 
-## AI Search Readiness (GEO) — 48/100
+## Hreflang Implementation
 
-### Critical
+**PASS.** Hreflang is correctly implemented in both HTML `<link>` tags (via `generateMetadata.alternates.languages`) and in the XML sitemap (`xhtml:link` within each `<url>` block). `x-default` correctly points to `/pt`. Reciprocal references are symmetric across locales.
 
-**No `llms.txt`** — The single highest-impact missing signal for AI search engines.
+---
 
-Draft content ready to create at `/public/llms.txt`:
+## robots.txt
+
+**PASS.** `User-agent: * / Allow: / / Disallow: /api/`. All AI crawlers implicitly allowed. Sitemap directive points to canonical `www` domain. `Host` directive (Yandex hint) is harmless.
+
+---
+
+## Appendix: Ready-to-Deploy llms.txt
+
+Save as `public/llms.txt`:
+
 ```
-# Detondo Corretora de Seguros e Resseguros
+# Detondo Corretora de Seguros - AI Content Guide
+# https://www.detondocorretora.com
+# Last updated: 2026-05-25
 
-> Angolan insurance and reinsurance brokerage founded in 2017, headquartered in Luanda.
-> ANPG-certified for the oil & gas sector. Serves corporate clients, energy companies,
-> and oil & gas operators across Angola. Bilingual: Portuguese (primary) and English.
+> Detondo is an Angolan insurance and reinsurance brokerage, established in 2017 and headquartered in Luanda, Angola. The company holds ARSEG licence 112/ASEG/MF/23 as a registered insurance broker and is certified by ANPG (Agencia Nacional de Petroleo, Gas e Biocombustiveis) to provide goods and services to Angola's Oil & Gas sector. Detondo works with more than 10 insurers in the Angolan market and with international reinsurers including Swiss Re, Munich Re, and Lloyd's of London.
 
 ## About
 
-Detondo is a licensed insurance and reinsurance brokerage registered and supervised by
-ARSEG (Agencia Angolana de Regulacao e Supervisao de Seguros), licence reference
-112/ASEG/MF/23. Certified by the ANPG (Agencia Nacional de Petroleo, Gas e
-Biocombustiveis de Angola) to supply goods and services to oil and gas operators.
-Places business with 13 Angolan insurers and with Swiss Re, Munich Re, and Lloyd's.
+Detondo is a licensed insurance and reinsurance brokerage based in Luanda, Angola. The company has operated since 2017 and serves corporate clients, energy companies, oil and gas operators, mining firms, and individual clients across Angola. Detondo holds ARSEG licence 112/ASEG/MF/23 and ANPG certification for the Petroleum and Gas sector. The legal entity name is Detondo Corretora de Seguros, Lda.
+
+Contact: geral@detondocorretora.com
+Address: Rua no 121, casa no 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola
+Phone: +244 921 545 832
+Language support: Portuguese, English
 
 ## Services
 
-- https://detondocorretora.com/pt/services/personal — Personal insurance (motor, buildings,
-  home contents, all-risks, personal liability, travel)
-- https://detondocorretora.com/pt/services/business — Corporate and specialist insurance
-  (corporate, oil & gas, energy, marine, construction, liability, aviation, mining)
-- https://detondocorretora.com/pt/services/reinsurance — Reinsurance (treaty, facultative,
-  alternative risk transfer, life and health reinsurance)
+Detondo provides three main service lines:
 
-## Key pages
+1. Personal insurance - motor, building, home contents, all-risks, personal liability, travel
+2. Business insurance - corporate, oil and gas, energy, marine, construction all risks, liability, professional indemnity, goods in transit, fleet, aviation, agricultural, mining
+3. Reinsurance - treaty, facultative, and alternative risk transfer
 
-- https://detondocorretora.com/pt/about — Company background, ANPG certification, insurer panel
-- https://detondocorretora.com/pt/contact — Contact details, Luanda office
-- https://detondocorretora.com/en — English version
+The company also offers group schemes including group personal accident and health insurance.
 
-## Regulatory
+## Regulatory Information
 
-- ARSEG licence: 112/ASEG/MF/23
-- ANPG certified for oil & gas goods and services
-- Angolan insurance sector regulatory framework
+- Regulator: ARSEG (Agencia Angolana de Regulacao e Supervisao de Seguros)
+- Licence reference: 112/ASEG/MF/23
+- Entity type: Registered insurance broker
+- ANPG certification: Authorised to provide goods and services to Angola's Oil and Gas sector
+- Operating jurisdiction: Republic of Angola
 
-## Contact
+## Key Pages
 
-Address: Rua n. 121, casa n. 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola
-Telephone: +244 921 545 832 | +244 923 254 449 | +244 946 451 069
-Email: geral@detondocorretora.com
+- Homepage (PT): https://www.detondocorretora.com/pt
+- Homepage (EN): https://www.detondocorretora.com/en
+- About (PT): https://www.detondocorretora.com/pt/about
+- Services (PT): https://www.detondocorretora.com/pt/services
+- Personal Insurance (PT): https://www.detondocorretora.com/pt/services/personal
+- Business Insurance (PT): https://www.detondocorretora.com/pt/services/business
+- Reinsurance (PT): https://www.detondocorretora.com/pt/services/reinsurance
+- Mining Insurance (PT): https://www.detondocorretora.com/pt/services/mining
+- Contact (PT): https://www.detondocorretora.com/pt/contact
+- Contact (EN): https://www.detondocorretora.com/en/contact
+- Regulatory Notice (PT): https://www.detondocorretora.com/pt/regulatory-notice
+- AML & KYC Policy (PT): https://www.detondocorretora.com/pt/aml-kyc
+- Privacy Policy: https://www.detondocorretora.com/pt/privacy-policy
+- Sitemap: https://www.detondocorretora.com/sitemap.xml
+
+## Partner Insurers in Angola
+
+ENSA Seguros, Nossa Seguros, BIC Seguros, Sanlam Seguros, Fidelidade Seguros, STAS Seguros, Proteja Seguros, Viva Seguros, Unisaude Seguros, Fortaleza Seguros, Harmonia Seguros, Alianca Seguros, Mundial Seguros
+
+## International Reinsurers
+
+Swiss Re, Munich Re, Lloyd's of London
+
+## Content Licensing
+
+Content on this site may be cited for informational purposes. Insurance coverage, policy terms, and pricing are subject to underwriting acceptance and applicable regulatory requirements. All information is provided for general purposes and does not constitute professional insurance advice.
 ```
-
-**Empty `sameAs`** — Covered in Schema section. Without external entity links, AI systems cannot confirm "Detondo" is a real entity.
-
-**No FAQPage schema** — FAQs page is empty. This is the highest-ROI schema for Google AI Overviews.
-
-### High
-
-**Missing schema properties for entity completeness**
-Add to `lib/jsonld.tsx`:
-- `foundingDate: "2017"`
-- `knowsAbout: ["insurance brokerage", "reinsurance", "oil and gas insurance", "Angola insurance market", "corporate risk management"]`
-- `hasCredential` entries for ARSEG licence and ANPG certification
-
-**No question-form headings** — None of the H2/H3 tags across the site are phrased as questions. For AI Overview triggers ("O que e uma corretora de seguros em Angola?"), question-form headings are the primary citation matching signal.
-
-**Commitment pillar copy below citation threshold** — 30-50 words each. Target 130-160 words per block for AI citation extraction.
-
-### Medium
-
-**ANPG certificate not linked from structured data** — The PDF at `/public/anpg-certificate.pdf` is a high-authority document. Add as `hasCredential` in schema.
-
-**Partner logo alt text missing entity names** — `alt="Swiss Re logo"`, `alt="Munich Re logo"` etc. help AI systems confirm business relationships.
-
-**Brand name variants inconsistent** — `meta.siteName` = "Detondo Corretora de Seguros e Resseguros", `common.brand` = "Detondo", `alternateName` = "Detondo Seguros". Replace single `alternateName` string with an array: `["Detondo Seguros", "Detondo Corretora de Seguros"]`.
-
-**AI crawler access** — All AI crawlers implicitly allowed via `*` wildcard in `robots.ts`. This is correct; no action needed.
-
----
-
-## Local SEO — 38/100
-
-### Critical
-
-**No Google Business Profile** — Zero GBP signals anywhere on-site. GBP is the #1 local ranking factor. For "corretora de seguros Luanda" queries, the site cannot appear in the local pack without a GBP listing.
-
-Action: Create/claim a GBP at the Nova Vida / Kilamba Kiaxi address. Primary category: "Insurance agency". Include ARSEG licence number in the description. Once live, add GBP URL to `sameAs` in `lib/jsonld.tsx`.
-
-**Gmail address as primary business contact** — `detondocorretoraseguros@gmail.com` appears in JSON-LD, footer, and contact page. A Gmail address for an ARSEG-supervised brokerage that works with Lloyd's and Swiss Re is a professional credibility signal failure.
-
-Action: Replace with `geral@detondocorretora.com` in `lib/jsonld.tsx`, `components/layout/Footer.tsx`, and `app/[lang]/contact/page.tsx`.
-
-### High
-
-**Missing `geo` coordinates in schema** — Add `GeoCoordinates` (Kilamba Kiaxi, Luanda: lat -8.9035, lon 13.2441) to the InsuranceAgency payload.
-
-**Missing `openingHoursSpecification`** — Mon-Fri 08:00-17:00 exists in the dictionary but not in schema. Add to `lib/jsonld.tsx`.
-
-**Missing geo meta tags** — Add to `generateMetadata` via `other`:
-```json
-{
-  "geo.region": "AO-LUA",
-  "geo.placename": "Luanda, Angola",
-  "geo.position": "-8.90350;13.24410",
-  "ICBM": "-8.90350, 13.24410"
-}
-```
-
-**No Google Maps embed or directions link** — Contact page has address text but no map. Add an embedded Google Maps iframe (post-GBP) or a deep-link to the Maps listing.
-
-### Medium
-
-**`areaServed` fix** — Covered in Schema section.
-
-**`foundingDate` and `addressRegion`** — Add "2017" and "Luanda" (or "AO-LUA") to schema.
-
-**Address separator in JSON-LD** — Use comma form to match all other surfaces.
-
-**Zero review signals** — No GBP = no reviews. Once GBP is live, build a review solicitation process. Target 1 new review per 2 weeks to avoid the Sterling Sky 18-day velocity cliff.
-
-**WhatsApp absent** — WhatsApp is a primary B2B communication channel in Angola. Add as a `contactPoint` in schema and as a visible contact option on the contact page.
-
----
-
-## SXO (Search Experience) — 53/100
-
-### Persona Scores
-
-| Persona | Score | Primary Gap |
-|---|---|---|
-| Corporate risk manager | 68/100 | Business service pages have no body copy; no intermediate CTA |
-| Oil and gas procurement officer | 44/100 | No dedicated oil-and-gas page; ANPG cert buried; no sector-specific CTA path |
-| Individual (personal insurance) | 82/100 | Best-served; testimonials missing is the only gap |
-
-### Critical
-
-**No dedicated oil-and-gas/sector page** — The highest-value keyword cluster ("seguro petróleo gás Angola", "ANPG corretora seguros") has no targeted URL. `/services/business` is a 13-item list with zero body copy. An ANPG-certified brokerage with no oil-and-gas content page is leaving its strongest differentiator invisible to the keyword that matters most.
-
-Action: Create `/services/oil-gas` (or expand `/services/business` into per-sector pages) with: 600+ words on upstream/midstream/downstream coverages, inline ANPG certificate reference, ARSEG licence number, a `?topic=oilgas` pre-wired CTA, and metadata targeting the oil-and-gas keyword cluster.
-
-**`Testimonials` component not rendered on homepage** — The component, copy (three client quotes), and schema are ready; the component is simply missing from `app/[lang]/page.tsx`. A one-line import fix restores three trust signals.
-
-### High
-
-**Business service items have no descriptions** — 13 insurance line names with no descriptive copy. Add at minimum 2-3 sentences per item in `business.items`. For oil-and-gas, marine, energy, and construction: create dedicated sub-pages with 600+ words each.
-
-**No desktop navigation dropdown** — Service categories require an intermediate hub-page click. Add a Services dropdown or mega-menu to reduce the path to any category from 2 clicks to 1.
-
-**Mining not in mobile sub-navigation** — `/services/mining` is a valid route but absent from the mobile nav `Services` sub-items.
-
-**Gmail address** — Covered in Local SEO section; repeated here as a conversion signal for corporate personas.
-
-### Medium
-
-**ANPG certificate not surfaced on service pages** — The certificate PDF exists but is not linked from the business/oil-and-gas service context where it carries the most persuasive weight.
-
-**WhatsApp absent** — Covered in Local SEO.
-
-**No SLA on contact page** — "normalmente em menos de 24 horas" appears in the contact form description but is vague. An explicit response commitment ("within one business day") on the contact page improves conversion confidence.
-
-**Vision copy violates CLAUDE.md section 7** — "global risk solutions provider of choice, delivering exceptional results through the balance of our strengths" — rewrite in both locales.
-
----
-
-## What Is Working Well
-
-- **Next.js SSR/SSG** — All pages are server-rendered with `generateStaticParams`. Googlebot receives complete HTML. No JavaScript-rendering risk.
-- **Bilingual implementation** — hreflang in layout, per-page metadata, and sitemap is correctly structured. `x-default: /pt` is correct. Locale switcher swaps path segment only. `getDictionary` / `hasLocale` pattern is solid.
-- **URL structure** — Clean `/{lang}/{route}` kebab-case slugs, no query pollution.
-- **Security headers** — `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`, `frame-ancestors: none`, `poweredByHeader: false` — all correct.
-- **Font loading** — Geist with `display: swap`, self-hosted via `next/font`. CLS minimisation via automatic `size-adjust`.
-- **Image component** — `next/image` used consistently across all components; AVIF/WebP configured; `priority` on above-the-fold images; appropriate `sizes` props.
-- **Proxy redirect** — `proxy.ts` uses 308 (permanent) for locale redirect, preserving link equity.
-- **ANPG/ARSEG credentials** — Specific, verifiable, prominently placed. Unique differentiators in the Angola insurance market.
-- **Contact form** — 4-step guided form with service-type pre-qualification. `?topic=` param support for CTA wiring.
-- **Accessibility** — Skip-to-content link, `useReducedMotion()` respected, semantic HTML, `aria-current` on active nav.
-- **Google Analytics** — Conditional: production-only, `gaId`-gated, via `@next/third-parties` for off-main-thread loading.
-- **`prefers-reduced-motion`** — Implemented both in `globals.css` and in all Framer Motion components.
-- **Legal pages** — Privacy Policy, Terms, AML/KYC, Regulatory Notice, Cookies, Disclaimer — all present and substantially filled, appropriate for a YMYL financial services site.
-- **International insurer panel** — Swiss Re, Munich Re, Lloyd's plus 13 named Angolan insurers. Strong authority signal on every page via the Partners section.

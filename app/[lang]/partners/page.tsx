@@ -12,6 +12,7 @@ export async function generateMetadata(
   return {
     title: dict.meta.partners.title,
     description: dict.meta.partners.description,
+    robots: { index: false, follow: true },
     alternates: {
       canonical: `/${lang}/partners`,
       languages: {

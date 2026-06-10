@@ -12,6 +12,7 @@ export async function generateMetadata(
   return {
     title: dict.meta.clientSupport.title,
     description: dict.meta.clientSupport.description,
+    robots: { index: false, follow: true },
     alternates: {
       canonical: `/${lang}/client-support`,
       languages: {

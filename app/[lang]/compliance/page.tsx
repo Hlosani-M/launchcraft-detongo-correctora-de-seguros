@@ -12,6 +12,7 @@ export async function generateMetadata(
   return {
     title: dict.meta.compliance.title,
     description: dict.meta.compliance.description,
+    robots: { index: false, follow: true },
     alternates: {
       canonical: `/${lang}/compliance`,
       languages: {

@@ -7,7 +7,7 @@ import { getDictionary, hasLocale, LOCALES, type Locale } from "./dictionaries";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
-import { OrganizationJsonLd } from "@/lib/jsonld";
+import { OrganizationJsonLd, WebSiteJsonLd } from "@/lib/jsonld";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +40,7 @@ export async function generateMetadata(
     metadataBase: new URL(siteUrl),
     title: {
       default: home.title,
-      template: `%s · ${dict.common.brand}`,
+      template: `%s | ${dict.common.brand}`,
     },
     description: home.description,
     icons: {
@@ -111,6 +111,7 @@ export default async function LangLayout(props: LayoutProps<"/[lang]">) {
         <Footer lang={typedLang} dict={dict.common} />
         <CookieBanner lang={typedLang} dict={dict.common.cookieBanner} />
         <OrganizationJsonLd lang={typedLang} dict={dict} siteUrl={siteUrl} />
+        <WebSiteJsonLd siteUrl={siteUrl} />
         {gaId && process.env.NODE_ENV === "production" ? (
           <GoogleAnalytics gaId={gaId} />
         ) : null}

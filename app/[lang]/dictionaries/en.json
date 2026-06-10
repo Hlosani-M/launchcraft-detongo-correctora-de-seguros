@@ -1,6 +1,8 @@
 {
   "meta": {
     "siteName": "Detondo Seguros",
+    "organizationName": "Detondo Corretora de Seguros e Resseguros",
+    "alternateName": "Detondo",
     "tagline": "Insurance, reinsurance, and risk management for Angola",
     "description": "Angolan insurance and reinsurance brokerage, established in 2017. Tailored solutions for corporate, energy, and oil & gas clients in Angola. ANPG-certified.",
     "home": {
@@ -87,7 +89,7 @@
       "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
       "phoneLabel": "Phone",
       "emailLabel": "Email",
-      "email": "info@detondocorretora.com",
+      "email": "geral@detondocorretora.com",
       "rights": "All rights reserved.",
       "tagline": "Insurance, reinsurance, and risk management for corporate, energy, and oil & gas clients in Angola. Established 2017.",
       "builtBy": "Website built by",
@@ -240,7 +242,7 @@
   },
   "arseg": {
     "eyebrow": "ARSEG Authorised Entity",
-    "title": "Registered and supervised by ARSEG",
+    "title": "What is ARSEG and how does it regulate insurance in Angola?",
     "description": "DETONDO - Insurance Brokerage, Lda is listed among the authorised insurance mediation entities by ARSEG, Angola's Insurance Regulation and Supervision Agency, as a registered insurance broker.",
     "details": {
       "entityType": "Entity Type",
@@ -286,7 +288,7 @@
   "vision": {
     "eyebrow": "Vision and values",
     "title": "Our vision",
-    "description": "To be a global risk solutions provider of choice, delivering exceptional results through the balance of our strengths: innovation, precision, and service.",
+    "description": "To be Angola's reference insurance broker for businesses with risk exposure in the energy, oil & gas, and corporate sectors.",
     "valuesTitle": "Our values",
     "valuesDescription": "Our values are the foundation of how we operate. They guide our decisions and the determination to live up to our vision. We hold the highest standards in everything we do.",
     "values": [
@@ -717,33 +719,6 @@
       "Gap coverage"
     ]
   },
-  "testimonials": {
-    "eyebrow": "Testimonials",
-    "title": "Stories from our clients",
-    "description": "Relationships built on trust, clarity, and fast response.",
-    "items": [
-      {
-        "quote": "Detondo's team turned something complicated into something simple. They explained every policy detail and were there when we needed them most.",
-        "author": "CFO",
-        "company": "Luanda-based group"
-      },
-      {
-        "quote": "They placed a reinsurance programme on a tight deadline with terms that seemed impossible in the local market. Top-tier professionalism.",
-        "author": "Technical Director",
-        "company": "Regional insurer"
-      },
-      {
-        "quote": "Claim resolved in days, not months. Communication was transparent from start to finish.",
-        "author": "Owner",
-        "company": "Small family business"
-      }
-    ],
-    "a11y": {
-      "goToSlide": "Testimonial {index}",
-      "previous": "Previous",
-      "next": "Next"
-    }
-  },
   "ctaBand": {
     "title": "Shall we design the right cover for you?",
     "description": "In a few minutes we can schedule a conversation to understand your needs and put the best available options in front of you.",
@@ -807,7 +782,7 @@
     "address": "Rua nº 121, casa nº 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola",
     "phoneTitle": "Phone",
     "emailTitle": "Email",
-    "emailAddress": "info@detondocorretora.com",
+    "emailAddress": "geral@detondocorretora.com",
     "hoursTitle": "Hours",
     "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
     "form": {

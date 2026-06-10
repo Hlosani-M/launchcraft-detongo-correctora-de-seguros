@@ -12,7 +12,7 @@ export function Logo({
   return (
     <Image
       src="/logo-transparent.png"
-      alt=""
+      alt="Detondo Seguros"
       width={size}
       height={size}
       priority={priority}
