@@ -785,6 +785,85 @@
     "emailAddress": "geral@detondocorretora.com",
     "hoursTitle": "Horário",
     "hours": "Segunda a sexta, 08h00 às 17h00",
+    "claimsBanner": {
+      "badge": "Contacto prioritário",
+      "address": "claims@detondocorretora.com",
+      "description": "Tem um sinistro em curso? Escreva à nossa equipa de sinistros para participação e acompanhamento.",
+      "cta": "Contactar a equipa de sinistros"
+    },
+    "directory": {
+      "title": "Endereços de email",
+      "description": "Escreva directamente à equipa responsável pelo seu assunto.",
+      "groups": [
+        {
+          "title": "Contactos gerais e apoio",
+          "items": [
+            {
+              "address": "geral@detondocorretora.com",
+              "description": "Contactos institucionais e gestão geral"
+            },
+            {
+              "address": "info@detondocorretora.com",
+              "description": "Informações gerais sobre os nossos serviços"
+            },
+            {
+              "address": "support@detondocorretora.com",
+              "description": "Assistência e apoio ao cliente"
+            },
+            {
+              "address": "claims@detondocorretora.com",
+              "description": "Participação e acompanhamento de sinistros"
+            }
+          ]
+        },
+        {
+          "title": "Áreas de negócio",
+          "items": [
+            {
+              "address": "comercial@detondocorretora.com",
+              "description": "Pedidos de cotação e novas parcerias de negócio"
+            },
+            {
+              "address": "corporate@detondocorretora.com",
+              "description": "Apoio dedicado a clientes corporativos"
+            },
+            {
+              "address": "reinsurance@detondocorretora.com",
+              "description": "Soluções de resseguro"
+            },
+            {
+              "address": "tenders@detondocorretora.com",
+              "description": "Concursos e propostas"
+            }
+          ]
+        },
+        {
+          "title": "Departamentos corporativos",
+          "items": [
+            {
+              "address": "finance@detondocorretora.com",
+              "description": "Assuntos financeiros e tesouraria"
+            },
+            {
+              "address": "accounts@detondocorretora.com",
+              "description": "Facturação e contabilidade"
+            },
+            {
+              "address": "compliance@detondocorretora.com",
+              "description": "Conformidade legal e ética"
+            },
+            {
+              "address": "hr@detondocorretora.com",
+              "description": "Recursos humanos e recrutamento"
+            },
+            {
+              "address": "privacy@detondocorretora.com",
+              "description": "Protecção de dados e privacidade"
+            }
+          ]
+        }
+      ]
+    },
     "form": {
       "steps": {
         "labels": [

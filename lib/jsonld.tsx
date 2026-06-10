@@ -44,7 +44,22 @@ export function OrganizationJsonLd({
       {
         "@type": "ContactPoint",
         telephone: "+244 921 545 832",
+        email: "support@detondocorretora.com",
         contactType: "customer service",
+        availableLanguage: ["Portuguese", "English"],
+        areaServed: "AO",
+      },
+      {
+        "@type": "ContactPoint",
+        email: "claims@detondocorretora.com",
+        contactType: "claims",
+        availableLanguage: ["Portuguese", "English"],
+        areaServed: "AO",
+      },
+      {
+        "@type": "ContactPoint",
+        email: "comercial@detondocorretora.com",
+        contactType: "sales",
         availableLanguage: ["Portuguese", "English"],
         areaServed: "AO",
       },

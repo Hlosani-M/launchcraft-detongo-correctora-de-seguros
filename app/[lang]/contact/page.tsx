@@ -4,6 +4,8 @@ import { getDictionary, hasLocale, type Locale } from "../dictionaries";
 import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { EmailDirectory } from "@/components/sections/EmailDirectory";
+import { ClaimsBanner } from "@/components/sections/ClaimsBanner";
 import {
   MapPinIcon,
   PhoneIcon,
@@ -49,6 +51,8 @@ export default async function ContactPage(
       title={dict.contact.title}
       description={dict.contact.description}
     >
+      <ClaimsBanner dict={dict.contact.claimsBanner} />
+
       <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
         <Reveal>
           <div className="space-y-6">
@@ -139,6 +143,8 @@ export default async function ContactPage(
           </div>
         </Reveal>
       </div>
+
+      <EmailDirectory dict={dict.contact.directory} />
     </Section>
   );
 }

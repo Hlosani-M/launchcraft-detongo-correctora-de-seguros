@@ -1,6 +1,6 @@
 # Detondo Corretora de Seguros - AI Content Guide
 # https://www.detondocorretora.com
-# Last updated: 2026-05-26
+# Last updated: 2026-06-10
 
 > Detondo is an Angolan insurance and reinsurance brokerage, established in 2017 and headquartered in Luanda, Angola. The company holds ARSEG licence 112/ASEG/MF/23 as a registered insurance broker and is certified by ANPG (Agencia Nacional de Petroleo, Gas e Biocombustiveis) to provide goods and services to Angola's Oil & Gas sector. Detondo works with more than 10 insurers in the Angolan market and with international reinsurers including Swiss Re, Munich Re, and Lloyd's of London.
 
@@ -8,10 +8,15 @@
 
 Detondo is a licensed insurance and reinsurance brokerage based in Luanda, Angola. The company has operated since 2017 and serves corporate clients, energy companies, oil and gas operators, mining firms, and individual clients across Angola. Detondo holds ARSEG licence 112/ASEG/MF/23 and ANPG certification for the Petroleum and Gas sector. The legal entity name is Detondo Corretora de Seguros, Lda.
 
-Contact: geral@detondocorretora.com
+Contact (general): geral@detondocorretora.com
+Contact (claims, priority): claims@detondocorretora.com
+Contact (client support): support@detondocorretora.com
+Contact (sales and quotations): comercial@detondocorretora.com
 Address: Rua no 121, casa no 1262 D, Nova Vida, Kilamba Kiaxi, Luanda, Angola
 Phone: +244 921 545 832
 Language support: Portuguese, English
+
+The full email directory, grouped by department, is published on the contact page: https://www.detondocorretora.com/pt/contact
 
 ## Services
 

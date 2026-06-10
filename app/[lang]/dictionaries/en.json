@@ -785,6 +785,85 @@
     "emailAddress": "geral@detondocorretora.com",
     "hoursTitle": "Hours",
     "hours": "Monday to Friday, 8:00 AM to 5:00 PM",
+    "claimsBanner": {
+      "badge": "Priority contact",
+      "address": "claims@detondocorretora.com",
+      "description": "Dealing with an active claim? Write to our claims team for notification and follow-up.",
+      "cta": "Email the claims team"
+    },
+    "directory": {
+      "title": "Email addresses",
+      "description": "Write directly to the team that handles your matter.",
+      "groups": [
+        {
+          "title": "General Enquiries & Support",
+          "items": [
+            {
+              "address": "geral@detondocorretora.com",
+              "description": "Institutional contacts and general management"
+            },
+            {
+              "address": "info@detondocorretora.com",
+              "description": "General information about our services"
+            },
+            {
+              "address": "support@detondocorretora.com",
+              "description": "Client assistance and support"
+            },
+            {
+              "address": "claims@detondocorretora.com",
+              "description": "Claims notification and follow-up"
+            }
+          ]
+        },
+        {
+          "title": "Business Areas",
+          "items": [
+            {
+              "address": "comercial@detondocorretora.com",
+              "description": "Quotation requests and new business partnerships"
+            },
+            {
+              "address": "corporate@detondocorretora.com",
+              "description": "Dedicated support for corporate clients"
+            },
+            {
+              "address": "reinsurance@detondocorretora.com",
+              "description": "Reinsurance solutions"
+            },
+            {
+              "address": "tenders@detondocorretora.com",
+              "description": "Tenders and proposals"
+            }
+          ]
+        },
+        {
+          "title": "Corporate Departments",
+          "items": [
+            {
+              "address": "finance@detondocorretora.com",
+              "description": "Financial matters and treasury"
+            },
+            {
+              "address": "accounts@detondocorretora.com",
+              "description": "Invoicing and accounting"
+            },
+            {
+              "address": "compliance@detondocorretora.com",
+              "description": "Legal compliance and ethics"
+            },
+            {
+              "address": "hr@detondocorretora.com",
+              "description": "Human resources and recruitment"
+            },
+            {
+              "address": "privacy@detondocorretora.com",
+              "description": "Data protection and privacy"
+            }
+          ]
+        }
+      ]
+    },
     "form": {
       "steps": {
         "labels": [
